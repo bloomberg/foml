@@ -32,16 +32,6 @@ function compileTemplate(handlebars, input) {
 }
 
 function parseDocuments() {
-    const lectures = yaml.safeLoad(fs.readFileSync(path.resolve(__dirname, '../data/lectures.yml')));
-
-    // Normalize the data
-    for (const lecture of lectures) {
-        for (const event of Object.values(lecture.Events)) {
-            ensureArrayExists(event, SLIDES);
-            ensureArrayExists(event, NOTES);
-            ensureArrayExists(event, REFERENCES);
-        }
-    }
 
     let assignmentsFrontmatter, assignments;
     let i = 0;
@@ -74,7 +64,7 @@ function parseDocuments() {
     }
 
 
-    return { lectures, lecturesNew, assignmentsFrontmatter, assignments };
+    return { lecturesNew, assignmentsFrontmatter, assignments };
 }
 
 function registerPartials(handlebars) {

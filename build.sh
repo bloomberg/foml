@@ -9,12 +9,11 @@ rm -rf styles/*.css
 
 npm run build-in-place
 
+mkdir -p out/styles
 cp index.html favicon.ico out/
-
-mkdir -p out/styles/
 cp styles/*.css out/styles/
 
-cp -r images fonts scripts docs out/
+cp -r images fonts scripts out/
 
 echo ""
 find out/ -print
