@@ -1,0 +1,441 @@
+@font-face {
+  font-family: "Glyphicons Halflings";
+  src: url("../fonts/glyphicons-halflings-regular.woff2") format("woff2"), url("../fonts/glyphicons-halflings-regular.woff") format("woff");
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.phone-only-block {
+  display: none;
+}
+body {
+  padding: 40px;
+  padding-left: 100px;
+  padding-top: 0;
+  line-height: 1.6em;
+  color: #444;
+  font-family: Helvetica, Arial, sans-serif;
+  background-color: #f8f7f8;
+}
+a {
+  text-decoration: none;
+  color: #0d9ddb;
+}
+a:hover {
+  color: #47c0f4;
+}
+h1 {
+  text-transform: uppercase;
+  line-height: normal;
+}
+p {
+  margin: 16px 0;
+  font-size: 16px;
+  line-height: 1.6em;
+}
+@media (max-width: 420px) {
+  p {
+    font-size: 14px;
+  }
+}
+p:first-child {
+  margin-top: 0;
+}
+p:last-child {
+  margin-bottom: 0;
+}
+ul,
+ol {
+  margin-left: 20px;
+}
+.module {
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.12);
+}
+.icon::before {
+  font-family: "Glyphicons Halflings";
+  opacity: 0.4;
+  margin-right: 10px;
+  vertical-align: middle;
+  color: #0d9ddb;
+}
+.icon.pdf::before {
+  content: "\e164";
+}
+.icon.zip::before {
+  content: "\e166";
+}
+body > nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 60px;
+  height: 100%;
+  background-color: #0d9ddb;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+body > nav > a {
+  position: relative;
+  display: block;
+  width: 60px;
+  height: 60px;
+  padding: 10px 10px 10px 10px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #47c0f4;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-align: left;
+  color: #fff;
+  white-space: nowrap;
+  line-height: 42px;
+  background-color: #0d9ddb;
+  overflow: hidden;
+  transition: width ease 0.2s, color ease 0.2s, background-color ease 0.2s;
+}
+body > nav > a:hover {
+  width: 200px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.3);
+  color: #fff;
+}
+body > nav > a.selected {
+  border-bottom: none;
+  color: #0d9ddb;
+  background: #fff;
+}
+body > nav > a::before {
+  float: left;
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  margin: -10px 15px 0 -10px;
+  font-size: 20px;
+  font-family: "Glyphicons Halflings";
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: normal;
+  line-height: 60px;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+@media (max-width: 420px) {
+  body > nav > a::before {
+    font-size: 16px;
+  }
+}
+body > nav > a[href="#home"]::before {
+  content: "\e021";
+}
+body > nav > a[href="#about"]::before {
+  content: "\e086";
+}
+body > nav > a[href="#resources"]::before {
+  content: "\e043";
+}
+body > nav > a[href="#lectures"]::before {
+  content: "\e109";
+}
+body > nav > a[href="#assignments"]::before {
+  content: "\e012";
+}
+body > nav > a[href="#project"]::before {
+  content: "\e006";
+}
+body > nav > a[href="#people"]::before {
+  content: "\e008";
+}
+body > section {
+  border-bottom: 1px solid #d9d9d9;
+  padding-bottom: 70px;
+  padding-top: 20px;
+}
+body > section > h1 {
+  margin-bottom: 40px;
+  font-size: 36px;
+}
+@media (max-width: 420px) {
+  body > section > h1 {
+    font-size: 20px;
+  }
+}
+body > section > section:not(:last-of-type) {
+  margin-bottom: 30px;
+}
+body > section > section > h1 {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+@media (max-width: 420px) {
+  body > section > section > h1 {
+    font-size: 16px;
+  }
+}
+#home {
+  text-align: center;
+  padding-top: 40px;
+}
+#home > a img {
+  max-width: 100%;
+}
+#home > h1 {
+  font-size: 46px;
+  text-align: left;
+  margin-bottom: 50px;
+}
+@media (max-width: 420px) {
+  #home > h1 {
+    font-size: 24px;
+  }
+}
+#home > h1 > span {
+  display: block;
+  margin-top: 5px;
+  font-size: 20px;
+}
+@media (max-width: 420px) {
+  #home > h1 > span {
+    font-size: 16px;
+  }
+}
+#home > h1 .department {
+  font-size: 16px;
+  vertical-align: middle;
+}
+@media (max-width: 420px) {
+  #home > h1 .department {
+    font-size: 14px;
+  }
+}
+#course-info {
+  margin: 10px auto;
+  text-align: left;
+}
+#course-info th {
+  font-weight: bold;
+  min-width: 170px;
+  vertical-align: top;
+  font-size: 20px;
+  color: #0d9ddb;
+  text-transform: uppercase;
+  opacity: 0.6;
+}
+@media (max-width: 420px) {
+  #course-info th {
+    font-size: 16px;
+  }
+}
+#course-info tr:last-of-type {
+  line-height: 1;
+}
+#course-info .email::before {
+  content: "\2709";
+  margin-left: 5px;
+}
+#about .module {
+  margin-bottom: 30px;
+}
+#textbooks img {
+  height: 200px;
+  margin: 0 10px 10px 0;
+}
+#textbooks dd {
+  margin-bottom: 10px;
+}
+#textbooks cite {
+  font-weight: bold;
+}
+#references ul {
+  margin-top: 10px;
+}
+#lectures > .abbreviations {
+  margin-bottom: 20px;
+  list-style-type: none;
+}
+#lectures > section {
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+#lectures > section > table {
+  width: 100%;
+  border-collapse: collapse;
+}
+#lectures > section thead {
+  line-height: 50px;
+}
+#lectures > section tbody > tr:not(:last-of-type) {
+  border-bottom: 1px solid rgba(13,157,219,0.2);
+}
+#lectures > section tbody > tr:not(:first-of-type) td,
+#lectures > section tbody > tr:not(:first-of-type) th {
+  padding-top: 15px;
+}
+#lectures > section th {
+  text-align: left;
+  text-transform: uppercase;
+}
+#lectures > section th,
+#lectures > section td {
+  vertical-align: top;
+}
+#lectures > section .label {
+  width: 20%;
+}
+#lectures > section .references {
+  width: 25%;
+}
+#lectures > section .slides {
+  width: 20%;
+}
+#lectures > section ul {
+  list-style-type: none;
+  margin: 0;
+}
+#lectures > section li {
+  line-height: normal;
+  margin-bottom: 10px;
+}
+#lectures > section h1 {
+  margin-bottom: 15px;
+}
+#lectures > section .date,
+#lectures > section .video {
+  display: block;
+  margin-top: 5px;
+}
+#lectures > section .date {
+  color: #0d9ddb;
+  font-size: 0.9em;
+  opacity: 0.6;
+}
+#lectures > section .video {
+  font-size: 0.85em;
+}
+#lectures > section .video::after {
+  font-family: "Glyphicons Halflings";
+  margin-left: 5px;
+  vertical-align: top;
+  content: "\e059";
+}
+#lectures > section .references {
+  padding-right: 60px;
+}
+#assignments .policies {
+  margin-bottom: 30px;
+}
+#assignments .homework {
+  margin-bottom: 20px;
+}
+#assignments .homework strong {
+  text-transform: uppercase;
+  display: block;
+}
+#assignments .homework .module {
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 600px;
+  width: 100%;
+}
+#assignments .homework .module > * {
+  display: table-cell;
+  padding-right: 40px;
+}
+#assignments .homework .module > *:last-of-type {
+  padding-right: 0;
+}
+#assignments .homework .title {
+  width: 310px;
+}
+#assignments .homework .title > h1 {
+  line-height: 1.6em;
+  white-space: nowrap;
+}
+#assignments .homework .title > p {
+  margin-top: 0;
+}
+#assignments .homework .deadline {
+  width: 190px;
+}
+#assignments .homework .files {
+  width: 100px;
+}
+#assignments .submit,
+#assignments .solutions {
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 5px;
+  margin-left: 30px;
+}
+#assignments .submit {
+  text-align: center;
+}
+#assignments .submit .icon {
+  margin-bottom: 5px;
+}
+#assignments .submit .icon::before {
+  content: "\2709";
+  font-size: 32px;
+  margin-right: 0;
+}
+#assignments .submit a:hover {
+  color: #0d9ddb;
+}
+#assignments .submit a:hover .icon::before {
+  opacity: 1;
+}
+#people > section:not(:last-of-type) {
+  margin-bottom: 50px;
+}
+#people > section.multiple-people {
+  margin-bottom: 30px;
+  max-width: 1300px;
+}
+#people ul {
+  display: flex;
+  flex-flow: row wrap;
+  list-style-type: none;
+  margin: 0;
+}
+#people .person {
+  display: flex;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 600px;
+  width: 600px;
+  min-height: 190px;
+}
+#people .person > img {
+  width: 150px;
+  height: 150px;
+  margin-right: 20px;
+  border-radius: 8px;
+  flex: 0 0 auto;
+}
+#people .person > .info {
+  min-width: 0;
+}
+#people .person > .info > p {
+  margin: 0 5px;
+}
+#people .person > .info > p.name {
+  font-weight: bold;
+}
+#people .person > .info > p.email {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#people .person > .info > p.bio {
+  margin-top: 10px;
+  font-size: 14px;
+}

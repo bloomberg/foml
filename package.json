@@ -1,0 +1,20 @@
+{
+  "name": "dsga1003",
+  "private": true,
+  "scripts": {
+    "stylus": "stylus styles/",
+    "watch": "gulp watch",
+    "build-in-place": "gulp build",
+    "build": "bash ./build.sh"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-stylus": "^2.0.0",
+    "gulp-util": "^3.0.3",
+    "handlebars": "^4.0.6",
+    "js-yaml": "^3.2.5",
+    "moment": "^2.9.0",
+    "slugg": "^1.0.0",
+    "stylus": "0.54.5"
+  }
+}

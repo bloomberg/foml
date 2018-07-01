@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>ML 101: Foundations of Machine Learning, Fall 2017</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" media="only screen and (max-width: 770px)" href="styles/tablet-and-phone.css">
+    <link rel="stylesheet" media="only screen and (max-width: 420px)" href="styles/phone.css">
+    <link rel="icon" href="favicon.ico" type="image/vnd.microsoft.icon">
+    <link rel="canonical" href="https://bbgithub.dev.bloomberg.com/pages/ML101/fall2017">
+  </head>
+  <body>
+    <nav>
+        <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#resources">Resources</a>
+            <a href="#lectures">Lectures</a>
+            <a href="#assignments">Assignments</a>
+            <a href="#people">People</a>
+        </a>
+    </nav>
+
+    <section id="home">
+        <a href="https://www.techatbloomberg.com/post-topic/data-science/"><img src="images/mlbanner.jpg" srcset="images/mlbanner.jpg 1x"></a>
+        <h1>
+            Foundations of Machine Learning
+            <span class="course">
+                ML 101 · Fall 2017
+            </span>
+        </h1>
+
+        <table id="course-info">
+            <tr>
+                <th>Instructor</th>
+                <td>David Rosenberg <a class="icon email" href="bbg://screens/MSG%2015001760"></a></td>
+            </tr>
+            <tr>
+                <th>Coordinators</th>
+                <td>Zoey Deng <a class="icon email" href="bbg://screens/MSG%207312260"></a></td>
+                <td>Jen Carberry <a class="icon email" href="bbg://screens/MSG%15975116"></a></td>
+            </tr>
+        </table>
+    </section>
+    <section id="about">
+        <h1>About This Course</h1>
+
+        <div class="module">
+            <p>This course covers a wide variety of topics in machine learning and statistical modeling. While mathematical methods and theoretical aspects will be covered, the primary goal is to provide students with the tools and principles needed to solve the data science problems found in practice.  This course also serves as a foundation on which more specialized courses and further independent study can build.</p>
+
+            <p>The course schedule can be found <a href="docs/ML_101_Schedule.xlsx">here</a>. </p>
+
+            <!--         <p>We will use <a href="https://piazza.com/">Piazza</a> for class discussion. Rather than emailing questions to the teaching staff, please <a href="https://piazza.com/nyu/spring2017/dsga1003/home">post your questions on Piazza</a>, where they will be answered by the instructor, TAs, graders, and other students.  For questions that are not specific to the class, you are also encouraged to post to <a href="http://stackoverflow.com/">Stack Overflow</a> for programming questions and <a href="http://stats.stackexchange.com/">Cross Validated</a> for statistics and machine learning questions.  Please also post a link to these postings in Piazza, so others in the class can answer the questions and benefit from the answers.
+               -->
+            <!-- Without registering, you can also view an <a href="https://piazza.com/class/i2jg9qgaxwr5fq?cid=14">anonymized version of our Piazza board</a>.</p> -->
+        </div>
+
+        <section>
+            <h1>Prerequisites</h1>
+            <ul>
+                <li><strong>Solid mathematical background</strong>, equivalent to a 1-semester undergraduate course in each of the following: linear algebra, multivariate calculus (primarily differential calculus), probability theory, and statistics. The content of NYU's <a href="http://www.cims.nyu.edu/~cfgranda/pages/DSGA1002_fall15/index.html"><strong>DS-GA-1002: Statistical and Mathematical Methods</strong></a> would be more than sufficient, for example.</li>
+                <li><strong>Python programming required</strong> for most homework assignments.</li>
+                <li><em>Recommended:</em> Computer science background up to a "data structures and algorithms" course</li>
+                <li><em>Recommended:</em> At least one advanced, proof-based mathematics course</li>
+            </ul>
+        </section>
+
+    </section>
+
+    <section id="resources">
+        <h1>Resources</h1>
+
+        <section id="textbooks">
+            <h1>Textbooks</h1>
+
+            <a href="http://shop.oreilly.com/product/0636920052289.do"><img src="images/geron-original.jpg" alt="The cover of Hands-On Machine Learning with Scikit-Learn and TensorFlow"></a>
+
+            <a href="https://web.stanford.edu/~hastie/ElemStatLearn/"><img src="images/hastie-1x.png" srcset="images/hastie-1x.png 1x, images/hastie-2x.jpg 2x, images/hastie-3x.jpg 3x" alt="The cover of Elements of Statistical Learning"></a>
+
+            <a href="http://www-bcf.usc.edu/~gareth/ISL/"><img src="images/james-1x.jpg" srcset="images/james-1x.jpg 1x, images/james-2x.jpg 2x, images/james-3x.jpg 3x" alt="The cover of An Introduction to Statistical Learning"></a>
+
+            <a href="http://www.cs.huji.ac.il/~shais/UnderstandingMachineLearning/"><img src="images/shalev-shwartz-original.jpg" alt="The cover of Understanding Machine Learning: From Theory to Algorithms"></a>
+
+            <a href="https://research.microsoft.com/en-us/um/people/cmbishop/PRML/"><img src="images/bishop-1x.jpg" srcset="images/bishop-1x.jpg 1x, images/bishop-2x.jpg 2x, images/bishop-3x.jpg 3x" alt="The cover of Pattern Recognition and Machine Learning"></a>
+
+            <a href="http://www.data-science-for-biz.com/DSB/Home.html/"><img src="images/provost-fawcett-original.jpg" alt="The cover of Data Science for Business"></a>
+
+            <dl>
+                <dt><a href="http://shop.oreilly.com/product/0636920052289.do"><cite>Hands-On Machine Learning with Scikit-Learn and TensorFlow</cite> (Aurélien Géron)</a>
+                    <dd>This is a practical guide to machine learning that corresponds fairly well with the content and level of our course.  While most of our homework is about coding ML from scratch with numpy, this book makes heavy use of scikit-learn and TensorFlow. We'll use the first two chapters of this book in the first two weeks of the course, when we cover "black-box machine learning."  It'll also be a handy reference for your projects and beyond this course, when you'll want to make use of existing ML packages, rather than rolling your own.</dd>
+                </dt>
+
+                <dt><a href="https://web.stanford.edu/~hastie/ElemStatLearn/"><cite>The
+                    Elements of Statistical Learning</cite> (Hastie, Friedman, and Tibshirani)</a>
+                    <dd>This will be our main textbook for L1 and L2 regularization, trees, bagging, random forests, and boosting.  It's written by three statisticians who invented many of the techniques discussed. There's an easier version of this book that covers many of the same topics, described below. (Available for free as a PDF.)</dd>
+                </dt>
+
+                <dt><a href="http://www-bcf.usc.edu/~gareth/ISL/"><cite>An Introduction to Statistical Learning</cite> (James, Witten, Hastie, and Tibshirani)</a>
+                    <dd>This book is written by two of the same authors as The Elements of Statistical Learning. It's much less intense mathematically, and it's good for a lighter introduction to the topics. Uses R as the language of instruction.  (Available for free as a PDF.)</dd>
+                </dt>
+
+    	          <dt><a href="http://www.cs.huji.ac.il/~shais/UnderstandingMachineLearning/"><cite>Understanding Machine Learning: From Theory to Algorithms</cite> (Shalev-Shwartz and Ben-David)</a>
+    	              <dd>This is our primary reference for kernel methods and multiclass classification, and possibly more towards the end of the course.  Covers a lot of theory that we don't go into, but it would be a good supplemental resource for a more theoretical course, such as Mohri's <a href="http://www.cs.nyu.edu/~mohri/ml16/">Foundations of Machine Learning</a> course. (Available for free as a PDF.)</dd>
+                </dt>
+
+                <dt><a href="https://research.microsoft.com/en-us/um/people/cmbishop/PRML/"><cite>Pattern Recognition and Machine Learning</cite> (Christopher Bishop)</a>
+    	              <dd>Our primary reference for probabilistic methods, including bayesian regression, latent variable models, and the EM algorithm.  It's highly recommended, but unfortunately not free online.</dd>
+                </dt>
+
+    	          <dt><a href="http://www.data-science-for-biz.com/DSB/Home.html"><cite>Data Science for Business</cite> (Provost and Fawcett)</a>
+    	              <dd>Ideally, this would be everybody's first book on machine learning.  The intended audience is both the ML practitioner and the ML product manager.  It's full of important core concepts and practical wisdom.  The math is so minimal that it's perfect for reading on your phone, and I encourage you to read it in parallel to doing this class.  Have your managers read it too.</dd>
+                </dt>
+            </dl>
+        </section>
+
+        <section id="references">
+            <h1>Other tutorials and references</h1>
+
+            <ul>
+                <li><a href="http://www.cims.nyu.edu/~cfgranda/pages/DSGA1002_fall15/notes.html">Carlos Fernandez-Granda's lecture notes</a> provide a comprehensive review of the prerequisite material in linear algebra, probability, statistics, and optimization.</li>
+    	          <li><a href="http://nbviewer.ipython.org/github/briandalessandro/DataScienceCourse/tree/master/ipython/">Brian Dalessandro's iPython notebooks</a> from <a href="https://github.com/briandalessandro/DataScienceCourse/blob/master/ipython/references/Syllabus_2017.pdf"><strong>DS-GA-1001: Intro to Data Science</strong></a></li>
+                <li><a href="http://www2.imm.dtu.dk/pubdb/views/publication_details.php?id=3274">The Matrix Cookbook</a> has lots of facts and identities about matrices and certain probability distributions.</li>
+                <li><a href="http://cs229.stanford.edu/section/cs229-prob.pdf">Stanford CS229: "Review of Probability Theory"</a></li>
+                <li><a href="http://cs229.stanford.edu/section/cs229-linalg.pdf">Stanford CS229: "Linear Algebra Review and Reference"</a></li>
+                <li><a href="http://www.umiacs.umd.edu/~hal/courses/2013S_ML/math4ml.pdf">Math for Machine Learning</a> by Hal Daumé III</li>
+            </ul>
+        </section>
+
+    </section>
+
+    <section id="lectures">
+        <h1>Lectures</h1>
+
+        <ul class="abbreviations">
+            <li> (HTF) refers to Hastie, Tibshirani, and Friedman's book <a href="https://web.stanford.edu/~hastie/ElemStatLearn/"><cite>The Elements of Statistical Learning</cite></a></li>
+            <li> (SSBD) refers to Shalev-Shwartz and Ben-David's book <a href="http://www.cs.huji.ac.il/~shais/UnderstandingMachineLearning/"><cite>Understanding Machine Learning: From Theory to Algorithms</cite></a></li>
+            <li> (JWHT) refers to James, Witten, Hastie, and Tibshirani's book <a href="http://www-bcf.usc.edu/~gareth/ISL"><cite>An Introduction to Statistical Learning</cite></a></li>
+        </ul>
+
+        <section class="module" id="lecture-statistical-learning-theory">
+            <table>
+                <tr>
+                    <td class="label" colspan="2">
+                        <h1>Statistical Learning Theory</h1>
+                        We introduce the main concepts, objects, and vocabulary that we&#x27;ll use in this course: input space, action space, outcome/output/label space, prediction functions, loss functions, hypothesis spaces, and empirical risk minimization.
+                    </td>
+                    <td colspan="2">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/U6M0m9c9_Js" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="slides">
+                        <h1>Slides</h1>
+                        <a href=https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Lectures/02a.intro-stat-learning-theory.pdf>Lecture Slides</a>
+                    </td>
+                    <td class="notes">
+                        <h1>Notes</h1>
+                        <ul>
+                                <li><a href="https://davidrosenberg.github.io/mlcourse/Archive/2017/ConceptChecks/1-Lec-Check.pdf">SLT and SGD Concept Check Questions</a></li>
+                                <li><a href="https://davidrosenberg.github.io/mlcourse/Archive/2017/ConceptChecks/1-Lec-Check_sol.pdf">SLT and SGD Concept Check Solutions</a></li>
+                        </ul>
+                    </td>
+                    <td>
+                        <h1>Concept Checks</h1>
+                          (None)
+                    </td>
+                    <td class="references">
+                        <h1>References</h1>
+                        <ul>
+                                <li><a href="http://leon.bottou.org/papers/bottou-tricks-2012">Bottou's SGD Tricks</a></li>
+                        </ul>
+        </td>
+            </tr>
+        </table>
+        </section>
+        <section class="module" id="lecture-stochastic-gradient-descent">
+            <table>
+                <tr>
+                    <td class="label" colspan="2">
+                        <h1>Stochastic Gradient Descent</h1>
+                        Taking gradient descent as a starting point, we motivate and give some intuitive justification for mini-batch and stochastic gradient descent, which are  today&#x27;s standard optimization methods for large-scale machine learning problems.
+                    </td>
+                    <td colspan="2">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/5TZww5bTROE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="slides">
+                        <h1>Slides</h1>
+                        <a href=https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Lectures/02b.SGD.pdf>Lecture Slides</a>
+                    </td>
+                    <td class="notes">
+                        <h1>Notes</h1>
+                        <ul>
+                                <li><a href="https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Notes/directional-derivative.pdf">Directional Derivatives and Approximation (short)</a></li>
+                                <li><a href="https://davidrosenberg.github.io/mlcourse/Archive/2017/Labs/1-gradients-Notes_sol.pdf">Gradients and Directional Derivatives (long)</a></li>
+                                <li><a href="https://github.com/davidrosenberg/mlcourse/blob/gh-pages/Notebooks/gd_fixed_and_backtracking.ipynb">Gradient Descent Demo (ipynb)</a></li>
+                        </ul>
+                    </td>
+                    <td>
+                        <h1>Concept Checks</h1>
+                        <ul>
+                                <li><a href="https://davidrosenberg.github.io/mlcourse/Archive/2017/ConceptChecks/1-Lab-Check.pdf">Differentiation and LinAlg Questions</a></li>
+                                <li><a href="https://davidrosenberg.github.io/mlcourse/Archive/2017/ConceptChecks/1-Lab-Check_sol.pdf">Differentiation and LinAlg Solutions</a></li>
+                        </ul>
+                    </td>
+                    <td class="references">
+                        <h1>References</h1>
+                        <ul>
+                                <li><a href="http://leon.bottou.org/papers/bottou-tricks-2012">Bottou's SGD Tricks</a></li>
+                        </ul>
+        </td>
+            </tr>
+        </table>
+        </section>
+        <section class="module" id="lecture-excess-risk-decomposition">
+            <table>
+                <tr>
+                    <td class="label" colspan="2">
+                        <h1>Excess Risk Decomposition</h1>
+                        
+                    </td>
+                    <td colspan="2">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/5TZww5bTROE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="slides">
+                        <h1>Slides</h1>
+                        <a href=https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Lectures/02c.excess-risk-decomposition.pdf>Lecture Slides</a>
+                    </td>
+                    <td class="notes">
+                        <h1>Notes</h1>
+                          (None)
+                    </td>
+                    <td>
+                        <h1>Concept Checks</h1>
+                          (None)
+                    </td>
+                    <td class="references">
+                        <h1>References</h1>
+                        <ul>
+                                <li>HTF Ch. 3</li>
+                                <li><a href="https://arxiv.org/pdf/1411.3230v2.pdf">Mairal, Bach, and Ponce on Sparse Modeling</a></li>
+                        </ul>
+        </td>
+            </tr>
+        </table>
+        </section>
+        <section class="module" id="lecture-loss-functions">
+            <table>
+                <tr>
+                    <td class="label" colspan="2">
+                        <h1>Loss Functions</h1>
+                        
+                    </td>
+                    <td colspan="2">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/5TZww5bTROE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="slides">
+                        <h1>Slides</h1>
+                        <a href=https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Lectures/04a.loss-functions.pdf>Lecture Slides</a>
+                    </td>
+                    <td class="notes">
+                        <h1>Notes</h1>
+                          (None)
+                    </td>
+                    <td>
+                        <h1>Concept Checks</h1>
+                          (None)
+                    </td>
+                    <td class="references">
+                        <h1>References</h1>
+                          (None)
+                        </td>
+            </tr>
+        </table>
+        </section>
+        <section class="module" id="lecture-convex-optimization">
+            <table>
+                <tr>
+                    <td class="label" colspan="2">
+                        <h1>Convex Optimization</h1>
+                        
+                    </td>
+                    <td colspan="2">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/5TZww5bTROE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="slides">
+                        <h1>Slides</h1>
+                        <a href=https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Lectures/04b.convex-optimization.pdf>Lecture Slides</a>
+                    </td>
+                    <td class="notes">
+                        <h1>Notes</h1>
+                        <ul>
+                                <li><a href="https://davidrosenberg.github.io/mlcourse/Archive/2017/Notes/svm-lecture-prep.pdf">Pre-lecture warmup for SVM and Lagrangians</a></li>
+                                <li><a href="https://davidrosenberg.github.io/mlcourse/Archive/2017/Notes/convex-optimization.pdf">Extreme Abridgement of BV</a></li>
+                                <li><a href="https://davidrosenberg.github.io/mlcourse/Archive/2017/ConceptChecks/4-Lec-Check.pdf">Convex Optimization Questions</a></li>
+                                <li><a href="https://davidrosenberg.github.io/mlcourse/Archive/2017/ConceptChecks/4-Lec-Check_sol.pdf">Convex Optimization Solutions</a></li>
+                        </ul>
+                    </td>
+                    <td>
+                        <h1>Concept Checks</h1>
+                          (None)
+                    </td>
+                    <td class="references">
+                        <h1>References</h1>
+                        <ul>
+                                <li><a href="http://cs229.stanford.edu/notes/cs229-notes3.pdf">Andrew Ng's CS229 SVM Notes</a></li>
+                                <li>HTF 12.2.1 - 12.2.2</li>
+                        </ul>
+        </td>
+            </tr>
+        </table>
+        </section>
+
+    </section>
+    <section id="assignments">
+        <h1>Assignments</h1>
+
+            <section class="homework" id="assignment-lab-1">
+                <div class="module">
+                    <div class="title">
+                        <h1>Lab 1</h1>
+                        <p>Black box ML</p>
+                    </div>
+                    <div class="files">
+                            <p>(Coming&nbsp;soon)</p>
+                    </div>
+                </div>
+            </section>
+            <section class="homework" id="assignment-lab-2">
+                <div class="module">
+                    <div class="title">
+                        <h1>Lab 2</h1>
+                        <p>Ridge Regression, Gradient Descent, and SGD</p>
+                    </div>
+                    <div class="files">
+                            <p>(Coming&nbsp;soon)</p>
+                    </div>
+                </div>
+            </section>
+            <section class="homework" id="assignment-lab-3">
+                <div class="module">
+                    <div class="title">
+                        <h1>Lab 3</h1>
+                        <p>Lasso Regression</p>
+                    </div>
+                    <div class="files">
+                            <a href="https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Homework/hw3.pdf" class="pdf icon">hw3.pdf</a>
+                            <a href="https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Homework/hw3.zip" class="zip icon">hw3.zip</a>
+                    </div>
+                </div>
+            </section>
+            <section class="homework" id="assignment-lab-4">
+                <div class="module">
+                    <div class="title">
+                        <h1>Lab 4</h1>
+                        <p>Subgradients, SVM, and Sentiment Analysis</p>
+                    </div>
+                    <div class="files">
+                            <p>(Coming&nbsp;soon)</p>
+                    </div>
+                </div>
+            </section>
+            <section class="homework" id="assignment-lab-5">
+                <div class="module">
+                    <div class="title">
+                        <h1>Lab 5</h1>
+                        <p>Kernel Methods and Lagrangian Duality</p>
+                    </div>
+                    <div class="files">
+                            <a href="https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Homework/hw5.pdf" class="pdf icon">hw5.pdf</a>
+                            <a href="https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Homework/hw5.zip" class="zip icon">hw5.zip</a>
+                    </div>
+                </div>
+            </section>
+            <section class="homework" id="assignment-lab-6">
+                <div class="module">
+                    <div class="title">
+                        <h1>Lab 6</h1>
+                        <p>Bayesian Methods</p>
+                    </div>
+                    <div class="files">
+                            <a href="https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Homework/hw6.pdf" class="pdf icon">hw6.pdf</a>
+                            <a href="https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Homework/hw6.zip" class="zip icon">hw6.zip</a>
+                    </div>
+                </div>
+            </section>
+            <section class="homework" id="assignment-lab-7">
+                <div class="module">
+                    <div class="title">
+                        <h1>Lab 7</h1>
+                        <p>Ensemble Methods</p>
+                    </div>
+                    <div class="files">
+                            <a href="https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Homework/hw7.pdf" class="pdf icon">hw7.pdf</a>
+                            <a href="https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Homework/hw7.zip" class="zip icon">hw7.zip</a>
+                    </div>
+                </div>
+            </section>
+            <section class="homework" id="assignment-lab-8">
+                <div class="module">
+                    <div class="title">
+                        <h1>Lab 8</h1>
+                        <p>Neural Networks and Backpropagation</p>
+                    </div>
+                    <div class="files">
+                            <p>(Coming&nbsp;soon)</p>
+                    </div>
+                </div>
+            </section>
+    </section>
+
+    <section id="people">
+        <h1>People</h1>
+
+        <section>
+            <h1>Instructor</h1>
+
+            <div class="person module instructor">
+                <img src="images/people/david.jpg" alt="A photo of David Rosenberg">
+                <div class="info">
+                    <p class="name"><a href="http://www.linkedin.com/pub/david-rosenberg/4/241/598">David Rosenberg</a></p>
+                    <p class="email"><a href="bbg://screens/MSG%2015001760">MSG</a></p>
+                    <p class="bio">David is in the data science group in the office of the CTO at <a href="http://www.bloomberglabs.com/data-science/">Bloomberg.</a>
+                </div>
+            </div>
+        </section>
+
+       <!--  <section class="multiple-people">
+            <h1>Teaching Assistants</h1>
+
+            <ul>
+
+            </ul>
+        </section>
+    </section>
+ -->
+
+    <script async defer src="scripts/navigation.js"></script>
+</body>
+</html>

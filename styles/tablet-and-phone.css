@@ -1,0 +1,38 @@
+body > section {
+  padding-bottom: 50px;
+}
+body > section > h1 {
+  margin-bottom: 30px;
+}
+body > nav > a:hover {
+  width: auto;
+}
+#lectures > section .label,
+#lectures > section .references,
+#lectures > section .slides {
+  width: auto;
+}
+#assignments .solutions,
+#assignments .submit {
+  margin-top: 10px;
+}
+#assignments .solutions strong,
+#assignments .submit strong {
+  display: inline-block;
+  margin-right: 5px;
+}
+#assignments .submit {
+  text-align: left;
+}
+#assignments .submit .icon {
+  display: inline-block;
+}
+#assignments .submit .icon::before {
+  font-size: 16px;
+}
+#this-week {
+  width: 600px;
+}
+#this-week section {
+  width: 220px;
+}
