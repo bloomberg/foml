@@ -1,0 +1,56 @@
+{{#each this}}
+<section class="module" id="{{lectureSlug this}}">
+    <table>
+        <tr>
+            <td class="label" colspan="2">
+                <h1>{{Title}}</h1>
+                {{Summary}}
+            </td>
+            <td colspan="2">
+                <iframe width="560" height="315" src="{{Video}}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </td>
+        </tr>
+        <tr>
+            <td class="slides">
+                <h1>Slides</h1>
+                <a href={{Slides}}>Lecture Slides</a>
+            </td>
+            <td class="notes">
+                <h1>Notes</h1>
+                {{#if Notes}}
+                <ul>
+                    {{#each Notes}}
+                        <li>{{maybeLink this}}</li>
+                    {{/each}}
+                </ul>
+                {{else}}
+                  (None)
+                {{/if}}
+            </td>
+            <td>
+                <h1>Concept Checks</h1>
+                {{#if CChecks}}
+                <ul>
+                    {{#each CChecks}}
+                        <li>{{maybeLink this}}</li>
+                    {{/each}}
+                </ul>
+                {{else}}
+                  (None)
+                {{/if}}
+            </td>
+            <td class="references">
+                <h1>References</h1>
+                {{#if References}}
+                <ul>
+                    {{#each References}}
+                        <li>{{maybeLink this}}</li>
+                    {{/each}}
+                </ul>
+                {{else}}
+                  (None)
+                {{/if}}</td>
+    </tr>
+</table>
+</section>
+{{/each}}

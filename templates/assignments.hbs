@@ -1,0 +1,25 @@
+{{#each this}}
+    <section class="homework" id="{{assignmentSlug this}}">
+        <div class="module">
+            <div class="title">
+                <h1>{{Label}}</h1>
+                <p>{{{Description}}}</p>
+            </div>
+            {{> _assignment-details }}
+        </div>
+        {{#if Submittable}}
+            <div class="submit">
+                <a href="{{@root.assignmentsFrontmatter.[Submit link]}}">
+                    <div class="icon"></div>
+                    <strong>Submit</strong>
+                </a>
+            </div>
+        {{/if}}
+        {{#each Solutions}}
+            <div class="solutions">
+                <strong>Solutions:</strong>
+                <a href="{{Solutions}}" class="zip icon">{{@key}}</a>
+            </div>
+        {{/each}}
+    </section>
+{{/each}}

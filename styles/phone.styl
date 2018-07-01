@@ -1,0 +1,124 @@
+@import "colors"
+
+nav-height = 60px
+number-of-nav-items = 7
+
+.phone-only-block
+  display: block
+
+body
+  padding = 10px
+  padding: padding
+  padding-bottom: padding + nav-height
+
+body > nav
+  width: 100%
+  height: nav-height
+  top: initial
+  bottom: 0
+  display: flex
+
+  > a
+    width: auto
+    flex: 0 0 (100% / number-of-nav-items)
+    border-bottom: none
+    border-right: 1px solid accent-hover
+    touch-action: manipulation
+
+    &:hover
+      width: auto
+
+#home
+  padding-top: 20px
+
+  > h1
+    text-align: center
+    margin-bottom: 40px
+
+    > span
+      &, .department
+        margin-top: 10px
+        font-size: 12px
+      .department
+        margin-top: 5px
+        display: block
+
+  p
+    label-width = 145px
+    span
+      display: inline-block
+      width: "calc(100% - %s)" % label-width
+
+    strong
+      width: label-width
+
+#textbooks
+  img
+    max-width: 30%
+    width: auto
+    height: auto
+    margin-right: 5px
+
+#lectures > section
+  > h1
+    font-size: 24px
+
+  .date
+    display: inline-block
+
+  .topics, .references
+    padding-right: 0
+
+  > table
+    display: block
+    margin-top: 0
+
+    &:not(:last-child)
+      margin-bottom: 20px
+      border-bottom: 2px solid gray
+
+    thead
+      display: none
+
+    tbody
+      td, th
+        display: block
+        margin-bottom: 25px
+        padding-top: 0
+
+    // .icon
+    //   &.references, &.slides
+    //     &::before
+    //       top: 0
+    //       left: 0
+
+    //       margin-top: -6px
+
+    //       font-size: 14px
+
+#assignments .homework
+  strong
+    display: inline-block
+
+  .deadline, .files
+    width: auto
+
+  .module > *
+    display: block
+    padding-bottom: 10px
+
+  .files > *
+    margin-right: 10px
+
+#people
+  ul
+    display: block
+
+  .person
+    display: block
+    width: auto
+    flex-basis: auto
+    margin-right: 0
+
+    > img
+      float: left

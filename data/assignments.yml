@@ -1,0 +1,39 @@
+Due time: 6pm
+Submit link: "TBD"
+---
+-
+  Label: Lab 1
+  Description: Black box ML
+-
+  Label: Lab 2
+  Description: Ridge Regression, Gradient Descent, and SGD
+-
+  Label: Lab 3
+  Description: Lasso Regression
+  PDF: {hw3.pdf: "https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Homework/hw3.pdf"}
+  ZIP: {hw3.zip: "https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Homework/hw3.zip"}
+-
+  Label: Lab 4
+  Description: Subgradients, SVM, and Sentiment Analysis
+-
+  Label: Lab 5
+  Description: Kernel Methods and Lagrangian Duality
+  PDF: {hw5.pdf: "https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Homework/hw5.pdf"}
+  ZIP: {hw5.zip: "https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Homework/hw5.zip"}
+-
+  Label: Lab 6
+  Description: Bayesian Methods
+  PDF: {hw6.pdf: "https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Homework/hw6.pdf"}
+  ZIP: {hw6.zip: "https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Homework/hw6.zip"}
+-
+  Label: Lab 7
+  Description: Ensemble Methods
+  PDF: {hw7.pdf: "https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Homework/hw7.pdf"}
+  ZIP: {hw7.zip: "https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Homework/hw7.zip"}
+-
+  Label: Lab 8
+  Description: Neural Networks and Backpropagation 
+
+
+
+

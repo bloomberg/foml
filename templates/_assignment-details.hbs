@@ -1,0 +1,12 @@
+<p class="deadline"><strong>Due:</strong> {{date Due}}, {{@root.assignmentsFrontmatter.[Due time]}}</p>
+<div class="files">
+    {{#each PDF}}
+        <a href="{{this}}" class="pdf icon">{{@key}}</a>
+    {{/each}}
+    {{#each ZIP}}
+        <a href="{{this}}" class="zip icon">{{@key}}</a>
+    {{/each}}
+    {{#if noFiles}}
+        <p>(Coming&nbsp;soon)</p>
+    {{/if}}
+</div>

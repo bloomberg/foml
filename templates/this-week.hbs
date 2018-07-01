@@ -1,0 +1,54 @@
+{{#if lecture}}
+<section id="this-week">
+    <h1>This week</h1>
+
+    <div class="week-summary">
+        {{#with lecture}}
+            <section>
+                <h1><a href="#{{lectureSlug this}}">Slides</a></h1>
+                <ul>
+                    {{#each Events}}
+                        {{#each Slides}}
+                            <li>{{maybeLink this}}</li>
+                        {{/each}}
+                    {{/each}}
+                </ul>
+            </section>
+            <section>
+                <h1><a href="#{{lectureSlug this}}">Notes</a></h1>
+
+                <ul>
+                    {{#each Events}}
+                        {{#each Notes}}
+                            <li>{{maybeLink this}}</li>
+                        {{/each}}
+                    {{/each}}
+                </ul>
+            </section>
+            <section>
+                <h1><a href="#{{lectureSlug this}}">References</a></h1>
+
+                <ul>
+                    {{#each Events}}
+                        {{#each References}}
+                            <li>{{maybeLink this}}</li>
+                        {{/each}}
+                    {{/each}}
+                </ul>
+            </section>
+        {{/with}}
+        {{#with assignment}}
+            <section class="assignment">
+                <h1><a href="#{{assignmentSlug this}}">{{Label}}</a></h1>
+                <p>{{{Description}}}</p>
+
+                {{> _assignment-details }}
+            </section>
+        {{/with}}
+
+        {{#if Announcement}}
+        <p>{{{Announcement}}}</p>
+        {{/if}}
+    </div>
+</section>
+{{/if}}

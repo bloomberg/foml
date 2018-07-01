@@ -1,0 +1,47 @@
+-
+  Title: Statistical Learning Theory
+  Slides: "https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Lectures/02a.intro-stat-learning-theory.pdf"
+  Video: "https://www.youtube.com/embed/U6M0m9c9_Js"
+  Summary: "We introduce the main concepts, objects, and vocabulary that we'll use in this course: input space, action space, outcome/output/label space, prediction functions, loss functions, hypothesis spaces, and empirical risk minimization."
+  Notes:
+    - {SLT and SGD Concept Check Questions: "https://davidrosenberg.github.io/mlcourse/Archive/2017/ConceptChecks/1-Lec-Check.pdf"}
+    - {SLT and SGD Concept Check Solutions: "https://davidrosenberg.github.io/mlcourse/Archive/2017/ConceptChecks/1-Lec-Check_sol.pdf"}
+  References:
+    - {"Bottou's SGD Tricks": "http://leon.bottou.org/papers/bottou-tricks-2012"}
+-
+  Title: Stochastic Gradient Descent
+  Slides: "https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Lectures/02b.SGD.pdf"
+  Video: "https://www.youtube.com/embed/5TZww5bTROE"
+  Summary: "Taking gradient descent as a starting point, we motivate and give some intuitive justification for mini-batch and stochastic gradient descent, which are  today's standard optimization methods for large-scale machine learning problems."
+  References:
+    - {"Bottou's SGD Tricks": "http://leon.bottou.org/papers/bottou-tricks-2012"}
+  Notes:
+    - {Directional Derivatives and Approximation (short): "https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Notes/directional-derivative.pdf"}
+    - {Gradients and Directional Derivatives (long) : "https://davidrosenberg.github.io/mlcourse/Archive/2017/Labs/1-gradients-Notes_sol.pdf"}
+    - {Gradient Descent Demo (ipynb): "https://github.com/davidrosenberg/mlcourse/blob/gh-pages/Notebooks/gd_fixed_and_backtracking.ipynb"}
+  CChecks:
+    - {Differentiation and LinAlg Questions: "https://davidrosenberg.github.io/mlcourse/Archive/2017/ConceptChecks/1-Lab-Check.pdf"}
+    - {Differentiation and LinAlg Solutions: "https://davidrosenberg.github.io/mlcourse/Archive/2017/ConceptChecks/1-Lab-Check_sol.pdf"}
+-
+  Title: Excess Risk Decomposition
+  Slides: "https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Lectures/02c.excess-risk-decomposition.pdf"
+  Video: "https://www.youtube.com/embed/5TZww5bTROE"
+  References:
+    - "HTF Ch. 3"
+    - {'Mairal, Bach, and Ponce on Sparse Modeling': "https://arxiv.org/pdf/1411.3230v2.pdf"}
+-
+  Title: Loss Functions
+  Slides: "https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Lectures/04a.loss-functions.pdf"
+  Video: "https://www.youtube.com/embed/5TZww5bTROE"
+-
+  Title: Convex Optimization
+  Slides: "https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Lectures/04b.convex-optimization.pdf"
+  Video: "https://www.youtube.com/embed/5TZww5bTROE"
+  Notes:
+    - {Pre-lecture warmup for SVM and Lagrangians: "https://davidrosenberg.github.io/mlcourse/Archive/2017/Notes/svm-lecture-prep.pdf"}
+    - {Extreme Abridgement of BV: "https://davidrosenberg.github.io/mlcourse/Archive/2017/Notes/convex-optimization.pdf"}
+    - {Convex Optimization Questions: "https://davidrosenberg.github.io/mlcourse/Archive/2017/ConceptChecks/4-Lec-Check.pdf"}
+    - {Convex Optimization Solutions: "https://davidrosenberg.github.io/mlcourse/Archive/2017/ConceptChecks/4-Lec-Check_sol.pdf"}
+  References:
+    - {"Andrew Ng's CS229 SVM Notes": "http://cs229.stanford.edu/notes/cs229-notes3.pdf"}
+    - "HTF 12.2.1 - 12.2.2"
