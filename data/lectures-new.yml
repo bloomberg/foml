@@ -205,8 +205,63 @@ We explain (by picture) why lasso solutions may be very unstable in the case of 
   Summary: "We start by considering the \"adaptive basis function model\", in which we are trying to learn a linear combination of M basis functions, where the M basis functions are themselves learned (i.e. chosen based on training data) from a base hypothesis space H.  In this lecture, we address the question of how to find a good prediction function of this form.  If the base hypothesis space H has a nice parameterization (say differentiable, in a certain sense), then we may be able to use standard gradient-based optimization methods.  In fact, neural networks may be considered in this category.  However, if the base hypothesis space H consists of trees, then no such parameterization exists, and we need to consider some other approach.  Gradient boosted regression is one approach to this problem, which works for doing empirical risk minimization whenever the loss function is [sub]differentiable, and we can regression on the base hypothesis space (i.e find a prediction function that approximately minimizes a square loss on some data).  By far the most common base hypothesis space are regression trees. It is important to note that even though there is \"regression\" in the name, we can choose a wide range of loss functions, allowing classification and conditional probability modeling.  Gradient boosting with trees (and its specific implementation in the packages XGBoost and LightGBM are, along with neural networks, among the most dominant methods in competitive machine learning (i.e. Kaggle competitions)."
   Slides: "https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Lectures/11a.gradient-boosting.pdf"
   Video: "https://www.youtube.com/embed/fz1H03ZKvLM"
+  Notes:
+    - {"Gradient Boosting Example (Poisson)": "https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Notes/poisson-gradient-boosting.pdf"}
+  References:
+    - {Friedman's GBM Paper: http://statweb.stanford.edu/~jhf/ftp/trebst.pdf}
+    - {Ridgeway's GBM Guide: http://www.saedsayad.com/docs/gbm2.pdf}
+    - {XGBoost Paper: http://arxiv.org/abs/1603.02754}
+    - {"Bühlmann and Hothorn's Boosting Paper": https://projecteuclid.org/euclid.ss/1207580163}
 -
   Title: Multiclass Classification
-  Summary: "Multiclass..."
+  Summary: "Here we consider how to generalize the score-producing binary classification methods we've discussed (e.g. SVM, logistic regression, etc) to multiclass settings.  We discuss a standard approach... One stanobvious approach the   "
   Slides: "https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Lectures/11a.gradient-boosting.pdf"
   Video: "https://www.youtube.com/embed/WMQwtoMUjDA"
+  References:
+    - {In Defense of One-Vs-All Classification: "http://www.jmlr.org/papers/v5/rifkin04a.html"}
+    - {Reducing Multiclass to Binary: "http://www.jmlr.org/papers/volume1/allwein00a/allwein00a.pdf"} 
+-
+  Title: k-Means Clustering
+  Summary: "Multiclass..."
+  Slides: "https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Lectures/13a.k-means.pdf"
+  Video: "https://www.youtube.com/embed/5TZww5bTROE"
+  References:
+    - {In Defense of One-Vs-All Classification: "http://www.jmlr.org/papers/v5/rifkin04a.html"}
+    - {Reducing Multiclass to Binary: "http://www.jmlr.org/papers/volume1/allwein00a/allwein00a.pdf"} 
+-
+  Title: Gaussian Mixture Models
+  Summary: "Multiclass..."
+  Slides: "https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Lectures/13b.mixture-models.pdf"
+  Video: "https://www.youtube.com/embed/5TZww5bTROE"
+  References:
+    - {In Defense of One-Vs-All Classification: "http://www.jmlr.org/papers/v5/rifkin04a.html"}
+    - {Reducing Multiclass to Binary: "http://www.jmlr.org/papers/volume1/allwein00a/allwein00a.pdf"} 
+-
+  Title: EM Algorithm
+  Summary: "Multiclass..."
+  Slides: "https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Lectures/13c.EM-algorithm.pdf"
+  Video: "https://www.youtube.com/embed/5TZww5bTROE"
+  References:
+    - {In Defense of One-Vs-All Classification: "http://www.jmlr.org/papers/v5/rifkin04a.html"}
+    - {Reducing Multiclass to Binary: "http://www.jmlr.org/papers/volume1/allwein00a/allwein00a.pdf"} 
+-
+  Title: Neural Networks
+  Summary: "Multiclass..."
+  Slides: "https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Lectures/14a.neural-networks.pdf"
+  Video: "https://www.youtube.com/embed/5TZww5bTROE"
+  References:
+    - {In Defense of One-Vs-All Classification: "http://www.jmlr.org/papers/v5/rifkin04a.html"}
+    - {Reducing Multiclass to Binary: "http://www.jmlr.org/papers/volume1/allwein00a/allwein00a.pdf"} 
+-
+  Title: Backpropagation
+  Summary: "Multiclass..."
+  Slides: "https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Lectures/14b.backpropagation.pdf"
+  Video: "https://www.youtube.com/embed/5TZww5bTROE"
+  References:
+    - {In Defense of One-Vs-All Classification: "http://www.jmlr.org/papers/v5/rifkin04a.html"}
+    - {Reducing Multiclass to Binary: "http://www.jmlr.org/papers/volume1/allwein00a/allwein00a.pdf"} 
+-
+  Title: Next Steps
+  Summary: "Multiclass..."
+  Slides: "https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Lectures/14c.next-steps.pdf"
+  Video: "https://www.youtube.com/embed/5TZww5bTROE"
