@@ -2,38 +2,37 @@ Due time: 6pm
 Submit link: "TBD"
 ---
 -
-  Label: Lab 1
-  Description: Black box ML
+  Label: Homework 1
+  Description: GD, SGD, and Ridge Regression
+  PDF: {hw1.pdf: "https://davidrosenberg.github.io/mlcourse/Homework/hw1.pdf"}
+  ZIP: {hw1.zip: "https://davidrosenberg.github.io/mlcourse/Homework/hw1.zip"}
 -
-  Label: Lab 2
-  Description: Ridge Regression, Gradient Descent, and SGD
--
-  Label: Lab 3
+  Label: Homework 2
   Description: Lasso Regression
-  PDF: {hw3.pdf: "https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Homework/hw3.pdf"}
-  ZIP: {hw3.zip: "https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Homework/hw3.zip"}
+  PDF: {hw2.pdf: "https://davidrosenberg.github.io/mlcourse/Homework/hw2.pdf"}
+  ZIP: {hw2.zip: "https://davidrosenberg.github.io/mlcourse/Homework/hw2.zip"}
 -
-  Label: Lab 4
-  Description: Subgradients, SVM, and Sentiment Analysis
+  Label: Homework 3
+  Description: SVM and Sentiment Analysis
+  PDF: {hw3.pdf: "https://davidrosenberg.github.io/mlcourse/Homework/hw3.pdf"}
+  ZIP: {hw3.zip: "https://davidrosenberg.github.io/mlcourse/Homework/hw3.zip"}
 -
-  Label: Lab 5
-  Description: Kernel Methods and Lagrangian Duality
-  PDF: {hw5.pdf: "https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Homework/hw5.pdf"}
-  ZIP: {hw5.zip: "https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Homework/hw5.zip"}
+  Label: Homework 4
+  Description: Kernel Methods
+  PDF: {hw4.pdf: "https://davidrosenberg.github.io/mlcourse/Homework/hw4.pdf"}
+  ZIP: {hw4.zip: "https://davidrosenberg.github.io/mlcourse/Homework/hw4.zip"}
 -
-  Label: Lab 6
-  Description: Bayesian Methods
-  PDF: {hw6.pdf: "https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Homework/hw6.pdf"}
-  ZIP: {hw6.zip: "https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Homework/hw6.zip"}
+  Label: Homework 5
+  Description: Probabilistic Modeling
+  PDF: {hw5.pdf: "https://davidrosenberg.github.io/mlcourse/Homework/hw5.pdf"}
+  ZIP: {hw5.zip: "https://davidrosenberg.github.io/mlcourse/Homework/hw5.zip"}
 -
-  Label: Lab 7
-  Description: Ensemble Methods
-  PDF: {hw7.pdf: "https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Homework/hw7.pdf"}
-  ZIP: {hw7.zip: "https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Homework/hw7.zip"}
+  Label: Homework 6
+  Description: Multiclass, Trees, and Gradient Boosting
+  PDF: {hw6.pdf: "https://davidrosenberg.github.io/mlcourse/Homework/hw6.pdf"}
+  ZIP: {hw6.zip: "https://davidrosenberg.github.io/mlcourse/Homework/hw6.zip"}
 -
-  Label: Lab 8
-  Description: Neural Networks and Backpropagation 
-
-
-
-
+  Label: Homework 7
+  Description: Computation Graphs, Backprop, and Neural Networks
+  PDF: {hw7.pdf: "https://davidrosenberg.github.io/mlcourse/Homework/hw7.pdf"}
+  ZIP: {hw7.zip: "https://davidrosenberg.github.io/mlcourse/Homework/hw7.zip"}
