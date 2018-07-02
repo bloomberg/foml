@@ -256,7 +256,7 @@
                         We introduce the notions of approximation error, estimation error, and optimization error.  While these concepts usually only show up in more advanced courses on statistical learning theory, they will help us frame our understanding of the very practical issue of trading off between the choice of hypothesis space, the amount of data we have, and how long we run our optimization algorithms.  In particular, it will helps us understand why &quot;better&quot; optimization methods (such as quasi-Newton methods) that can do a better job minimizing our objective function may not help find prediction functions that generalize better. (Note: This is independent of the more recent observations that stochastic gradient methods often generalize _better_ than batch gradient methods in neural network settings.)
                     </td>
                     <td colspan="2">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/5TZww5bTROE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/YA_CE9jat4I" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                     </td>
                 </tr>
                 <tr>
@@ -290,7 +290,7 @@
                         We introduce the concept of regularization, as our main defense against overfitting.  We discuss the equivalence of the penalization and constraint forms of regularization (see the homework for a precise statement). We compare regularization paths of L1- and L2-regularized linear least squares regression (i.e. &quot;lasso&quot; and &quot;ridge&quot; regression, respectively), and give a geometric argument for why lasso often gives &quot;sparse&quot; solutions, in a sense we make precise.  Finally, we note that the lasso objective function is not differentiable, and thus not immediately amenable to our gradient-based optimization methods.  We present several approaches to finding the lasso solution, including coordinate descent, known as the &quot;shooting algorithm&quot; in this context.
                     </td>
                     <td colspan="2">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/5TZww5bTROE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/d6XDOS4btck" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                     </td>
                 </tr>
                 <tr>
@@ -329,7 +329,7 @@
                         We continue our discussion of ridge and lasso regression with a sharp focus on what happens in the case of correlated features, which is a common occurrence in machine learning practice.  We explain (by picture) why lasso solutions may be very unstable in the case of highly correlated features, and why elastic net, which combines L1 and L2 regularization, ameliorates the instability issue while maintaining some of the sparsity properties of lasso.
                     </td>
                     <td colspan="2">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/5TZww5bTROE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/KIoz_aa1ed4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                     </td>
                 </tr>
                 <tr>
@@ -368,7 +368,7 @@
                         We start by discussing the absolute loss and the Huber loss, whjch one might use in the regression setting, in place of  square loss.  Attention is given to &quot;robustness&quot;, in the sense of sensitivity to outliers, which is a theme that occurs several times during the course.  Next we introduce our approach to the classification setting, introducing the notions of score, margin, and margin-based losses.  We discuss basic properties of the hinge loss (i.e SVM loss), logistic loss, and even the square loss, considered as a margin-based loss.
                     </td>
                     <td colspan="2">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/5TZww5bTROE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/1oi_Mwozj5w" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                     </td>
                 </tr>
                 <tr>
@@ -396,10 +396,10 @@
                 <tr>
                     <td class="label" colspan="2">
                         <h1>Convex Optimization</h1>
-                        We give a highly abridged introduction to convex optimization and Lagrangian duality.  We discuss duality and Slater&#x27;s constraint qualifications, and derive the complementary slackness conditions.  As far as this course is concerned, there are really only two reasons for discussing this material: 1) When we apply the complementary slackness conditions to the dual formulation of the support vector machine (SVM), we find that the solutions are &quot;sparse in the data&quot;.  This has important practical implications for the kernelized version of SVM, which we discuss later. I do not know another way derive these insights.  2) Lagrangian duality is the tool needed to establish the equivalence between the penalty and constraint forms of regularization, which we address in the homework.
+                        We give a highly abridged introduction to convex optimization and Lagrangian duality. We discuss duality and Slater&#x27;s constraint qualifications, and derive the complementary slackness conditions.  As far as this course is concerned, there are really only two reasons for discussing this material: 1) When we apply the complementary slackness conditions to the dual formulation of the support vector machine (SVM), we find that the solutions are &quot;sparse in the data&quot;.  This has important practical implications for the kernelized version of SVM, which we discuss later. I do not know another way derive these insights.  2) Lagrangian duality is the tool needed to establish the equivalence between the penalty and constraint forms of regularization, which we address in the homework.
                     </td>
                     <td colspan="2">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/5TZww5bTROE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/thuYiebq1cE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                     </td>
                 </tr>
                 <tr>
@@ -440,7 +440,7 @@
         Notably absent from our treatment is the hard-margin SVM and its standard geometric derivation.  Although the derivation is fun, as we proceed from the simple and visually appealing idea of maximizing the &quot;geometric margin&quot;, the hard-margin SVM is rarely useful in practice, as it requires separable data, which precludes any datasets with repeated inputs and label noise.  One fixes this by introducing &quot;slack&quot; variables, which leads to a formulation equivalent to the soft-margin SVM we present.  Personally, once we introduce slack variables, I&#x27;ve found the interpretation in terms of margin to be much hazier, and I find understanding the SVM in terms of &quot;just&quot; a particular loss function and a particular regularization to be much more useful.  That said, Brett Bernstein gives a very nice development of the geometric approach to the SVM, which is linked in the Notes below.  At the very least, it&#x27;s a great exercise in basic linear algebra.
                     </td>
                     <td colspan="2">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/5TZww5bTROE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/9zi6-RjlYrU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                     </td>
                 </tr>
                 <tr>
@@ -479,7 +479,7 @@
         Note: This lecture is mathematically one of the heavier ones and one can safely skip it. 
                     </td>
                     <td colspan="2">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/5TZww5bTROE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/jYtCiV1aP44" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                     </td>
                 </tr>
                 <tr>
@@ -514,7 +514,7 @@
                         When using linear hypothesis spaces, one needs to encode explicitly any nonlinear dependencies on the input as features. In this lecture we discuss various strategies for creating features.  Many of the examples are taken (with permission) from Percy Liang&#x27;s CS221 course at Stanford.
                     </td>
                     <td colspan="2">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/5TZww5bTROE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/gmli6EyiNRw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                     </td>
                 </tr>
                 <tr>
@@ -550,7 +550,7 @@
         After reparameterization, the objective function depends on the data only through the Gram matrix, or &quot;kernel matrix&quot;, which contains the dot product between all pairs of training feature vectors.  This is where things get interesting a second time:  Suppose f is our featurization function.  Sometimes the dot product between two feature vectors f(x) and f(x&#x27;) can be computed much more efficiently than multiplying together corresponding features and summing.  In such a situation, we write the dot products in terms of the &quot;kernel function&quot;: k(x,x&#x27;) &#x3D; &lt;f(x),f(x&#x27;)&gt;, which we hope to compute much more quickly than O(d), where d is the dimension of the features space.  Using this &quot;kernel trick&quot; together with the reparameterization described above is the essence of a &quot;kernel method&quot;, and it allows you to use huge (even infinite-dimensional) feature spaces with a computational burden that depends primarily on the size of your training set.  In practice, it&#x27;s useful for small and medium-sized datasets for which computing the kernel matrix is tractable.  Scaling kernel methods to large data sets is still an active area of research.
                     </td>
                     <td colspan="2">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/5TZww5bTROE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/m1otj-SdwYw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                     </td>
                 </tr>
                 <tr>
@@ -584,7 +584,7 @@
                         This is another black-box ML lecture.  We start with a mention of various baseline models that you should compare your prediction functions to: zero-information prediction function, single-feature prediction functions, regularized linear models, and sometimes an &#x27;oracle&#x27; model that is trained on your validation/test data, to get an idea of the upper bound of performance for your learning method.  Then we simply define the various summary statistics that are used in practice to describe classifier performance: confusion matrix, accuracy, precision, recall, specificity, sensitivity, F1 score, type 1 error, type 2 error, and a few others.  We also discuss the fact that most classifiers  give you a score, rather than just a hard classification, and you should tune your threshold to optimize the performance metric of importance to you, rather than just using the default (typically 0, or 0.5 if the prediction is a probability).  We also discuss the various performance curves you&#x27;ll see in practice: precision/recall, ROC, and (my personal favorite for many business applications) lift curves.
                     </td>
                     <td colspan="2">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/5TZww5bTROE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/xMyAL0C6cPY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                     </td>
                 </tr>
                 <tr>
@@ -609,16 +609,16 @@
             </tr>
         </table>
         </section>
-        <section class="module" id="lecture-citysense-probabilistic-modeling">
+        <section class="module" id="lecture-city-sense-probabilistic-modeling">
             <table>
                 <tr>
                     <td class="label" colspan="2">
-                        <h1>CitySense: Probabilistic Modeling</h1>
+                        <h1>City Sense: Probabilistic Modeling</h1>
                         So far we have studied the regression setting, for which our predictions (i.e. &#x27;actions&#x27;) are real-valued, as well as the classification setting, for which our score functions also produce real values.  With this lecture, we begin our consideration of &quot;conditional probability models&quot;, in which the predictions are probability distributions over possible outcomes. We motivate these models by discussion of the &quot;CitySense&quot; problem, in which we want to predict the probability distribution on the number of taxi cab pickups at each street corner, at different times of the week.  In this lecture we take a &quot;bare hands&quot; approach to building these conditional probability models.
         While I consider the basic use of stratification and bucketing to build conditional models by hand to be very useful in practice, if you&#x27;re eager to get to some mathematics, you may safely skip this lecture.
                     </td>
                     <td colspan="2">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/5TZww5bTROE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/6nolrvzXiE4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                     </td>
                 </tr>
                 <tr>
@@ -651,7 +651,7 @@
                         In empirical risk minimization, we select a prediction function that minimizes the average loss on a training set (or on a validation set, at the model selection phase). So if our prediction functions are producing probability distributions, what loss functions will give a reasonable performance measure on an individual example?  In this lecture, we discuss one of the most popular performance measures for a predicted probability distribution: &quot;likelihood&quot;.  For this lecture, we temporarily leave aside the conditional probability modeling problem, and focus on the simpler problem of fitting a single probability model to data.  For a parametric models, it&#x27;s often a straightforward optimization problem to find the &quot;maximum likelihood&quot;  model, which maximizes the likelihood on some training data. Of course, we can also use a non-parametric model, such as the histogram model we used in the previous lecture.  No matter how we have developed a collection of candidate probability distributions on training data, we can compare them on an equal footing by evaluating their likelihood on some validation data.
                     </td>
                     <td colspan="2">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/5TZww5bTROE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/ec_5vvxW7fE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                     </td>
                 </tr>
                 <tr>
@@ -682,7 +682,7 @@
                         In this lecture we consider prediction functions that produces distributions from some parametric family of distributions.  We restrict to the case of linear models, though later in the course it will be clear how to make nonlinear versions using gradient boosting and neural networks.  We develop the technique through four examples: Bernoulli regression (logistic regression being a special case), Poisson regression, Gaussian regression, and multinomial logistic regression (our first multiclass method).  We end by connecting this maximum likelihood framework back to our empirical risk minimization framework.
                     </td>
                     <td colspan="2">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/5TZww5bTROE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/JrFj0xpGd2Q" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                     </td>
                 </tr>
                 <tr>
@@ -713,7 +713,7 @@
                         In preparation for our discussion on Bayesian predictive machine learning, we review some basics of classical and Bayesian statistics for parametric probability models. For classical (i.e. &quot;frequentist&quot;) statistics, we define statistics and point estimators, and discuss various desirable properties of point estimators.  For Bayesian statistics, we introduce a new ingredient, the &quot;prior distribution&quot;, which is a distribution on the parameter space that you declare, before seeing any data.  We compare the two approaches for the simple problem of learning about a coin&#x27;s probability of heads.  Along the way, we discuss conjugate priors, Bayesian point estimators, posterior distributions, and credible sets.  Finally, we give the basic setup for Bayesian decision theory, which is how a Bayesian would choose a single action to take, given the posterior distribution on the parameter space.
                     </td>
                     <td colspan="2">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/5TZww5bTROE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/VCfrGjDPC6k" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                     </td>
                 </tr>
                 <tr>
@@ -746,7 +746,7 @@
                         In our earlier discussion of conditional probability modeling, we started with a hypothesis space of possible prediction functions, from which we selected a single prediction function (e.g. by regularized maximum likelihood).  In the Bayesian approach, we additionally start with a prior distribution on this hypothesis space.  After observing some training data, we end up with a posterior distribution on the hypothesis space.  For making predictions, we can derive a predictive distribution from the posterior distribution.  We explore these concepts by working through the case of Bayesian Gaussian linear regression.  We also make a precise connection between MAP estimation in this model and ridge regression.
                     </td>
                     <td colspan="2">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/5TZww5bTROE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/EqsZVhVQi8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                     </td>
                 </tr>
                 <tr>
@@ -784,7 +784,7 @@
                         We begin our discussion of nonlinear models with tree models.  While it&#x27;s easy enough to define a hypothesis space of decision trees, along with some complexity measure for regularization, such as tree depth or number of leaf nodes, the challenge starts when we try to find the empirical risk minimizer (ERM) over this space for some loss function.  It turns out finding the ERM is computationally intractable.  We discuss a standard greedy approach to tree building, both for classification and regression, in the case that features take values in any ordered set. We also mention how to categorical variables (in the binary classification case) and missing values.
                     </td>
                     <td colspan="2">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/5TZww5bTROE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/GZuweldJWrM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                     </td>
                 </tr>
                 <tr>
@@ -817,7 +817,7 @@
                         In this lecture we define bootstrap sampling, and show how how it is typically applied in statistics to do things such as  estimate the variance of statistics and make confidence intervals.
                     </td>
                     <td colspan="2">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/5TZww5bTROE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/lr5WH-JVT5I" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                     </td>
                 </tr>
                 <tr>
@@ -840,15 +840,15 @@
             </tr>
         </table>
         </section>
-        <section class="module" id="lecture-bagging-and-random-forest">
+        <section class="module" id="lecture-bagging-and-random-forests">
             <table>
                 <tr>
                     <td class="label" colspan="2">
-                        <h1>Bagging and Random Forest</h1>
+                        <h1>Bagging and Random Forests</h1>
                         The motivating idea of bagging is simple: Consider the regression case, and suppose we could create a bunch (say B) prediction functions based on independent training samples of size n.  If we average together these prediction functions, the expected value of the average is the same as any one of the functions, but the variance would have decreased by a factor of 1/B -- a clear win!  Of course, this would require an overall sample of size nB.  The idea of bagging is to replace independent samples with bootstrap samples from a single data set of size n.  Of course the bootstrap samples are not independent draws from the data generating distribution, and so that this even sometimes works is the really the magic of the bootstrap.  Although it&#x27;s hard to find crisp theoretical results describing when bagging helps, conventional wisdom says that it helps most for models that are &quot;high variance&quot;, which in this context means that the prediction function may change a lot and when you got a new random sample from the same distribution, and &quot;low bias&quot;, which just means fitting the training data well.  Trees have these characteristics are usually the model of choice for bagging.  Random forests are just bagged trees with one additional twist: only a random subset of features are considered when splitting a node of a tree.  The hope, very roughly speaking, is that by injecting this randomness, the resulting prediction functions are less dependent, and thus we&#x27;ll get a larger reduction in variance.  In practice, random forests are one of the most effect machine learning models in many domains.
                     </td>
                     <td colspan="2">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/5TZww5bTROE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/f2S4hVs-ESw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                     </td>
                 </tr>
                 <tr>
@@ -879,7 +879,7 @@
                         We start by considering the &quot;adaptive basis function model&quot;, in which we are trying to learn a linear combination of M basis functions, where the M basis functions are themselves learned (i.e. chosen based on training data) from a base hypothesis space H.  In this lecture, we address the question of how to find a good prediction function of this form.  If the base hypothesis space H has a nice parameterization (say differentiable, in a certain sense), then we may be able to use standard gradient-based optimization methods.  In fact, neural networks may be considered in this category.  However, if the base hypothesis space H consists of trees, then no such parameterization exists, and we need to consider some other approach.  Gradient boosted regression is one approach to this problem, which works for doing empirical risk minimization whenever the loss function is [sub]differentiable, and we can regression on the base hypothesis space (i.e find a prediction function that approximately minimizes a square loss on some data).  By far the most common base hypothesis space are regression trees. It is important to note that even though there is &quot;regression&quot; in the name, we can choose a wide range of loss functions, allowing classification and conditional probability modeling.  Gradient boosting with trees (and its specific implementation in the packages XGBoost and LightGBM are, along with neural networks, among the most dominant methods in competitive machine learning (i.e. Kaggle competitions).
                     </td>
                     <td colspan="2">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/5TZww5bTROE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/fz1H03ZKvLM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                     </td>
                 </tr>
                 <tr>
@@ -914,10 +914,10 @@
                 <tr>
                     <td class="label" colspan="2">
                         <h1>Multiclass Classification</h1>
-                        Multiclass...
+                        Here we consider how to generalize the score-producing binary classification methods we&#x27;ve discussed (e.g. SVM, logistic regression, etc) to multiclass settings.  We discuss a standard approach... One stanobvious approach the   
                     </td>
                     <td colspan="2">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/5TZww5bTROE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/WMQwtoMUjDA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                     </td>
                 </tr>
                 <tr>
