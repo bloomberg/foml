@@ -171,7 +171,7 @@ We explain (by picture) why lasso solutions may be very unstable in the case of 
   Title: Bayesian Conditional Probability Models
   Summary: "In our earlier discussion of conditional probability modeling, we started with a hypothesis space of possible prediction functions, from which we selected a single prediction function (e.g. by regularized maximum likelihood).  In the Bayesian approach, we additionally start with a prior distribution on this hypothesis space.  After observing some training data, we end up with a posterior distribution on the hypothesis space.  For making predictions, we can derive a predictive distribution from the posterior distribution.  We explore these concepts by working through the case of Bayesian Gaussian linear regression.  We also make a precise connection between MAP estimation in this model and ridge regression."
   Slides: "https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Lectures/09b.bayesian-regression.pdf"
-  Video: "https://www.youtube.com/embed/EqsZVhVQi8"
+  Video: "https://www.youtube.com/embed/rEqsZVhVQi8"
   Notes:
     - {"Proportionality Review": "https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Notes/proportionality.pdf"}
     - {"Multivariate Gaussians": "https://davidrosenberg.github.io/mlcourse/in-prep/multivariate-gaussian.pdf"}
