@@ -123,9 +123,9 @@ We explain (by picture) why lasso solutions may be very unstable in the case of 
     - {"Boyd's subgradient notes": "http://web.stanford.edu/class/ee364b/lectures.html"}
 -
   Title: Kernel Methods
-  Summary: "With linear methods, we may need to make a whole lot of features to get a hypothesis space that's expressive enough to fit our data -- sometimes there will be orders of magnitude more features than we have training examples.  While regularization can control overfitting, having a huge number of features can make things computationally very difficult, if we handle them naively.  However, it turns out even when the optimal parameter vector we're searching for lives in a very high-dimensional vector space (dimension being the number of features),  a basic linear algebra argument shows that for certain objective function, the optimal parameter vector lives in a subspace spanned by the training input vectors, which will be of dimension equal to the number of training points.  Thus when we have far more features than training points, we're better off restricting our search to this lower-dimensional subspace.  We can do this by an easy reparameterization of the objective function.  This result is referred to as the \"representer theorem\", and its proof can be given on one slide.
+  Summary: "With linear methods, we may need to make a whole lot of features to get a hypothesis space that's expressive enough to fit our data -- sometimes there will be orders of magnitude more features than we have training examples.  While regularization can control overfitting, having a huge number of features can make things computationally very difficult, if we handle them naively.  However, it turns out that even when the optimal parameter vector we're searching for lives in a very high-dimensional vector space (dimension being the number of features),  a basic linear algebra argument shows that for certain objective function, the optimal parameter vector lives in a subspace spanned by the training input vectors, which will be of dimension equal to the number of training points.  Thus when we have far more features than training points, we're better off restricting our search to this lower-dimensional subspace.  We can do this by an easy reparameterization of the objective function.  This result is referred to as the \"representer theorem\", and its proof can be given on one slide.
 
-  After reparameterization, the objective function depends on the data only through the Gram matrix, or \"kernel matrix\", which contains the dot product between all pairs of training feature vectors.  This is where things get interesting a second time:  Suppose f is our featurization function.  Sometimes the dot product between two feature vectors f(x) and f(x') can be computed much more efficiently than multiplying together corresponding features and summing.  In such a situation, we write the dot products in terms of the \"kernel function\": k(x,x') = <f(x),f(x')>, which we hope to compute much more quickly than O(d), where d is the dimension of the features space.  Using this \"kernel trick\" together with the reparameterization described above is the essence of a \"kernel method\", and it allows you to use huge (even infinite-dimensional) feature spaces with a computational burden that depends primarily on the size of your training set.  In practice, it's useful for small and medium-sized datasets for which computing the kernel matrix is tractable.  Scaling kernel methods to large data sets is still an active area of research."
+  After reparameterization, we'll find that the objective function depends on the data only through the Gram matrix, or \"kernel matrix\", which contains the dot product between all pairs of training feature vectors.  This is where things get interesting a second time:  Suppose f is our featurization function.  Sometimes the dot product between two feature vectors f(x) and f(x') can be computed much more efficiently than multiplying together corresponding features and summing.  In such a situation, we write the dot products in terms of the \"kernel function\": k(x,x') = <f(x),f(x')>, which we hope to compute much more quickly than O(d), where d is the dimension of the features space.  Using this \"kernel trick\", together with the reparameterization described above, is the essence of a \"kernel method\", and it allows you to use huge (even infinite-dimensional) feature spaces with a computational burden that depends primarily on the size of your training set.  In practice, it's useful for small and medium-sized datasets for which computing the kernel matrix is tractable.  Scaling kernel methods to large data sets is still an active area of research."
   Slides: "https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Lectures/06a.kernel-methods.pdf"
   Video: "https://www.youtube.com/embed/m1otj-SdwYw"
   References:
@@ -140,7 +140,7 @@ We explain (by picture) why lasso solutions may be very unstable in the case of 
     - Provost and Fawcett book
 
 -
-  Title: "City Sense" Probabilistic Modeling
+  Title: "City Sense: Probabilistic Modeling"
   Summary: "So far we have studied the regression setting, for which our predictions (i.e. 'actions') are real-valued, as well as the classification setting, for which our score functions also produce real values.  With this lecture, we begin our consideration of \"conditional probability models\", in which the predictions are probability distributions over possible outcomes. We motivate these models by discussion of the \"CitySense\" problem, in which we want to predict the probability distribution on the number of taxi cab pickups at each street corner, at different times of the week.  In this lecture we take a \"bare hands\" approach to building these conditional probability models.
 
   While I consider the basic use of stratification and bucketing to build conditional models by hand to be very useful in practice, if you're eager to get to some mathematics, you may safely skip this lecture."
@@ -214,15 +214,15 @@ We explain (by picture) why lasso solutions may be very unstable in the case of 
     - {"Bühlmann and Hothorn's Boosting Paper": https://projecteuclid.org/euclid.ss/1207580163}
 -
   Title: Multiclass Classification
-  Summary: "Here we consider how to generalize the score-producing binary classification methods we've discussed (e.g. SVM, logistic regression, etc) to multiclass settings.  We discuss a standard approach... One stanobvious approach the   "
-  Slides: "https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Lectures/11a.gradient-boosting.pdf"
+  Summary: "Here we consider how to generalize the score-producing binary classification methods we've discussed (e.g. SVM and logistic regression) to multiclass settings.  We start by discussing 'one-vs-all', a simple reduction of multiclass to binary classification.  This will usually work just fine in practice, despite the interesting failure case we illustrate.  However, one-vs-all doesn't scale to very large number of classes, as we have to train a separate model for each class.  This is the real motivation for presenting the \"compatibility function\" approach described in this lecture.  The approach presented here extends to structured prediction problems, in which the output space may be exponentially large."
+  Slides: "https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Lectures/11b.multiclass.pdf"
   Video: "https://www.youtube.com/embed/WMQwtoMUjDA"
   References:
     - {In Defense of One-Vs-All Classification: "http://www.jmlr.org/papers/v5/rifkin04a.html"}
     - {Reducing Multiclass to Binary: "http://www.jmlr.org/papers/volume1/allwein00a/allwein00a.pdf"} 
 -
   Title: k-Means Clustering
-  Summary: "Multiclass..."
+  Summary: "Here we start our short unit on unsupervised learning.  k-means clustering is presented first as an algorithm and then as an approach to minimizing a particular objective function. One challenge with clustering algorithms is that it's not obvious how to measure success (though see the Shalev-Shwartz, Ben-David book Section 22.5 for a nice discussion).  When possible, I prefer to take a probabilistic modeling approach, as discussed in the next two lectures."
   Slides: "https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Lectures/13a.k-means.pdf"
   Video: "https://www.youtube.com/embed/5TZww5bTROE"
   References:
@@ -230,7 +230,7 @@ We explain (by picture) why lasso solutions may be very unstable in the case of 
     - {Reducing Multiclass to Binary: "http://www.jmlr.org/papers/volume1/allwein00a/allwein00a.pdf"} 
 -
   Title: Gaussian Mixture Models
-  Summary: "Multiclass..."
+  Summary: "A Gaussian mixture model (GMM) is a family of multimodal probability distributions that is a plausible generative model for clustered data.  We can fit this model to data with maximum likelihood, and we can assess the quality of fit by evaluating the model likelihood on holdout data.  While the \"learning\" phase of Gaussian mixture modeling is fitting the model to data, in the \"inference\" phase, we determine for any point drawn from the GMM the probability that it came from each of the k components.  To use a GMM for clustering, we simply assign each point to the component that it is most likely to have come from.  k-means clustering can be seen as a limiting case of a restricted form of Gaussian mixture modeling."
   Slides: "https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Lectures/13b.mixture-models.pdf"
   Video: "https://www.youtube.com/embed/5TZww5bTROE"
   References:
@@ -238,7 +238,7 @@ We explain (by picture) why lasso solutions may be very unstable in the case of 
     - {Reducing Multiclass to Binary: "http://www.jmlr.org/papers/volume1/allwein00a/allwein00a.pdf"} 
 -
   Title: EM Algorithm
-  Summary: "Multiclass..."
+  Summary: "It turns out, fitting a Gaussian mixture model by maximum likelihood is easier said then done: there is no closed from solution, and our usual gradient methods do not work well.  The standard approach to maximum likelihood estimation in a Gaussian mixture model is the expectation  maximization algorithm.  In this lecture, We present the EM algorithm in the general setting of latent variable models, of which GMM is a special case.  We present the EM algorithm as a very basic \"variational method\" and indicate a few generalizations."
   Slides: "https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Lectures/13c.EM-algorithm.pdf"
   Video: "https://www.youtube.com/embed/5TZww5bTROE"
   References:
@@ -246,7 +246,7 @@ We explain (by picture) why lasso solutions may be very unstable in the case of 
     - {Reducing Multiclass to Binary: "http://www.jmlr.org/papers/volume1/allwein00a/allwein00a.pdf"} 
 -
   Title: Neural Networks
-  Summary: "Multiclass..."
+  Summary: "In the context of this course, we view neural networks as \"just\" another nonlinear hypothesis space.  On the practical side, unlike trees and tree-based ensembles (our other major nonlinear hypothesis spaces), neural networks can be fit using gradient-based optimization methods.  On the theoretical side, a large enough neural network can approximate any continuous function.  We discuss the specific case of the multilayer perceptron for multiclass classification, which we view as a generalization of multinomial logistic regression from linear to nonlinear score functions."
   Slides: "https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Lectures/14a.neural-networks.pdf"
   Video: "https://www.youtube.com/embed/5TZww5bTROE"
   References:
@@ -254,7 +254,7 @@ We explain (by picture) why lasso solutions may be very unstable in the case of 
     - {Reducing Multiclass to Binary: "http://www.jmlr.org/papers/volume1/allwein00a/allwein00a.pdf"} 
 -
   Title: Backpropagation
-  Summary: "Multiclass..."
+  Summary: "Neural network optimization is amenable to gradient-based methods, but if the actual computation of the gradient is done naively, the computational cost can be prohibitive.  Back propagation is the standard algorithm for computing the gradient efficiently.  We present the backpropagation algorithm for a general computation graph.  The algorithm we present applies, without change, to models with \"parameter tying\", which include convolutional networks and recurrent neural networks (RNN's), the workhorses of computer vision and natural language processing.  We illustrate backpropagation with one of the simplest models with parameter tying: regularized linear regression.  Backpropagation for the multilayer perceptron, the standard introductory example, is presented as a homework problem."
   Slides: "https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Lectures/14b.backpropagation.pdf"
   Video: "https://www.youtube.com/embed/5TZww5bTROE"
   References:
