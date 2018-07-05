@@ -2,13 +2,13 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>ML 101: Foundations of Machine Learning, Fall 2017</title>
+    <title>Foundations of Machine Learning</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" media="only screen and (max-width: 770px)" href="styles/tablet-and-phone.css">
     <link rel="stylesheet" media="only screen and (max-width: 420px)" href="styles/phone.css">
     <link rel="icon" href="favicon.ico" type="image/vnd.microsoft.icon">
-    <link rel="canonical" href="https://bbgithub.dev.bloomberg.com/pages/ML101/fall2017">
+    <link rel="canonical" href="https://https://bloomberg.github.io/foml/">
   </head>
   <body>
     <nav>
@@ -23,22 +23,12 @@
 
     <section id="home">
         <a href="https://www.techatbloomberg.com/post-topic/data-science/"><img src="images/mlbanner.jpg" srcset="images/mlbanner.jpg 1x"></a>
-        <h1>
-            Foundations of Machine Learning
-            <span class="course">
-                ML 101 · Fall 2017
-            </span>
-        </h1>
+        <h1>Bloomberg's Foundations of Machine Learning</h1>
 
         <table id="course-info">
             <tr>
                 <th>Instructor</th>
-                <td>David Rosenberg <a class="icon email" href="bbg://screens/MSG%2015001760"></a></td>
-            </tr>
-            <tr>
-                <th>Coordinators</th>
-                <td>Zoey Deng <a class="icon email" href="bbg://screens/MSG%207312260"></a></td>
-                <td>Jen Carberry <a class="icon email" href="bbg://screens/MSG%15975116"></a></td>
+                <td>David Rosenberg </td>
             </tr>
         </table>
     </section>
@@ -47,8 +37,6 @@
 
         <div class="module">
             <p>This course covers a wide variety of topics in machine learning and statistical modeling. While mathematical methods and theoretical aspects will be covered, the primary goal is to provide students with the tools and principles needed to solve the data science problems found in practice.  This course also serves as a foundation on which more specialized courses and further independent study can build.</p>
-
-            <p>The course schedule can be found <a href="docs/ML_101_Schedule.xlsx">here</a>. </p>
 
             <!--         <p>We will use <a href="https://piazza.com/">Piazza</a> for class discussion. Rather than emailing questions to the teaching staff, please <a href="https://piazza.com/nyu/spring2017/dsga1003/home">post your questions on Piazza</a>, where they will be answered by the instructor, TAs, graders, and other students.  For questions that are not specific to the class, you are also encouraged to post to <a href="http://stackoverflow.com/">Stack Overflow</a> for programming questions and <a href="http://stats.stackexchange.com/">Cross Validated</a> for statistics and machine learning questions.  Please also post a link to these postings in Piazza, so others in the class can answer the questions and benefit from the answers.
                -->
@@ -546,8 +534,8 @@
                 <tr>
                     <td class="label" colspan="2">
                         <h1>Kernel Methods</h1>
-                        With linear methods, we may need to make a whole lot of features to get a hypothesis space that&#x27;s expressive enough to fit our data -- sometimes there will be orders of magnitude more features than we have training examples.  While regularization can control overfitting, having a huge number of features can make things computationally very difficult, if we handle them naively.  However, it turns out even when the optimal parameter vector we&#x27;re searching for lives in a very high-dimensional vector space (dimension being the number of features),  a basic linear algebra argument shows that for certain objective function, the optimal parameter vector lives in a subspace spanned by the training input vectors, which will be of dimension equal to the number of training points.  Thus when we have far more features than training points, we&#x27;re better off restricting our search to this lower-dimensional subspace.  We can do this by an easy reparameterization of the objective function.  This result is referred to as the &quot;representer theorem&quot;, and its proof can be given on one slide.
-        After reparameterization, the objective function depends on the data only through the Gram matrix, or &quot;kernel matrix&quot;, which contains the dot product between all pairs of training feature vectors.  This is where things get interesting a second time:  Suppose f is our featurization function.  Sometimes the dot product between two feature vectors f(x) and f(x&#x27;) can be computed much more efficiently than multiplying together corresponding features and summing.  In such a situation, we write the dot products in terms of the &quot;kernel function&quot;: k(x,x&#x27;) &#x3D; &lt;f(x),f(x&#x27;)&gt;, which we hope to compute much more quickly than O(d), where d is the dimension of the features space.  Using this &quot;kernel trick&quot; together with the reparameterization described above is the essence of a &quot;kernel method&quot;, and it allows you to use huge (even infinite-dimensional) feature spaces with a computational burden that depends primarily on the size of your training set.  In practice, it&#x27;s useful for small and medium-sized datasets for which computing the kernel matrix is tractable.  Scaling kernel methods to large data sets is still an active area of research.
+                        With linear methods, we may need to make a whole lot of features to get a hypothesis space that&#x27;s expressive enough to fit our data -- sometimes there will be orders of magnitude more features than we have training examples.  While regularization can control overfitting, having a huge number of features can make things computationally very difficult, if we handle them naively.  However, it turns out that even when the optimal parameter vector we&#x27;re searching for lives in a very high-dimensional vector space (dimension being the number of features),  a basic linear algebra argument shows that for certain objective function, the optimal parameter vector lives in a subspace spanned by the training input vectors, which will be of dimension equal to the number of training points.  Thus when we have far more features than training points, we&#x27;re better off restricting our search to this lower-dimensional subspace.  We can do this by an easy reparameterization of the objective function.  This result is referred to as the &quot;representer theorem&quot;, and its proof can be given on one slide.
+        After reparameterization, we&#x27;ll find that the objective function depends on the data only through the Gram matrix, or &quot;kernel matrix&quot;, which contains the dot product between all pairs of training feature vectors.  This is where things get interesting a second time:  Suppose f is our featurization function.  Sometimes the dot product between two feature vectors f(x) and f(x&#x27;) can be computed much more efficiently than multiplying together corresponding features and summing.  In such a situation, we write the dot products in terms of the &quot;kernel function&quot;: k(x,x&#x27;) &#x3D; &lt;f(x),f(x&#x27;)&gt;, which we hope to compute much more quickly than O(d), where d is the dimension of the features space.  Using this &quot;kernel trick&quot;, together with the reparameterization described above, is the essence of a &quot;kernel method&quot;, and it allows you to use huge (even infinite-dimensional) feature spaces with a computational burden that depends primarily on the size of your training set.  In practice, it&#x27;s useful for small and medium-sized datasets for which computing the kernel matrix is tractable.  Scaling kernel methods to large data sets is still an active area of research.
                     </td>
                     <td colspan="2">
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/m1otj-SdwYw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
@@ -746,7 +734,7 @@
                         In our earlier discussion of conditional probability modeling, we started with a hypothesis space of possible prediction functions, from which we selected a single prediction function (e.g. by regularized maximum likelihood).  In the Bayesian approach, we additionally start with a prior distribution on this hypothesis space.  After observing some training data, we end up with a posterior distribution on the hypothesis space.  For making predictions, we can derive a predictive distribution from the posterior distribution.  We explore these concepts by working through the case of Bayesian Gaussian linear regression.  We also make a precise connection between MAP estimation in this model and ridge regression.
                     </td>
                     <td colspan="2">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/EqsZVhVQi8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/rEqsZVhVQi8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                     </td>
                 </tr>
                 <tr>
@@ -914,7 +902,7 @@
                 <tr>
                     <td class="label" colspan="2">
                         <h1>Multiclass Classification</h1>
-                        Here we consider how to generalize the score-producing binary classification methods we&#x27;ve discussed (e.g. SVM, logistic regression, etc) to multiclass settings.  We discuss a standard approach... One stanobvious approach the   
+                        Here we consider how to generalize the score-producing binary classification methods we&#x27;ve discussed (e.g. SVM and logistic regression) to multiclass settings.  We start by discussing &#x27;one-vs-all&#x27;, a simple reduction of multiclass to binary classification.  This will usually work just fine in practice, despite the interesting failure case we illustrate.  However, one-vs-all doesn&#x27;t scale to very large number of classes, as we have to train a separate model for each class.  This is the real motivation for presenting the &quot;compatibility function&quot; approach described in this lecture.  The approach presented here extends to structured prediction problems, in which the output space may be exponentially large.
                     </td>
                     <td colspan="2">
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/WMQwtoMUjDA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
@@ -923,7 +911,7 @@
                 <tr>
                     <td class="slides">
                         <h1>Slides</h1>
-                        <a href=https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Lectures/11a.gradient-boosting.pdf>Lecture Slides</a>
+                        <a href=https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Lectures/11b.multiclass.pdf>Lecture Slides</a>
                     </td>
                     <td class="notes">
                         <h1>Notes</h1>
@@ -948,7 +936,7 @@
                 <tr>
                     <td class="label" colspan="2">
                         <h1>k-Means Clustering</h1>
-                        Multiclass...
+                        Here we start our short unit on unsupervised learning.  k-means clustering is presented first as an algorithm and then as an approach to minimizing a particular objective function. One challenge with clustering algorithms is that it&#x27;s not obvious how to measure success (though see the Shalev-Shwartz, Ben-David book Section 22.5 for a nice discussion).  When possible, I prefer to take a probabilistic modeling approach, as discussed in the next two lectures.
                     </td>
                     <td colspan="2">
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/5TZww5bTROE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
@@ -982,7 +970,7 @@
                 <tr>
                     <td class="label" colspan="2">
                         <h1>Gaussian Mixture Models</h1>
-                        Multiclass...
+                        A Gaussian mixture model (GMM) is a family of multimodal probability distributions that is a plausible generative model for clustered data.  We can fit this model to data with maximum likelihood, and we can assess the quality of fit by evaluating the model likelihood on holdout data.  While the &quot;learning&quot; phase of Gaussian mixture modeling is fitting the model to data, in the &quot;inference&quot; phase, we determine for any point drawn from the GMM the probability that it came from each of the k components.  To use a GMM for clustering, we simply assign each point to the component that it is most likely to have come from.  k-means clustering can be seen as a limiting case of a restricted form of Gaussian mixture modeling.
                     </td>
                     <td colspan="2">
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/5TZww5bTROE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
@@ -1016,7 +1004,7 @@
                 <tr>
                     <td class="label" colspan="2">
                         <h1>EM Algorithm</h1>
-                        Multiclass...
+                        It turns out, fitting a Gaussian mixture model by maximum likelihood is easier said then done: there is no closed from solution, and our usual gradient methods do not work well.  The standard approach to maximum likelihood estimation in a Gaussian mixture model is the expectation  maximization algorithm.  In this lecture, We present the EM algorithm in the general setting of latent variable models, of which GMM is a special case.  We present the EM algorithm as a very basic &quot;variational method&quot; and indicate a few generalizations.
                     </td>
                     <td colspan="2">
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/5TZww5bTROE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
@@ -1050,7 +1038,7 @@
                 <tr>
                     <td class="label" colspan="2">
                         <h1>Neural Networks</h1>
-                        Multiclass...
+                        In the context of this course, we view neural networks as &quot;just&quot; another nonlinear hypothesis space.  On the practical side, unlike trees and tree-based ensembles (our other major nonlinear hypothesis spaces), neural networks can be fit using gradient-based optimization methods.  On the theoretical side, a large enough neural network can approximate any continuous function.  We discuss the specific case of the multilayer perceptron for multiclass classification, which we view as a generalization of multinomial logistic regression from linear to nonlinear score functions.
                     </td>
                     <td colspan="2">
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/5TZww5bTROE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
@@ -1084,7 +1072,7 @@
                 <tr>
                     <td class="label" colspan="2">
                         <h1>Backpropagation</h1>
-                        Multiclass...
+                        Neural network optimization is amenable to gradient-based methods, but if the actual computation of the gradient is done naively, the computational cost can be prohibitive.  Back propagation is the standard algorithm for computing the gradient efficiently.  We present the backpropagation algorithm for a general computation graph.  The algorithm we present applies, without change, to models with &quot;parameter tying&quot;, which include convolutional networks and recurrent neural networks (RNN&#x27;s), the workhorses of computer vision and natural language processing.  We illustrate backpropagation with one of the simplest models with parameter tying: regularized linear regression.  Backpropagation for the multilayer perceptron, the standard introductory example, is presented as a homework problem.
                     </td>
                     <td colspan="2">
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/5TZww5bTROE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
