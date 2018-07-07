@@ -14,9 +14,9 @@
     <nav>
         <a href="#home">Home</a>
             <a href="#about">About</a>
-            <a href="#resources">Resources</a>
             <a href="#lectures">Lectures</a>
             <a href="#assignments">Assignments</a>
+            <a href="#resources">Resources</a>
             <a href="#people">People</a>
         </a>
     </nav>
@@ -38,6 +38,8 @@
         <div class="module">
             <p>This course covers a wide variety of topics in machine learning and statistical modeling. While mathematical methods and theoretical aspects will be covered, the primary goal is to provide students with the tools and principles needed to solve the data science problems found in practice.  This course also serves as a foundation on which more specialized courses and further independent study can build.</p>
 
+            <p>The lectures are embedded below, but also may be viewed via this <a href="https://www.youtube.com/playlist?list=PLnZuxOufsXnvftwTB1HL6mel1V32w0ThI">YouTube playlist</a></p>
+
             <!--         <p>We will use <a href="https://piazza.com/">Piazza</a> for class discussion. Rather than emailing questions to the teaching staff, please <a href="https://piazza.com/nyu/spring2017/dsga1003/home">post your questions on Piazza</a>, where they will be answered by the instructor, TAs, graders, and other students.  For questions that are not specific to the class, you are also encouraged to post to <a href="http://stackoverflow.com/">Stack Overflow</a> for programming questions and <a href="http://stats.stackexchange.com/">Cross Validated</a> for statistics and machine learning questions.  Please also post a link to these postings in Piazza, so others in the class can answer the questions and benefit from the answers.
                -->
             <!-- Without registering, you can also view an <a href="https://piazza.com/class/i2jg9qgaxwr5fq?cid=14">anonymized version of our Piazza board</a>.</p> -->
@@ -50,67 +52,6 @@
                 <li><strong>Python programming required</strong> for most homework assignments.</li>
                 <li><em>Recommended:</em> Computer science background up to a "data structures and algorithms" course</li>
                 <li><em>Recommended:</em> At least one advanced, proof-based mathematics course</li>
-            </ul>
-        </section>
-
-    </section>
-
-    <section id="resources">
-        <h1>Resources</h1>
-
-        <section id="textbooks">
-            <h1>Textbooks</h1>
-
-            <a href="http://shop.oreilly.com/product/0636920052289.do"><img src="images/geron-original.jpg" alt="The cover of Hands-On Machine Learning with Scikit-Learn and TensorFlow"></a>
-
-            <a href="https://web.stanford.edu/~hastie/ElemStatLearn/"><img src="images/hastie-1x.png" srcset="images/hastie-1x.png 1x, images/hastie-2x.jpg 2x, images/hastie-3x.jpg 3x" alt="The cover of Elements of Statistical Learning"></a>
-
-            <a href="http://www-bcf.usc.edu/~gareth/ISL/"><img src="images/james-1x.jpg" srcset="images/james-1x.jpg 1x, images/james-2x.jpg 2x, images/james-3x.jpg 3x" alt="The cover of An Introduction to Statistical Learning"></a>
-
-            <a href="http://www.cs.huji.ac.il/~shais/UnderstandingMachineLearning/"><img src="images/shalev-shwartz-original.jpg" alt="The cover of Understanding Machine Learning: From Theory to Algorithms"></a>
-
-            <a href="https://research.microsoft.com/en-us/um/people/cmbishop/PRML/"><img src="images/bishop-1x.jpg" srcset="images/bishop-1x.jpg 1x, images/bishop-2x.jpg 2x, images/bishop-3x.jpg 3x" alt="The cover of Pattern Recognition and Machine Learning"></a>
-
-            <a href="http://www.data-science-for-biz.com/DSB/Home.html/"><img src="images/provost-fawcett-original.jpg" alt="The cover of Data Science for Business"></a>
-
-            <dl>
-                <dt><a href="http://shop.oreilly.com/product/0636920052289.do"><cite>Hands-On Machine Learning with Scikit-Learn and TensorFlow</cite> (Aurélien Géron)</a>
-                    <dd>This is a practical guide to machine learning that corresponds fairly well with the content and level of our course.  While most of our homework is about coding ML from scratch with numpy, this book makes heavy use of scikit-learn and TensorFlow. We'll use the first two chapters of this book in the first two weeks of the course, when we cover "black-box machine learning."  It'll also be a handy reference for your projects and beyond this course, when you'll want to make use of existing ML packages, rather than rolling your own.</dd>
-                </dt>
-
-                <dt><a href="https://web.stanford.edu/~hastie/ElemStatLearn/"><cite>The
-                    Elements of Statistical Learning</cite> (Hastie, Friedman, and Tibshirani)</a>
-                    <dd>This will be our main textbook for L1 and L2 regularization, trees, bagging, random forests, and boosting.  It's written by three statisticians who invented many of the techniques discussed. There's an easier version of this book that covers many of the same topics, described below. (Available for free as a PDF.)</dd>
-                </dt>
-
-                <dt><a href="http://www-bcf.usc.edu/~gareth/ISL/"><cite>An Introduction to Statistical Learning</cite> (James, Witten, Hastie, and Tibshirani)</a>
-                    <dd>This book is written by two of the same authors as The Elements of Statistical Learning. It's much less intense mathematically, and it's good for a lighter introduction to the topics. Uses R as the language of instruction.  (Available for free as a PDF.)</dd>
-                </dt>
-
-    	          <dt><a href="http://www.cs.huji.ac.il/~shais/UnderstandingMachineLearning/"><cite>Understanding Machine Learning: From Theory to Algorithms</cite> (Shalev-Shwartz and Ben-David)</a>
-    	              <dd>This is our primary reference for kernel methods and multiclass classification, and possibly more towards the end of the course.  Covers a lot of theory that we don't go into, but it would be a good supplemental resource for a more theoretical course, such as Mohri's <a href="http://www.cs.nyu.edu/~mohri/ml16/">Foundations of Machine Learning</a> course. (Available for free as a PDF.)</dd>
-                </dt>
-
-                <dt><a href="https://research.microsoft.com/en-us/um/people/cmbishop/PRML/"><cite>Pattern Recognition and Machine Learning</cite> (Christopher Bishop)</a>
-    	              <dd>Our primary reference for probabilistic methods, including bayesian regression, latent variable models, and the EM algorithm.  It's highly recommended, but unfortunately not free online.</dd>
-                </dt>
-
-    	          <dt><a href="http://www.data-science-for-biz.com/DSB/Home.html"><cite>Data Science for Business</cite> (Provost and Fawcett)</a>
-    	              <dd>Ideally, this would be everybody's first book on machine learning.  The intended audience is both the ML practitioner and the ML product manager.  It's full of important core concepts and practical wisdom.  The math is so minimal that it's perfect for reading on your phone, and I encourage you to read it in parallel to doing this class.  Have your managers read it too.</dd>
-                </dt>
-            </dl>
-        </section>
-
-        <section id="references">
-            <h1>Other tutorials and references</h1>
-
-            <ul>
-                <li><a href="http://www.cims.nyu.edu/~cfgranda/pages/DSGA1002_fall15/notes.html">Carlos Fernandez-Granda's lecture notes</a> provide a comprehensive review of the prerequisite material in linear algebra, probability, statistics, and optimization.</li>
-    	          <li><a href="http://nbviewer.ipython.org/github/briandalessandro/DataScienceCourse/tree/master/ipython/">Brian Dalessandro's iPython notebooks</a> from <a href="https://github.com/briandalessandro/DataScienceCourse/blob/master/ipython/references/Syllabus_2017.pdf"><strong>DS-GA-1001: Intro to Data Science</strong></a></li>
-                <li><a href="http://www2.imm.dtu.dk/pubdb/views/publication_details.php?id=3274">The Matrix Cookbook</a> has lots of facts and identities about matrices and certain probability distributions.</li>
-                <li><a href="http://cs229.stanford.edu/section/cs229-prob.pdf">Stanford CS229: "Review of Probability Theory"</a></li>
-                <li><a href="http://cs229.stanford.edu/section/cs229-linalg.pdf">Stanford CS229: "Linear Algebra Review and Reference"</a></li>
-                <li><a href="http://www.umiacs.umd.edu/~hal/courses/2013S_ML/math4ml.pdf">Math for Machine Learning</a> by Hal Daumé III</li>
             </ul>
         </section>
 
@@ -133,7 +74,7 @@
                         We introduce the main concepts, objects, and vocabulary that we&#x27;ll use in this course: input space, action space, outcome/output/label space, prediction functions, loss functions, hypothesis spaces, and empirical risk minimization.
                     </td>
                     <td colspan="2">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/U6M0m9c9_Js" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/MsD28INtSv8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                     </td>
                 </tr>
                 <tr>
@@ -162,15 +103,48 @@
             </tr>
         </table>
         </section>
-        <section class="module" id="lecture-statistical-learning-theory">
+        <section class="module" id="lecture-case-study-churn-prediction">
             <table>
                 <tr>
                     <td class="label" colspan="2">
-                        <h1>Statistical Learning Theory</h1>
+                        <h1>Case Study: Churn Prediction</h1>
+                        We introduce the main concepts, objects, and vocabulary that we&#x27;ll use in this course: input space, action space, outcome/output/label space, prediction functions, loss functions, hypothesis spaces, and empirical risk minimization.
+                    </td>
+                    <td colspan="2">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/kE_t3Mm8Z50" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="slides">
+                        <h1>Slides</h1>
+                        <a href=https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Lectures/churn.pdf>Lecture Slides</a>
+                    </td>
+                    <td class="notes">
+                        <h1>Notes</h1>
+                          (None)
+                    </td>
+                    <td>
+                        <h1>Concept Checks</h1>
+                          (None)
+                    </td>
+                    <td class="references">
+                        <h1>References</h1>
+                        <ul>
+                                <li><a href="http://www.kdd.org/kdd-cup/view/kdd-cup-2009">KDD Cup 2009: Customer relationship prediction</a></li>
+                        </ul>
+        </td>
+            </tr>
+        </table>
+        </section>
+        <section class="module" id="lecture-introduction-to-statistical-learning-theory">
+            <table>
+                <tr>
+                    <td class="label" colspan="2">
+                        <h1>Introduction to Statistical Learning Theory</h1>
                         We introduce the main concepts, objects, and vocabulary that we&#x27;ll use in this course: input space, action space, outcome/output/label space, prediction functions, loss functions, hypothesis spaces, and empirical risk minimization.  We highlight the issue of overfitting, which will occur when we find the empirical risk minimizer over too large a hypothesis space.
                     </td>
                     <td colspan="2">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/U6M0m9c9_Js" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/rqJ8SrnmWu0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                     </td>
                 </tr>
                 <tr>
@@ -309,11 +283,11 @@
             </tr>
         </table>
         </section>
-        <section class="module" id="lecture-elastic-net">
+        <section class="module" id="lecture-lasso-ridge-and-elastic-net">
             <table>
                 <tr>
                     <td class="label" colspan="2">
-                        <h1>Elastic Net</h1>
+                        <h1>Lasso, Ridge, and Elastic Net</h1>
                         We continue our discussion of ridge and lasso regression with a sharp focus on what happens in the case of correlated features, which is a common occurrence in machine learning practice.  We explain (by picture) why lasso solutions may be very unstable in the case of highly correlated features, and why elastic net, which combines L1 and L2 regularization, ameliorates the instability issue while maintaining some of the sparsity properties of lasso.
                     </td>
                     <td colspan="2">
@@ -323,7 +297,7 @@
                 <tr>
                     <td class="slides">
                         <h1>Slides</h1>
-                        <a href=https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Lectures/03a.L1L2-regularization.pdf>Lecture Slides</a>
+                        <a href=https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Lectures/03b.elastic-net.pdf>Lecture Slides</a>
                     </td>
                     <td class="notes">
                         <h1>Notes</h1>
@@ -348,11 +322,11 @@
             </tr>
         </table>
         </section>
-        <section class="module" id="lecture-loss-functions">
+        <section class="module" id="lecture-loss-functions-for-regression-and-classification">
             <table>
                 <tr>
                     <td class="label" colspan="2">
-                        <h1>Loss Functions</h1>
+                        <h1>Loss Functions for Regression and Classification</h1>
                         We start by discussing the absolute loss and the Huber loss, whjch one might use in the regression setting, in place of  square loss.  Attention is given to &quot;robustness&quot;, in the sense of sensitivity to outliers, which is a theme that occurs several times during the course.  Next we introduce our approach to the classification setting, introducing the notions of score, margin, and margin-based losses.  We discuss basic properties of the hinge loss (i.e SVM loss), logistic loss, and even the square loss, considered as a margin-based loss.
                     </td>
                     <td colspan="2">
@@ -379,11 +353,11 @@
             </tr>
         </table>
         </section>
-        <section class="module" id="lecture-convex-optimization">
+        <section class="module" id="lecture-lagrangian-duality-and-convex-optimization">
             <table>
                 <tr>
                     <td class="label" colspan="2">
-                        <h1>Convex Optimization</h1>
+                        <h1>Lagrangian Duality and Convex Optimization</h1>
                         We give a highly abridged introduction to convex optimization and Lagrangian duality. We discuss duality and Slater&#x27;s constraint qualifications, and derive the complementary slackness conditions.  As far as this course is concerned, there are really only two reasons for discussing this material: 1) When we apply the complementary slackness conditions to the dual formulation of the support vector machine (SVM), we find that the solutions are &quot;sparse in the data&quot;.  This has important practical implications for the kernelized version of SVM, which we discuss later. I do not know another way derive these insights.  2) Lagrangian duality is the tool needed to establish the equivalence between the penalty and constraint forms of regularization, which we address in the homework.
                     </td>
                     <td colspan="2">
@@ -434,7 +408,7 @@
                 <tr>
                     <td class="slides">
                         <h1>Slides</h1>
-                        <a href=https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Lectures/04b.convex-optimization.pdf>Lecture Slides</a>
+                        <a href=https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Lectures/04c.SVM.pdf>Lecture Slides</a>
                     </td>
                     <td class="notes">
                         <h1>Notes</h1>
@@ -494,11 +468,11 @@
             </tr>
         </table>
         </section>
-        <section class="module" id="lecture-features">
+        <section class="module" id="lecture-feature-extraction">
             <table>
                 <tr>
                     <td class="label" colspan="2">
-                        <h1>Features</h1>
+                        <h1>Feature Extraction</h1>
                         When using linear hypothesis spaces, one needs to encode explicitly any nonlinear dependencies on the input as features. In this lecture we discuss various strategies for creating features.  Many of the examples are taken (with permission) from Percy Liang&#x27;s CS221 course at Stanford.
                     </td>
                     <td colspan="2">
@@ -564,11 +538,11 @@
             </tr>
         </table>
         </section>
-        <section class="module" id="lecture-evaluating-classifiers">
+        <section class="module" id="lecture-performance-evaluation">
             <table>
                 <tr>
                     <td class="label" colspan="2">
-                        <h1>Evaluating Classifiers</h1>
+                        <h1>Performance Evaluation</h1>
                         This is another black-box ML lecture.  We start with a mention of various baseline models that you should compare your prediction functions to: zero-information prediction function, single-feature prediction functions, regularized linear models, and sometimes an &#x27;oracle&#x27; model that is trained on your validation/test data, to get an idea of the upper bound of performance for your learning method.  Then we simply define the various summary statistics that are used in practice to describe classifier performance: confusion matrix, accuracy, precision, recall, specificity, sensitivity, F1 score, type 1 error, type 2 error, and a few others.  We also discuss the fact that most classifiers  give you a score, rather than just a hard classification, and you should tune your threshold to optimize the performance metric of importance to you, rather than just using the default (typically 0, or 0.5 if the prediction is a probability).  We also discuss the various performance curves you&#x27;ll see in practice: precision/recall, ROC, and (my personal favorite for many business applications) lift curves.
                     </td>
                     <td colspan="2">
@@ -597,11 +571,11 @@
             </tr>
         </table>
         </section>
-        <section class="module" id="lecture-city-sense-probabilistic-modeling">
+        <section class="module" id="lecture-city-sense-probabilistic-modeling-for-unusual-behavior-detection">
             <table>
                 <tr>
                     <td class="label" colspan="2">
-                        <h1>City Sense: Probabilistic Modeling</h1>
+                        <h1>City Sense: Probabilistic Modeling for Unusual Behavior Detection</h1>
                         So far we have studied the regression setting, for which our predictions (i.e. &#x27;actions&#x27;) are real-valued, as well as the classification setting, for which our score functions also produce real values.  With this lecture, we begin our consideration of &quot;conditional probability models&quot;, in which the predictions are probability distributions over possible outcomes. We motivate these models by discussion of the &quot;CitySense&quot; problem, in which we want to predict the probability distribution on the number of taxi cab pickups at each street corner, at different times of the week.  In this lecture we take a &quot;bare hands&quot; approach to building these conditional probability models.
         While I consider the basic use of stratification and bucketing to build conditional models by hand to be very useful in practice, if you&#x27;re eager to get to some mathematics, you may safely skip this lecture.
                     </td>
@@ -625,7 +599,7 @@
                     <td class="references">
                         <h1>References</h1>
                         <ul>
-                                <li>Provost and Fawcett book</li>
+                                <li><a href="http://www1.cs.columbia.edu/~jebara/papers/CitySense.JSM2009.pdf">CitySense: multiscale space time clustering of GPS points and trajectories</a></li>
                         </ul>
         </td>
             </tr>
@@ -707,7 +681,7 @@
                 <tr>
                     <td class="slides">
                         <h1>Slides</h1>
-                        <a href=https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Lectures/08c.conditional-probability-models.pdf>Lecture Slides</a>
+                        <a href=https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Lectures/09a.bayesian-methods.pdf>Lecture Slides</a>
                     </td>
                     <td class="notes">
                         <h1>Notes</h1>
@@ -778,13 +752,11 @@
                 <tr>
                     <td class="slides">
                         <h1>Slides</h1>
-                        <a href=https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Lectures/09b.bayesian-regression.pdf>Lecture Slides</a>
+                        <a href=https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Lectures/10a.trees.pdf>Lecture Slides</a>
                     </td>
                     <td class="notes">
                         <h1>Notes</h1>
-                        <ul>
-                                <li><a href="https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Notes/proportionality.pdf">Proportionality Review</a></li>
-                        </ul>
+                          (None)
                     </td>
                     <td>
                         <h1>Concept Checks</h1>
@@ -797,11 +769,11 @@
             </tr>
         </table>
         </section>
-        <section class="module" id="lecture-bootstrap">
+        <section class="module" id="lecture-basic-statistics-and-a-bit-of-bootstrap">
             <table>
                 <tr>
                     <td class="label" colspan="2">
-                        <h1>Bootstrap</h1>
+                        <h1>Basic Statistics and a Bit of Bootstrap</h1>
                         In this lecture we define bootstrap sampling, and show how how it is typically applied in statistics to do things such as  estimate the variance of statistics and make confidence intervals.
                     </td>
                     <td colspan="2">
@@ -897,12 +869,12 @@
             </tr>
         </table>
         </section>
-        <section class="module" id="lecture-multiclass-classification">
+        <section class="module" id="lecture-multiclass-and-introduction-to-structured-prediction">
             <table>
                 <tr>
                     <td class="label" colspan="2">
-                        <h1>Multiclass Classification</h1>
-                        Here we consider how to generalize the score-producing binary classification methods we&#x27;ve discussed (e.g. SVM and logistic regression) to multiclass settings.  We start by discussing &#x27;one-vs-all&#x27;, a simple reduction of multiclass to binary classification.  This will usually work just fine in practice, despite the interesting failure case we illustrate.  However, one-vs-all doesn&#x27;t scale to very large number of classes, as we have to train a separate model for each class.  This is the real motivation for presenting the &quot;compatibility function&quot; approach described in this lecture.  The approach presented here extends to structured prediction problems, in which the output space may be exponentially large.
+                        <h1>Multiclass and Introduction to Structured Prediction</h1>
+                        Here we consider how to generalize the score-producing binary classification methods we&#x27;ve discussed (e.g. SVM and logistic regression) to multiclass settings.  We start by discussing &#x27;one-vs-all&#x27;, a simple reduction of multiclass to binary classification.  This will usually work just fine in practice, despite the interesting failure case we illustrate.  However, one-vs-all doesn&#x27;t scale to very large number of classes, as we have to train a separate model for each class.  This is the real motivation for presenting the &quot;compatibility function&quot; approach described in this lecture.  The approach presented here extends to structured prediction problems, in which the output space may be exponentially large.  We didn&#x27;t have time to define structured prediction in the lecture, but all the key components are there.  Please see the slides and the SSBD book in the references.
                     </td>
                     <td colspan="2">
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/WMQwtoMUjDA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
@@ -924,6 +896,7 @@
                     <td class="references">
                         <h1>References</h1>
                         <ul>
+                                <li><a href="null">SSBD 17.1-17.3</a></li>
                                 <li><a href="http://www.jmlr.org/papers/v5/rifkin04a.html">In Defense of One-Vs-All Classification</a></li>
                                 <li><a href="http://www.jmlr.org/papers/volume1/allwein00a/allwein00a.pdf">Reducing Multiclass to Binary</a></li>
                         </ul>
@@ -939,7 +912,7 @@
                         Here we start our short unit on unsupervised learning.  k-means clustering is presented first as an algorithm and then as an approach to minimizing a particular objective function. One challenge with clustering algorithms is that it&#x27;s not obvious how to measure success (though see the Shalev-Shwartz, Ben-David book Section 22.5 for a nice discussion).  When possible, I prefer to take a probabilistic modeling approach, as discussed in the next two lectures.
                     </td>
                     <td colspan="2">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/5TZww5bTROE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/J0A_tkIgutw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                     </td>
                 </tr>
                 <tr>
@@ -973,7 +946,7 @@
                         A Gaussian mixture model (GMM) is a family of multimodal probability distributions that is a plausible generative model for clustered data.  We can fit this model to data with maximum likelihood, and we can assess the quality of fit by evaluating the model likelihood on holdout data.  While the &quot;learning&quot; phase of Gaussian mixture modeling is fitting the model to data, in the &quot;inference&quot; phase, we determine for any point drawn from the GMM the probability that it came from each of the k components.  To use a GMM for clustering, we simply assign each point to the component that it is most likely to have come from.  k-means clustering can be seen as a limiting case of a restricted form of Gaussian mixture modeling.
                     </td>
                     <td colspan="2">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/5TZww5bTROE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/q0E6YyfdxS4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                     </td>
                 </tr>
                 <tr>
@@ -999,15 +972,15 @@
             </tr>
         </table>
         </section>
-        <section class="module" id="lecture-em-algorithm">
+        <section class="module" id="lecture-em-algorithm-for-latent-variable-models">
             <table>
                 <tr>
                     <td class="label" colspan="2">
-                        <h1>EM Algorithm</h1>
+                        <h1>EM Algorithm for Latent Variable Models</h1>
                         It turns out, fitting a Gaussian mixture model by maximum likelihood is easier said then done: there is no closed from solution, and our usual gradient methods do not work well.  The standard approach to maximum likelihood estimation in a Gaussian mixture model is the expectation  maximization algorithm.  In this lecture, We present the EM algorithm in the general setting of latent variable models, of which GMM is a special case.  We present the EM algorithm as a very basic &quot;variational method&quot; and indicate a few generalizations.
                     </td>
                     <td colspan="2">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/5TZww5bTROE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/lMShR1vjbUo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                     </td>
                 </tr>
                 <tr>
@@ -1041,7 +1014,7 @@
                         In the context of this course, we view neural networks as &quot;just&quot; another nonlinear hypothesis space.  On the practical side, unlike trees and tree-based ensembles (our other major nonlinear hypothesis spaces), neural networks can be fit using gradient-based optimization methods.  On the theoretical side, a large enough neural network can approximate any continuous function.  We discuss the specific case of the multilayer perceptron for multiclass classification, which we view as a generalization of multinomial logistic regression from linear to nonlinear score functions.
                     </td>
                     <td colspan="2">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/5TZww5bTROE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/Wr11D5sObzc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                     </td>
                 </tr>
                 <tr>
@@ -1067,15 +1040,15 @@
             </tr>
         </table>
         </section>
-        <section class="module" id="lecture-backpropagation">
+        <section class="module" id="lecture-backpropagation-and-the-chain-rule">
             <table>
                 <tr>
                     <td class="label" colspan="2">
-                        <h1>Backpropagation</h1>
+                        <h1>Backpropagation and the Chain Rule</h1>
                         Neural network optimization is amenable to gradient-based methods, but if the actual computation of the gradient is done naively, the computational cost can be prohibitive.  Back propagation is the standard algorithm for computing the gradient efficiently.  We present the backpropagation algorithm for a general computation graph.  The algorithm we present applies, without change, to models with &quot;parameter tying&quot;, which include convolutional networks and recurrent neural networks (RNN&#x27;s), the workhorses of computer vision and natural language processing.  We illustrate backpropagation with one of the simplest models with parameter tying: regularized linear regression.  Backpropagation for the multilayer perceptron, the standard introductory example, is presented as a homework problem.
                     </td>
                     <td colspan="2">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/5TZww5bTROE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/RtzDjbZ1QbA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                     </td>
                 </tr>
                 <tr>
@@ -1106,10 +1079,10 @@
                 <tr>
                     <td class="label" colspan="2">
                         <h1>Next Steps</h1>
-                        Multiclass...
+                        This course has really just scratched the surface of machine learning.  We point to several other topics that .
                     </td>
                     <td colspan="2">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/5TZww5bTROE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/tiXdqe1zGJ4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                     </td>
                 </tr>
                 <tr>
@@ -1222,6 +1195,69 @@
                 </div>
             </section>
     </section>
+
+    <section id="resources">
+        <h1>Resources</h1>
+
+        <section id="textbooks">
+            <h1>Textbooks</h1>
+
+            <a href="http://shop.oreilly.com/product/0636920052289.do"><img src="images/geron-original.jpg" alt="The cover of Hands-On Machine Learning with Scikit-Learn and TensorFlow"></a>
+
+            <a href="https://web.stanford.edu/~hastie/ElemStatLearn/"><img src="images/hastie-1x.png" srcset="images/hastie-1x.png 1x, images/hastie-2x.jpg 2x, images/hastie-3x.jpg 3x" alt="The cover of Elements of Statistical Learning"></a>
+
+            <a href="http://www-bcf.usc.edu/~gareth/ISL/"><img src="images/james-1x.jpg" srcset="images/james-1x.jpg 1x, images/james-2x.jpg 2x, images/james-3x.jpg 3x" alt="The cover of An Introduction to Statistical Learning"></a>
+
+            <a href="http://www.cs.huji.ac.il/~shais/UnderstandingMachineLearning/"><img src="images/shalev-shwartz-original.jpg" alt="The cover of Understanding Machine Learning: From Theory to Algorithms"></a>
+
+            <a href="https://research.microsoft.com/en-us/um/people/cmbishop/PRML/"><img src="images/bishop-1x.jpg" srcset="images/bishop-1x.jpg 1x, images/bishop-2x.jpg 2x, images/bishop-3x.jpg 3x" alt="The cover of Pattern Recognition and Machine Learning"></a>
+
+            <a href="http://www.data-science-for-biz.com/DSB/Home.html/"><img src="images/provost-fawcett-original.jpg" alt="The cover of Data Science for Business"></a>
+
+            <dl>
+                <dt><a href="http://shop.oreilly.com/product/0636920052289.do"><cite>Hands-On Machine Learning with Scikit-Learn and TensorFlow</cite> (Aurélien Géron)</a>
+                    <dd>This is a practical guide to machine learning that corresponds fairly well with the content and level of our course.  While most of our homework is about coding ML from scratch with numpy, this book makes heavy use of scikit-learn and TensorFlow. We'll use the first two chapters of this book in the first two weeks of the course, when we cover "black-box machine learning."  It'll also be a handy reference for your projects and beyond this course, when you'll want to make use of existing ML packages, rather than rolling your own.</dd>
+                </dt>
+
+                <dt><a href="https://web.stanford.edu/~hastie/ElemStatLearn/"><cite>The
+                    Elements of Statistical Learning</cite> (Hastie, Friedman, and Tibshirani)</a>
+                    <dd>This will be our main textbook for L1 and L2 regularization, trees, bagging, random forests, and boosting.  It's written by three statisticians who invented many of the techniques discussed. There's an easier version of this book that covers many of the same topics, described below. (Available for free as a PDF.)</dd>
+                </dt>
+
+                <dt><a href="http://www-bcf.usc.edu/~gareth/ISL/"><cite>An Introduction to Statistical Learning</cite> (James, Witten, Hastie, and Tibshirani)</a>
+                    <dd>This book is written by two of the same authors as The Elements of Statistical Learning. It's much less intense mathematically, and it's good for a lighter introduction to the topics. Uses R as the language of instruction.  (Available for free as a PDF.)</dd>
+                </dt>
+
+    	          <dt><a href="http://www.cs.huji.ac.il/~shais/UnderstandingMachineLearning/"><cite>Understanding Machine Learning: From Theory to Algorithms</cite> (Shalev-Shwartz and Ben-David)</a>
+    	              <dd>This is our primary reference for kernel methods and multiclass classification, and possibly more towards the end of the course.  Covers a lot of theory that we don't go into, but it would be a good supplemental resource for a more theoretical course, such as Mohri's <a href="http://www.cs.nyu.edu/~mohri/ml16/">Foundations of Machine Learning</a> course. (Available for free as a PDF.)</dd>
+                </dt>
+
+                <dt><a href="https://research.microsoft.com/en-us/um/people/cmbishop/PRML/"><cite>Pattern Recognition and Machine Learning</cite> (Christopher Bishop)</a>
+    	              <dd>Our primary reference for probabilistic methods, including bayesian regression, latent variable models, and the EM algorithm.  It's highly recommended, but unfortunately not free online.</dd>
+                </dt>
+
+    	          <dt><a href="http://www.data-science-for-biz.com/DSB/Home.html"><cite>Data Science for Business</cite> (Provost and Fawcett)</a>
+    	              <dd>Ideally, this would be everybody's first book on machine learning.  The intended audience is both the ML practitioner and the ML product manager.  It's full of important core concepts and practical wisdom.  The math is so minimal that it's perfect for reading on your phone, and I encourage you to read it in parallel to doing this class.  Have your managers read it too.</dd>
+                </dt>
+            </dl>
+        </section>
+
+        <section id="references">
+            <h1>Other tutorials and references</h1>
+
+            <ul>
+                <li><a href="http://www.cims.nyu.edu/~cfgranda/pages/DSGA1002_fall15/notes.html">Carlos Fernandez-Granda's lecture notes</a> provide a comprehensive review of the prerequisite material in linear algebra, probability, statistics, and optimization.</li>
+    	          <li><a href="http://nbviewer.ipython.org/github/briandalessandro/DataScienceCourse/tree/master/ipython/">Brian Dalessandro's iPython notebooks</a> from <a href="https://github.com/briandalessandro/DataScienceCourse/blob/master/ipython/references/Syllabus_2017.pdf"><strong>DS-GA-1001: Intro to Data Science</strong></a></li>
+                <li><a href="http://www2.imm.dtu.dk/pubdb/views/publication_details.php?id=3274">The Matrix Cookbook</a> has lots of facts and identities about matrices and certain probability distributions.</li>
+                <li><a href="http://cs229.stanford.edu/section/cs229-prob.pdf">Stanford CS229: "Review of Probability Theory"</a></li>
+                <li><a href="http://cs229.stanford.edu/section/cs229-linalg.pdf">Stanford CS229: "Linear Algebra Review and Reference"</a></li>
+                <li><a href="http://www.umiacs.umd.edu/~hal/courses/2013S_ML/math4ml.pdf">Math for Machine Learning</a> by Hal Daumé III</li>
+            </ul>
+        </section>
+
+    </section>
+
+
 
     <section id="people">
         <h1>People</h1>
