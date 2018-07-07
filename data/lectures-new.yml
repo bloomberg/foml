@@ -1,6 +1,6 @@
 -
   Title: Black Box Machine Learning
-  Slides: "https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Lectures/01.black-box-machine-learning.pdf"
+  Slides: "https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Lectures/01.black-box-ML.pdf"
   Video: "https://www.youtube.com/embed/MsD28INtSv8"
   Summary: "We introduce the main concepts, objects, and vocabulary that we'll use in this course: input space, action space, outcome/output/label space, prediction functions, loss functions, hypothesis spaces, and empirical risk minimization."
   Notes:
