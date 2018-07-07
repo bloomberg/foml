@@ -14,9 +14,9 @@
     <nav>
         <a href="#home">Home</a>
             <a href="#about">About</a>
-            <a href="#resources">Resources</a>
             <a href="#lectures">Lectures</a>
             <a href="#assignments">Assignments</a>
+            <a href="#resources">Resources</a>
             <a href="#people">People</a>
         </a>
     </nav>
@@ -38,6 +38,8 @@
         <div class="module">
             <p>This course covers a wide variety of topics in machine learning and statistical modeling. While mathematical methods and theoretical aspects will be covered, the primary goal is to provide students with the tools and principles needed to solve the data science problems found in practice.  This course also serves as a foundation on which more specialized courses and further independent study can build.</p>
 
+            <p>The lectures are embedded below, but also may be viewed via this <a href="https://www.youtube.com/playlist?list=PLnZuxOufsXnvftwTB1HL6mel1V32w0ThI">YouTube playlist</a></p>
+
             <!--         <p>We will use <a href="https://piazza.com/">Piazza</a> for class discussion. Rather than emailing questions to the teaching staff, please <a href="https://piazza.com/nyu/spring2017/dsga1003/home">post your questions on Piazza</a>, where they will be answered by the instructor, TAs, graders, and other students.  For questions that are not specific to the class, you are also encouraged to post to <a href="http://stackoverflow.com/">Stack Overflow</a> for programming questions and <a href="http://stats.stackexchange.com/">Cross Validated</a> for statistics and machine learning questions.  Please also post a link to these postings in Piazza, so others in the class can answer the questions and benefit from the answers.
                -->
             <!-- Without registering, you can also view an <a href="https://piazza.com/class/i2jg9qgaxwr5fq?cid=14">anonymized version of our Piazza board</a>.</p> -->
@@ -53,6 +55,24 @@
             </ul>
         </section>
 
+    </section>
+
+    <section id="lectures">
+        <h1>Lectures</h1>
+
+        <ul class="abbreviations">
+            <li> (HTF) refers to Hastie, Tibshirani, and Friedman's book <a href="https://web.stanford.edu/~hastie/ElemStatLearn/"><cite>The Elements of Statistical Learning</cite></a></li>
+            <li> (SSBD) refers to Shalev-Shwartz and Ben-David's book <a href="http://www.cs.huji.ac.il/~shais/UnderstandingMachineLearning/"><cite>Understanding Machine Learning: From Theory to Algorithms</cite></a></li>
+            <li> (JWHT) refers to James, Witten, Hastie, and Tibshirani's book <a href="http://www-bcf.usc.edu/~gareth/ISL"><cite>An Introduction to Statistical Learning</cite></a></li>
+        </ul>
+
+        {{> lectures-new lecturesNew }}
+
+    </section>
+    <section id="assignments">
+        <h1>Assignments</h1>
+
+        {{> assignments assignments }}
     </section>
 
     <section id="resources">
@@ -116,23 +136,7 @@
 
     </section>
 
-    <section id="lectures">
-        <h1>Lectures</h1>
 
-        <ul class="abbreviations">
-            <li> (HTF) refers to Hastie, Tibshirani, and Friedman's book <a href="https://web.stanford.edu/~hastie/ElemStatLearn/"><cite>The Elements of Statistical Learning</cite></a></li>
-            <li> (SSBD) refers to Shalev-Shwartz and Ben-David's book <a href="http://www.cs.huji.ac.il/~shais/UnderstandingMachineLearning/"><cite>Understanding Machine Learning: From Theory to Algorithms</cite></a></li>
-            <li> (JWHT) refers to James, Witten, Hastie, and Tibshirani's book <a href="http://www-bcf.usc.edu/~gareth/ISL"><cite>An Introduction to Statistical Learning</cite></a></li>
-        </ul>
-
-        {{> lectures-new lecturesNew }}
-
-    </section>
-    <section id="assignments">
-        <h1>Assignments</h1>
-
-        {{> assignments assignments }}
-    </section>
 
     <section id="people">
         <h1>People</h1>
