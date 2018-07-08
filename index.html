@@ -32,14 +32,20 @@
             </tr>
         </table>
     </section>
+---    
+    <section id="course-pitch">
+    <h1 align="center"><strong>Get a deep understanding of the concepts, techniques and mathematical frameworks used by experts in machine learning</strong></h1>
+    </section>
+---
     <section id="about">
         <h1>About This Course</h1>
 
         <div class="module">
-            <p>This course covers a wide variety of topics in machine learning and statistical modeling. While mathematical methods and theoretical aspects will be covered, the primary goal is to provide <s></s>tudents with the tools and principles needed to solve the data science problems found in practice.  This course also serves as a foundation on which more specialized courses and further independent study can build.</p>
+            <p>This course covers a wide variety of topics in machine learning and statistical modeling. While mathematical methods and theoretical aspects will be covered, the primary goal of the class is to help participants gain a deep understanding of and become conversant in the concepts, techniques and mathematical frameworks used by experts in machine learning to solve the data science problems found in contemporary practice. This course also serves as a foundation on which more specialized courses and further independent study can build.</p>
+            
+            <p>It is designed primarily to make valuable machine learning skills more accessible to software developers, experimental scientists and engineers, and financial professionals with solid mathematics knowledge encompassing linear algebra, multivariate differential calculus, probability theory and statistics. A computer science background, including data structures and algorithms, and some knowledge of advanced, proof-based mathematics are recommended. The course assignments have support code in Python, which is rapidly becoming the prevailing programming language for data science and machine learning in both academia and industry.
 
-            <p>The lectures are embedded below, but also may be viewed via this <a href="https://www.youtube.com/playlist?list=PLnZuxOufsXnvftwTB1HL6mel1V32w0ThI">YouTube playlist</a>
-            </p>
+            <p>The 30 lectures in the course are embedded below, but may also be viewed in this <a href="https://www.youtube.com/playlist?list=PLnZuxOufsXnvftwTB1HL6mel1V32w0ThI">YouTube playlist</a>.
 
             <p>Check back soon for how to register for our <a href="https://piazza.com/">Piazza</a> discussion board. Common questions from previous editions of the course are posted in our <a href="https://github.com/davidrosenberg/mlcourse/blob/gh-pages/course-faq.md">FAQ</a>.</p>
 
@@ -63,7 +69,6 @@
                         <li>Discussion of numerical overflow issues and the log-sum-exp trick (Homework 5, Problem 3.2)</li>
                         <li>Self-contained introduction to the expectation maximization (EM) algorithm for latent variable models.</li>
                         <li>Develop a general computation graph framework from scratch, using numpy, and implement your neural networks in it.</li>
-
                         <li><em>Recommended:</em> At least one advanced, proof-based mathematics course</li>
                         <li><em>Recommended:</em> Computer science background up to a "data structures and algorithms" course</li>
                     </ul>
@@ -72,7 +77,7 @@
             <section>
                 <h1>Course Prerequisites</h1>
 
-                <p>The quickest way to see if the mathematics level of the course is for you is to take a look at this <a href="https://davidrosenberg.github.io/mlcourse/Notes/prereq-questions/math-questions.pdf  ">mathematics assessment</a>, which is a preview of some of the math that shows up in the first part of the course.
+                <p>The quickest way to see if the mathematics level of the course is for you is to take a look at this <a href="https://davidrosenberg.github.io/mlcourse/Notes/prereq-questions/math-questions.pdf">mathematics assessment</a>, which is a preview of some of the math concepts that show up in the first part of the course.
                     <ul>
                         <li><strong>Solid mathematical background</strong>, equivalent to a 1-semester undergraduate course in each of the following: linear algebra, multivariate differential calculus, probability theory, and statistics. The content of NYU's <a href="http://www.cims.nyu.edu/~cfgranda/pages/DSGA1002_fall15/index.html"><strong>DS-GA-1002: Statistical and Mathematical Methods</strong></a> would be more than sufficient, for example.</li>
                         <li><strong>Python programming required</strong> for most homework assignments.</li>
@@ -96,7 +101,7 @@
                 <tr>
                     <td class="label" colspan="2">
                         <h1>Black Box Machine Learning</h1>
-                        We introduce the main concepts, objects, and vocabulary that we&#x27;ll use in this course: input space, action space, outcome/output/label space, prediction functions, loss functions, hypothesis spaces, and empirical risk minimization.
+                        &lt;p&gt; Here we present the high-level concepts and workflows of supervised machine learning, by far the most common paradigm of machine learning used in practice.  The premise of the lecture is that, with some basic knowledge of machine learning, one can produce workable machine learning solutions without understanding how the machine learning algorithms actually work.  Understanding how to use machine learning libraries in this way, what we call &quot;black box machine learning&quot;, is the topic of this introductory lecture.&lt;/p&gt; &lt;p&gt;This lecture may be skipped by those already familiar with practical machine learning.&lt;/p&gt;
                     </td>
                     <td colspan="2">
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/MsD28INtSv8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
@@ -122,7 +127,7 @@
                         <h1>References</h1>
                         <ul>
                                 <li>Géron Ch 1,2</li>
-                                <li>Provost and Fawcett book</li>
+                                <li><a href="http://www.data-science-for-biz.com/DSB/Home.html">Provost and Fawcett book</a></li>
                         </ul>
         </td>
             </tr>
@@ -133,7 +138,7 @@
                 <tr>
                     <td class="label" colspan="2">
                         <h1>Case Study: Churn Prediction</h1>
-                        We introduce the main concepts, objects, and vocabulary that we&#x27;ll use in this course: input space, action space, outcome/output/label space, prediction functions, loss functions, hypothesis spaces, and empirical risk minimization.
+                        We have an interactive discussion on how to represent a realistic, but subtly complicated business problem to a formal machine learning setting.
                     </td>
                     <td colspan="2">
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/kE_t3Mm8Z50" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
@@ -180,13 +185,15 @@
                     <td class="notes">
                         <h1>Notes</h1>
                         <ul>
-                                <li><a href="https://davidrosenberg.github.io/mlcourse/Archive/2017/ConceptChecks/1-Lec-Check.pdf">SLT and SGD Concept Check Questions</a></li>
-                                <li><a href="https://davidrosenberg.github.io/mlcourse/Archive/2017/ConceptChecks/1-Lec-Check_sol.pdf">SLT and SGD Concept Check Solutions</a></li>
+                                <li><a href="https://davidrosenberg.github.io/mlcourse/Notes/conditional-expectations.pdf">Conditional Expectations</a></li>
                         </ul>
                     </td>
                     <td>
                         <h1>Concept Checks</h1>
-                          (None)
+                        <ul>
+                                <li><a href="https://davidrosenberg.github.io/mlcourse/ConceptChecks/1-Lec-Check.pdf">SLT and SGD Concept Check Questions</a></li>
+                                <li><a href="https://davidrosenberg.github.io/mlcourse/ConceptChecks/1-Lec-Check_sol.pdf">SLT and SGD Concept Check Solutions</a></li>
+                        </ul>
                     </td>
                     <td class="references">
                         <h1>References</h1>
@@ -214,22 +221,23 @@
                     <td class="notes">
                         <h1>Notes</h1>
                         <ul>
-                                <li><a href="https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Notes/directional-derivative.pdf">Directional Derivatives and Approximation (short)</a></li>
-                                <li><a href="https://davidrosenberg.github.io/mlcourse/Archive/2017/Labs/1-gradients-Notes_sol.pdf">Gradients and Directional Derivatives (long)</a></li>
+                                <li><a href="https://davidrosenberg.github.io/mlcourse/Notes/directional-derivative.pdf">Directional Derivatives and Approximation (Short)</a></li>
+                                <li><a href="https://davidrosenberg.github.io/mlcourse/Labs/1-gradients-Notes_sol.pdf">Gradients and Directional Derivatives</a></li>
                                 <li><a href="https://github.com/davidrosenberg/mlcourse/blob/gh-pages/Notebooks/gd_fixed_and_backtracking.ipynb">Gradient Descent Demo (ipynb)</a></li>
                         </ul>
                     </td>
                     <td>
                         <h1>Concept Checks</h1>
                         <ul>
-                                <li><a href="https://davidrosenberg.github.io/mlcourse/Archive/2017/ConceptChecks/1-Lab-Check.pdf">Differentiation and LinAlg Questions</a></li>
-                                <li><a href="https://davidrosenberg.github.io/mlcourse/Archive/2017/ConceptChecks/1-Lab-Check_sol.pdf">Differentiation and LinAlg Solutions</a></li>
+                                <li><a href="https://davidrosenberg.github.io/mlcourse/ConceptChecks/1-Lec-Check.pdf">SLT and SGD Concept Check Questions</a></li>
+                                <li><a href="https://davidrosenberg.github.io/mlcourse/ConceptChecks/1-Lec-Check_sol.pdf">SLT and SGD Concept Check Solutions</a></li>
                         </ul>
                     </td>
                     <td class="references">
                         <h1>References</h1>
                         <ul>
                                 <li><a href="http://leon.bottou.org/papers/bottou-tricks-2012">Bottou's SGD Tricks</a></li>
+                                <li><a href="http://www.atmos.washington.edu/~dennis/MatrixCalculus.pdf">Barnes \"Matrix Differentiation\" notes</a></li>
                         </ul>
         </td>
             </tr>
@@ -260,7 +268,10 @@
                     </td>
                     <td>
                         <h1>Concept Checks</h1>
-                          (None)
+                        <ul>
+                                <li><a href="https://davidrosenberg.github.io/mlcourse/ConceptChecks/2-Lec-Check.pdf">Excess Risk and L1/L2 Questions</a></li>
+                                <li><a href="https://davidrosenberg.github.io/mlcourse/ConceptChecks/2-Lec-Check_sol.pdf">Excess Risk and L1/L2 Solutions</a></li>
+                        </ul>
                     </td>
                     <td class="references">
                         <h1>References</h1>
@@ -288,23 +299,24 @@
                     <td class="notes">
                         <h1>Notes</h1>
                         <ul>
-                                <li><a href="https://davidrosenberg.github.io/mlcourse/Archive/2017/ConceptChecks/2-PreLec-Check.pdf">Lasso Lecture Prep Questions</a></li>
-                                <li><a href="https://davidrosenberg.github.io/mlcourse/Archive/2017/ConceptChecks/2-PreLec-Check_sol.pdf">Lasso Lecture Prep Solutions</a></li>
-                                <li><a href="https://davidrosenberg.github.io/mlcourse/Archive/2017/Notes/completing-the-square.pdf">Completing the Square</a></li>
-                                <li><a href="https://github.com/davidrosenberg/mlcourse/blob/gh-pages/Notebooks/Lasso%20and%20Elastic%20Net/lasso_and_elastic_net.ipynb">Lasso and Elastic Net (ipynb)</a></li>
+                                <li><a href="https://davidrosenberg.github.io/mlcourse/ConceptChecks/2-PreLec-Check.pdf">Lasso Lecture Prep Questions</a></li>
+                                <li><a href="https://davidrosenberg.github.io/mlcourse/ConceptChecks/2-PreLec-Check_sol.pdf">Lasso Lecture Prep Solutions</a></li>
+                                <li><a href="https://davidrosenberg.github.io/mlcourse/Notes/completing-the-square.pdf">Completing the Square</a></li>
                         </ul>
                     </td>
                     <td>
                         <h1>Concept Checks</h1>
                         <ul>
-                                <li><a href="https://davidrosenberg.github.io/mlcourse/Archive/2017/ConceptChecks/2-Lec-Check.pdf">Risk Decomp and L1L2 Questions</a></li>
-                                <li><a href="https://davidrosenberg.github.io/mlcourse/Archive/2017/ConceptChecks/2-Lec-Check_sol.pdf">Risk Decomp and L1L2 Solutions</a></li>
+                                <li><a href="https://davidrosenberg.github.io/mlcourse/ConceptChecks/2-Lec-Check.pdf">Excess Risk and L1/L2 Questions</a></li>
+                                <li><a href="https://davidrosenberg.github.io/mlcourse/ConceptChecks/2-Lec-Check_sol.pdf">Excess Risk and L1/L2 Solutions</a></li>
                         </ul>
                     </td>
                     <td class="references">
                         <h1>References</h1>
-                          (None)
-                        </td>
+                        <ul>
+                                <li>HTF Ch. 3</li>
+                        </ul>
+        </td>
             </tr>
         </table>
         </section>
@@ -313,7 +325,7 @@
                 <tr>
                     <td class="label" colspan="2">
                         <h1>Lasso, Ridge, and Elastic Net</h1>
-                        We continue our discussion of ridge and lasso regression with a sharp focus on what happens in the case of correlated features, which is a common occurrence in machine learning practice.  We explain (by picture) why lasso solutions may be very unstable in the case of highly correlated features, and why elastic net, which combines L1 and L2 regularization, ameliorates the instability issue while maintaining some of the sparsity properties of lasso.
+                        We continue our discussion of ridge and lasso regression with a sharp focus on what happens in the case of correlated features, which is a common occurrence in machine learning practice.  We explain why lasso solutions may be very unstable in the case of highly correlated features, and why elastic net, which combines L1 and L2 regularization, ameliorates the instability issue while maintaining some of the sparsity properties of lasso.
                     </td>
                     <td colspan="2">
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/KIoz_aa1ed4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
@@ -327,10 +339,8 @@
                     <td class="notes">
                         <h1>Notes</h1>
                         <ul>
-                                <li><a href="https://davidrosenberg.github.io/mlcourse/Archive/2017/ConceptChecks/2-PreLec-Check.pdf">Lasso Lecture Prep Questions</a></li>
-                                <li><a href="https://davidrosenberg.github.io/mlcourse/Archive/2017/ConceptChecks/2-PreLec-Check_sol.pdf">Lasso Lecture Prep Solutions</a></li>
-                                <li><a href="https://davidrosenberg.github.io/mlcourse/Archive/2017/Notes/completing-the-square.pdf">Completing the Square</a></li>
                                 <li><a href="https://github.com/davidrosenberg/mlcourse/blob/gh-pages/Notebooks/Lasso%20and%20Elastic%20Net/lasso_and_elastic_net.ipynb">Lasso and Elastic Net (ipynb)</a></li>
+                                <li><a href="https://davidrosenberg.github.io/mlcourse/Notes/elastic-net-theorem.pdf">Elastic Net correlation theorem</a></li>
                         </ul>
                     </td>
                     <td>
@@ -342,8 +352,10 @@
                     </td>
                     <td class="references">
                         <h1>References</h1>
-                          (None)
-                        </td>
+                        <ul>
+                                <li><a href="https://web.stanford.edu/~hastie/Papers/B67.2%20(2005)%20301-320%20Zou%20&%20Hastie.pdf">Zou and Hastie \"Regularization and variable selection via the elastic net\" (2005)</a></li>
+                        </ul>
+        </td>
             </tr>
         </table>
         </section>
@@ -1295,7 +1307,7 @@
                 <div class="info">
                     <p class="name"><a href="http://www.linkedin.com/pub/david-rosenberg/4/241/598">David Rosenberg</a></p>
                     <p class="email"><a href="bbg://screens/MSG%2015001760">MSG</a></p>
-                    <p class="bio">David is in the data science group in the office of the CTO at <a href="http://www.bloomberglabs.com/data-science/">Bloomberg.</a>
+                    <p class="bio">David Rosenberg is a data scientist in data science group in the Office of the CTO at <a href=="https://www.techatbloomberg.com/post-topic/data-science/">Bloomberg</a>, and an adjunct professor at the Center for Data Science at New York University, where he has repeatedly received NYU's Center for Data Science "Professor of the Year" award. He received his Ph.D. in statistics from UC Berkeley, where he worked on statistical learning theory and natural language processing. David received Master of Science in applied mathematics, with a focus on computer science, from Harvard University, and a Bachelor of Science in mathematics from Yale University.
                 </div>
             </div>
         </section>
