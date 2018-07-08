@@ -2,18 +2,20 @@
   Title: Black Box Machine Learning
   Slides: "https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Lectures/01.black-box-ML.pdf"
   Video: "https://www.youtube.com/embed/MsD28INtSv8"
-  Summary: "We introduce the main concepts, objects, and vocabulary that we'll use in this course: input space, action space, outcome/output/label space, prediction functions, loss functions, hypothesis spaces, and empirical risk minimization."
+  Summary: "<p>
+  Here we present the high-level concepts and workflows of supervised machine learning, by far the most common paradigm of machine learning used in practice.  The premise of the lecture is that, with some basic knowledge of machine learning, one can produce workable machine learning solutions without understanding how the machine learning algorithms actually work.  Understanding how to use machine learning libraries in this way, what we call \"black box machine learning\", is the topic of this introductory lecture.</p>
+  <p>This lecture may be skipped by those already familiar with practical machine learning.</p>"
   Notes:
     - {"Géron's Machine Learning Landscape": "https://github.com/ageron/handson-ml/blob/master/01_the_machine_learning_landscape.ipynb"}
     - {"Géron's End-to-End Machine Learning": "https://github.com/ageron/handson-ml/blob/master/02_end_to_end_machine_learning_project.ipynb"}
   References:
     - "Géron Ch 1,2"
-    - Provost and Fawcett book
+    - {Provost and Fawcett book: "http://www.data-science-for-biz.com/DSB/Home.html"}
 -
   Title: "Case Study: Churn Prediction"
   Slides: "https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Lectures/churn.pdf"
   Video: "https://www.youtube.com/embed/kE_t3Mm8Z50"
-  Summary: "We introduce the main concepts, objects, and vocabulary that we'll use in this course: input space, action space, outcome/output/label space, prediction functions, loss functions, hypothesis spaces, and empirical risk minimization."
+  Summary: "We have an interactive discussion on how to represent a realistic, but subtly complicated business problem to a formal machine learning setting."
   References:
     - {"KDD Cup 2009: Customer relationship prediction": "http://www.kdd.org/kdd-cup/view/kdd-cup-2009"}
 -
@@ -22,8 +24,10 @@
   Video: "https://www.youtube.com/embed/rqJ8SrnmWu0"
   Summary: "We introduce the main concepts, objects, and vocabulary that we'll use in this course: input space, action space, outcome/output/label space, prediction functions, loss functions, hypothesis spaces, and empirical risk minimization.  We highlight the issue of overfitting, which will occur when we find the empirical risk minimizer over too large a hypothesis space."
   Notes:
-    - {SLT and SGD Concept Check Questions: "https://davidrosenberg.github.io/mlcourse/Archive/2017/ConceptChecks/1-Lec-Check.pdf"}
-    - {SLT and SGD Concept Check Solutions: "https://davidrosenberg.github.io/mlcourse/Archive/2017/ConceptChecks/1-Lec-Check_sol.pdf"}
+    - {Conditional Expectations: "https://davidrosenberg.github.io/mlcourse/Notes/conditional-expectations.pdf"}
+  CChecks:
+    - {SLT and SGD Concept Check Questions: "https://davidrosenberg.github.io/mlcourse/ConceptChecks/1-Lec-Check.pdf"}
+    - {SLT and SGD Concept Check Solutions: "https://davidrosenberg.github.io/mlcourse/ConceptChecks/1-Lec-Check_sol.pdf"}
 -
   Title: Stochastic Gradient Descent
   Slides: "https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Lectures/02b.SGD.pdf"
@@ -31,13 +35,14 @@
   Summary: "We motivate and give some intuitive justification for mini-batch and stochastic gradient descent, which are today's standard optimization methods for large-scale machine learning problems."
   References:
     - {"Bottou's SGD Tricks": "http://leon.bottou.org/papers/bottou-tricks-2012"}
+    - {Barnes \"Matrix Differentiation\" notes: "http://www.atmos.washington.edu/~dennis/MatrixCalculus.pdf"}
   Notes:
-    - {Directional Derivatives and Approximation (short): "https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Notes/directional-derivative.pdf"}
-    - {Gradients and Directional Derivatives (long) : "https://davidrosenberg.github.io/mlcourse/Archive/2017/Labs/1-gradients-Notes_sol.pdf"}
+    - {Directional Derivatives and Approximation (Short): "https://davidrosenberg.github.io/mlcourse/Notes/directional-derivative.pdf"}
+    - {Gradients and Directional Derivatives: "https://davidrosenberg.github.io/mlcourse/Labs/1-gradients-Notes_sol.pdf"}
     - {Gradient Descent Demo (ipynb): "https://github.com/davidrosenberg/mlcourse/blob/gh-pages/Notebooks/gd_fixed_and_backtracking.ipynb"}
   CChecks:
-    - {Differentiation and LinAlg Questions: "https://davidrosenberg.github.io/mlcourse/Archive/2017/ConceptChecks/1-Lab-Check.pdf"}
-    - {Differentiation and LinAlg Solutions: "https://davidrosenberg.github.io/mlcourse/Archive/2017/ConceptChecks/1-Lab-Check_sol.pdf"}
+    - {SLT and SGD Concept Check Questions: "https://davidrosenberg.github.io/mlcourse/ConceptChecks/1-Lec-Check.pdf"}
+    - {SLT and SGD Concept Check Solutions: "https://davidrosenberg.github.io/mlcourse/ConceptChecks/1-Lec-Check_sol.pdf"}
 -
   Title: Excess Risk Decomposition
   Slides: "https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Lectures/02c.excess-risk-decomposition.pdf"
@@ -46,33 +51,38 @@
   Notes:
     - {SLT and SGD Concept Check Questions: "https://davidrosenberg.github.io/mlcourse/Archive/2017/ConceptChecks/1-Lec-Check.pdf"}
     - {SLT and SGD Concept Check Solutions: "https://davidrosenberg.github.io/mlcourse/Archive/2017/ConceptChecks/1-Lec-Check_sol.pdf"}
+  CChecks:
+    - {Excess Risk and L1/L2 Questions: "https://davidrosenberg.github.io/mlcourse/ConceptChecks/2-Lec-Check.pdf"}
+    - {Excess Risk and L1/L2 Solutions: "https://davidrosenberg.github.io/mlcourse/ConceptChecks/2-Lec-Check_sol.pdf"}
 -
   Title: L1 and L2 regularization
   Video: "https://www.youtube.com/embed/d6XDOS4btck"
   Slides: "https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Lectures/03a.L1L2-regularization.pdf"
   Summary: "We introduce the concept of regularization, as our main defense against overfitting.  We discuss the equivalence of the penalization and constraint forms of regularization (see the homework for a precise statement). We compare regularization paths of L1- and L2-regularized linear least squares regression (i.e. \"lasso\" and \"ridge\" regression, respectively), and give a geometric argument for why lasso often gives \"sparse\" solutions, in a sense we make precise.  Finally, we note that the lasso objective function is not differentiable, and thus not immediately amenable to our gradient-based optimization methods.  We present several approaches to finding the lasso solution, including coordinate descent, known as the \"shooting algorithm\" in this context."
   CChecks:
-    - {Risk Decomp and L1L2 Questions: "https://davidrosenberg.github.io/mlcourse/Archive/2017/ConceptChecks/2-Lec-Check.pdf"}
-    - {Risk Decomp and L1L2 Solutions: "https://davidrosenberg.github.io/mlcourse/Archive/2017/ConceptChecks/2-Lec-Check_sol.pdf"}
+    - {Excess Risk and L1/L2 Questions: "https://davidrosenberg.github.io/mlcourse/ConceptChecks/2-Lec-Check.pdf"}
+    - {Excess Risk and L1/L2 Solutions: "https://davidrosenberg.github.io/mlcourse/ConceptChecks/2-Lec-Check_sol.pdf"}
+
   Notes:
-    - {Lasso Lecture Prep Questions: "https://davidrosenberg.github.io/mlcourse/Archive/2017/ConceptChecks/2-PreLec-Check.pdf"}
-    - {Lasso Lecture Prep Solutions: "https://davidrosenberg.github.io/mlcourse/Archive/2017/ConceptChecks/2-PreLec-Check_sol.pdf"}
-    - {Completing the Square: "https://davidrosenberg.github.io/mlcourse/Archive/2017/Notes/completing-the-square.pdf"}
-    - {Lasso and Elastic Net (ipynb): "https://github.com/davidrosenberg/mlcourse/blob/gh-pages/Notebooks/Lasso%20and%20Elastic%20Net/lasso_and_elastic_net.ipynb"}
+    - {Lasso Lecture Prep Questions: "https://davidrosenberg.github.io/mlcourse/ConceptChecks/2-PreLec-Check.pdf"}
+    - {Lasso Lecture Prep Solutions: "https://davidrosenberg.github.io/mlcourse/ConceptChecks/2-PreLec-Check_sol.pdf"}
+    - {Completing the Square: "https://davidrosenberg.github.io/mlcourse/Notes/completing-the-square.pdf"}
+  References:
+    - "HTF Ch. 3"
 -
   Title: Lasso, Ridge, and Elastic Net
   Slides: "https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Lectures/03b.elastic-net.pdf"
   Video: "https://www.youtube.com/embed/KIoz_aa1ed4"
   Summary: "We continue our discussion of ridge and lasso regression with a sharp focus on what happens in the case of correlated features, which is a common occurrence in machine learning practice. 
-We explain (by picture) why lasso solutions may be very unstable in the case of highly correlated features, and why elastic net, which combines L1 and L2 regularization, ameliorates the instability issue while maintaining some of the sparsity properties of lasso."
+We explain why lasso solutions may be very unstable in the case of highly correlated features, and why elastic net, which combines L1 and L2 regularization, ameliorates the instability issue while maintaining some of the sparsity properties of lasso."
   CChecks:
     - {Risk Decomp and L1L2 Questions: "https://davidrosenberg.github.io/mlcourse/Archive/2017/ConceptChecks/2-Lec-Check.pdf"}
     - {Risk Decomp and L1L2 Solutions: "https://davidrosenberg.github.io/mlcourse/Archive/2017/ConceptChecks/2-Lec-Check_sol.pdf"}
   Notes:
-    - {Lasso Lecture Prep Questions: "https://davidrosenberg.github.io/mlcourse/Archive/2017/ConceptChecks/2-PreLec-Check.pdf"}
-    - {Lasso Lecture Prep Solutions: "https://davidrosenberg.github.io/mlcourse/Archive/2017/ConceptChecks/2-PreLec-Check_sol.pdf"}
-    - {Completing the Square: "https://davidrosenberg.github.io/mlcourse/Archive/2017/Notes/completing-the-square.pdf"}
     - {Lasso and Elastic Net (ipynb): "https://github.com/davidrosenberg/mlcourse/blob/gh-pages/Notebooks/Lasso%20and%20Elastic%20Net/lasso_and_elastic_net.ipynb"}
+    - {Elastic Net correlation theorem: "https://davidrosenberg.github.io/mlcourse/Notes/elastic-net-theorem.pdf"}
+  References:
+    - {Zou and Hastie \"Regularization and variable selection via the elastic net\" (2005): "https://web.stanford.edu/~hastie/Papers/B67.2%20(2005)%20301-320%20Zou%20&%20Hastie.pdf"}
 -
   Title: Loss Functions for Regression and Classification
   Slides: "https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Lectures/04a.loss-functions.pdf"
