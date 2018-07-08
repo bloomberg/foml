@@ -36,26 +36,51 @@
         <h1>About This Course</h1>
 
         <div class="module">
-            <p>This course covers a wide variety of topics in machine learning and statistical modeling. While mathematical methods and theoretical aspects will be covered, the primary goal is to provide students with the tools and principles needed to solve the data science problems found in practice.  This course also serves as a foundation on which more specialized courses and further independent study can build.</p>
+            <p>This course covers a wide variety of topics in machine learning and statistical modeling. While mathematical methods and theoretical aspects will be covered, the primary goal is to provide <s></s>tudents with the tools and principles needed to solve the data science problems found in practice.  This course also serves as a foundation on which more specialized courses and further independent study can build.</p>
 
-            <p>The lectures are embedded below, but also may be viewed via this <a href="https://www.youtube.com/playlist?list=PLnZuxOufsXnvftwTB1HL6mel1V32w0ThI">YouTube playlist</a></p>
+            <p>The lectures are embedded below, but also may be viewed via this <a href="https://www.youtube.com/playlist?list=PLnZuxOufsXnvftwTB1HL6mel1V32w0ThI">YouTube playlist</a>
+            </p>
 
-            <!--         <p>We will use <a href="https://piazza.com/">Piazza</a> for class discussion. Rather than emailing questions to the teaching staff, please <a href="https://piazza.com/nyu/spring2017/dsga1003/home">post your questions on Piazza</a>, where they will be answered by the instructor, TAs, graders, and other students.  For questions that are not specific to the class, you are also encouraged to post to <a href="http://stackoverflow.com/">Stack Overflow</a> for programming questions and <a href="http://stats.stackexchange.com/">Cross Validated</a> for statistics and machine learning questions.  Please also post a link to these postings in Piazza, so others in the class can answer the questions and benefit from the answers.
-               -->
+            <p>Check back soon for how to register for our <a href="https://piazza.com/">Piazza</a> discussion board. Common questions from previous editions of the course are posted in our <a href="https://github.com/davidrosenberg/mlcourse/blob/gh-pages/course-faq.md">FAQ</a>.</p>
+
             <!-- Without registering, you can also view an <a href="https://piazza.com/class/i2jg9qgaxwr5fq?cid=14">anonymized version of our Piazza board</a>.</p> -->
+
+            <p>The first lecture, Black Box Machine Learning LINK ME, only requires familiarity with basic programming concepts.</p>
+
+            <section>
+                <h1>Highlights and Distinctive Features of the Course Lectures, Notes, and Assignments</h1>
+
+                    <ul>
+                        <li>Geometric explanation for what happens with ridge, lasso, and elastic net regression in the case of correlated random variables.</li>
+                        <li>Investigation of when the penalty (Tikhonov) and constraint (Ivanov) forms of regularization are equivalent.</li>
+                        <li>Concise summary of what we really learn about SVMs from Lagrangian duality.</li>
+                        <li>Proof of representer theorem with simple linear algebra, emphasizing it as a way to reparametrize certain objective functions.</li>
+                        <li>Guided derivation of the math behind the classic diamond/circle/ellipsoids picture that "explains" why L1 regularization gives sparsity (Homework 2, Problem 5)</li>
+                        <li>From scrach (in numpy) implementation of almost all major ML algorithms we discuss: ridge regression with SGD and GD (Homework 1, Problems 2.5, 2.6 page 4), lasso regression with the shooting algorithm (Homework 2, Problem 3, page 4), kernel ridge regression (Homework 4, Problem 3, page 2), kernelized SVM with Kernelized Pegasos (Homework 4, 6.4, page 9), L2-regularized logistic regression (Homework 5, Problem 3.3, page 4),Bayesian Linear Regession (Homework 5, problem 5, page 6), multiclass SVM (Homework 6, Problem 4.2, p. 3), classification and regression trees (without pruning)  (Homework 6, Problem 6), gradient boosting with trees for classification and regression (Homework 6, Problem 8), multilayer perceptron for regression (Homework 7, Problem 4, page 3)</li>
+                        <li>Implementation of the Shooting algorithm (coordinate descent) for Lasso and Pegasos for SVM and kernelized SVM.</li>
+                        <li>Repeated use of a simple 1-dimensional regression dataset, so it's easy to visualize the effect of various hypothesis spaces and regularizations that we investigate throughout the course.</li>
+                        <li>Investigation of how to derive a conditional probability estimate from a predicted score for various loss functions, and why it's not so straightforward for the hinge loss (i.e. the SVM) (Homework 5, Problem 2, page 1)</li>
+                        <li>Discussion of numerical overflow issues and the log-sum-exp trick (Homework 5, Problem 3.2)</li>
+                        <li>Self-contained introduction to the expectation maximization (EM) algorithm for latent variable models.</li>
+                        <li>Develop a general computation graph framework from scratch, using numpy, and implement your neural networks in it.</li>
+
+                        <li><em>Recommended:</em> At least one advanced, proof-based mathematics course</li>
+                        <li><em>Recommended:</em> Computer science background up to a "data structures and algorithms" course</li>
+                    </ul>
+            </section>
+
+            <section>
+                <h1>Course Prerequisites</h1>
+
+                <p>The quickest way to see if the mathematics level of the course is for you is to take a look at this <a href="https://davidrosenberg.github.io/mlcourse/Notes/prereq-questions/math-questions.pdf  ">mathematics assessment</a>, which is a preview of some of the math that shows up in the first part of the course.
+                    <ul>
+                        <li><strong>Solid mathematical background</strong>, equivalent to a 1-semester undergraduate course in each of the following: linear algebra, multivariate differential calculus, probability theory, and statistics. The content of NYU's <a href="http://www.cims.nyu.edu/~cfgranda/pages/DSGA1002_fall15/index.html"><strong>DS-GA-1002: Statistical and Mathematical Methods</strong></a> would be more than sufficient, for example.</li>
+                        <li><strong>Python programming required</strong> for most homework assignments.</li>
+                        <li><em>Recommended:</em> At least one advanced, proof-based mathematics course</li>
+                        <li><em>Recommended:</em> Computer science background up to a "data structures and algorithms" course</li>
+                    </ul>
+            </section>
         </div>
-
-        <section>
-            <h1>Prerequisites</h1>
-            <ul>
-                <li><strong>Solid mathematical background</strong>, equivalent to a 1-semester undergraduate course in each of the following: linear algebra, multivariate calculus (primarily differential calculus), probability theory, and statistics. The content of NYU's <a href="http://www.cims.nyu.edu/~cfgranda/pages/DSGA1002_fall15/index.html"><strong>DS-GA-1002: Statistical and Mathematical Methods</strong></a> would be more than sufficient, for example.</li>
-                <li><strong>Python programming required</strong> for most homework assignments.</li>
-                <li><em>Recommended:</em> Computer science background up to a "data structures and algorithms" course</li>
-                <li><em>Recommended:</em> At least one advanced, proof-based mathematics course</li>
-            </ul>
-        </section>
-
-    </section>
 
     <section id="lectures">
         <h1>Lectures</h1>
