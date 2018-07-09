@@ -67,7 +67,7 @@
     - {Lasso Lecture Prep Solutions: "https://davidrosenberg.github.io/mlcourse/ConceptChecks/2-PreLec-Check_sol.pdf"}
     - {Completing the Square: "https://davidrosenberg.github.io/mlcourse/Notes/completing-the-square.pdf"}
   References:
-    - "HTF Ch. 3"
+    - "HTF 3.4"
 -
   Title: Lasso, Ridge, and Elastic Net
   Slides: "https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Lectures/03b.elastic-net.pdf"
@@ -82,6 +82,7 @@ We explain why lasso solutions may be very unstable in the case of highly correl
     - {Elastic Net correlation theorem: "https://davidrosenberg.github.io/mlcourse/Notes/elastic-net-theorem.pdf"}
   References:
     - {Zou and Hastie \"Regularization and variable selection via the elastic net\" (2005): "https://web.stanford.edu/~hastie/Papers/B67.2%20(2005)%20301-320%20Zou%20&%20Hastie.pdf"}
+    - {'Mairal, Bach, and Ponce on Sparse Modeling': "https://arxiv.org/pdf/1411.3230v2.pdf"}
 -
   Title: Loss Functions for Regression and Classification
   Slides: "https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Lectures/04a.loss-functions.pdf"
@@ -94,13 +95,12 @@ We explain why lasso solutions may be very unstable in the case of highly correl
   Video: "https://www.youtube.com/embed/thuYiebq1cE"
   Notes:
     - {Pre-lecture warmup for SVM and Lagrangians: "https://davidrosenberg.github.io/mlcourse/Archive/2017/Notes/svm-lecture-prep.pdf"}
-    - {Extreme Abridgement of BV: "https://davidrosenberg.github.io/mlcourse/Archive/2017/Notes/convex-optimization.pdf"}
+    - {Extreme Abridgement of BV: "https://davidrosenberg.github.io/mlcourse/Notes/convex-optimization.pdf"}
   CChecks:
-    - {Convex Optimization Questions: "https://davidrosenberg.github.io/mlcourse/Archive/2017/ConceptChecks/4-Lec-Check.pdf"}
-    - {Convex Optimization Solutions: "https://davidrosenberg.github.io/mlcourse/Archive/2017/ConceptChecks/4-Lec-Check_sol.pdf"}
+    - {Subgradients and Lagrangian Duality Questions: "https://davidrosenberg.github.io/mlcourse/ConceptChecks/4-Lec-Check.pdf"}
+    - {Subgradients and Lagrangian Duality Solutions: "https://davidrosenberg.github.io/mlcourse/ConceptChecks/4-Lec-Check_sol.pdf"}
   References:
-    - {"Andrew Ng's CS229 SVM Notes": "http://cs229.stanford.edu/notes/cs229-notes3.pdf"}
-    - "HTF 12.2.1 - 12.2.2"
+    - {Lagrangian Duality (10-minute summary)): "https://davidrosenberg.github.io/mlcourse/Lectures/04d.lagrangian-duality-in-ten-minutes.pdf"}
 -
   Title: Support Vector Machines
   Summary: "We define the [soft-margin] SVM directly as L2-regularized hinge loss minimization over a linear hypothesis space. While the objective function is not differentiable, we reformulate it as a quadratic program (with a differentiable (quadratic) objective function and linear constraints). We derive the dual form, and apply the complementary slackness conditions to get some interesting insights into the connection between \"support vectors\" and margin. See the Notes for a high-level summary of what we learn about the SVM from our Lagrangian duality study, lest it get lost in the details.
@@ -109,8 +109,8 @@ We explain why lasso solutions may be very unstable in the case of highly correl
   Slides: "https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Lectures/04c.SVM.pdf"
   Video: "https://www.youtube.com/embed/9zi6-RjlYrU"
   Notes:
-    - {Support Vector Machines: "https://davidrosenberg.github.io/mlcourse/Archive/2017/Notes/svm-notes.pdf"}
-    - {SVM Main Takeaways from Duality: "https://davidrosenberg.github.io/mlcourse/Archive/2017/Notes/SVM-main-points.pdf"}
+    - {Support Vector Machines: "https://davidrosenberg.github.io/mlcourse/Notes/svm-notes.pdf"}
+    - {SVM Insights from Duality: "https://davidrosenberg.github.io/mlcourse/Notes/SVM-main-points.pdf"}
     - {"Note on the Uniqueness of SVMs": "https://davidrosenberg.github.io/mlcourse/Archive/2017/Labs/UniquenessOfSVM.pdf"}
   References:
     - {"Andrew Ng's CS229 SVM Notes": "http://cs229.stanford.edu/notes/cs229-notes3.pdf"}
@@ -121,7 +121,10 @@ We explain why lasso solutions may be very unstable in the case of highly correl
   Slides: "https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Lectures/05a.subgradient-descent.pdf"
   Video: "https://www.youtube.com/embed/jYtCiV1aP44"
   Notes:
-    - {"Subgradients": "https://davidrosenberg.github.io/mlcourse/Archive/2017/Labs/4-Subgradients-Notes_sol.pdf"}
+    - {"Subgradients": "https://davidrosenberg.github.io/mlcourse/Labs/4-Subgradients-Notes_sol.pdf"}
+  CChecks:
+    - {Subgradients and Lagrangian Duality Questions: "https://davidrosenberg.github.io/mlcourse/ConceptChecks/4-Lec-Check.pdf"}
+    - {Subgradients and Lagrangian Duality Solutions: "https://davidrosenberg.github.io/mlcourse/ConceptChecks/4-Lec-Check_sol.pdf"}
   References:
     - {"Boyd's subgradient notes": "http://web.stanford.edu/class/ee364b/lectures.html"}
 -
@@ -130,9 +133,12 @@ We explain why lasso solutions may be very unstable in the case of highly correl
   Slides: "https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Lectures/05b.features.pdf"
   Video: "https://www.youtube.com/embed/gmli6EyiNRw"
   Notes:
-    - {"Subgradients": "https://davidrosenberg.github.io/mlcourse/Archive/2017/Labs/4-Subgradients-Notes_sol.pdf"}
+    - {Simplest Example: "https://github.com/davidrosenberg/mlcourse/blob/gh-pages/Notebooks/Features/simple_feature_transformations.ipynb"}
+    - {Ingesting text with BOW: "https://github.com/davidrosenberg/mlcourse/blob/gh-pages/Notebooks/Features/test_BOW.ipynb"}
+    - {Polynomial features: "https://github.com/davidrosenberg/mlcourse/blob/gh-pages/Notebooks/Features/polynomial_feature_comparison.ipynb"}
+    - {Vector quantization with k-means: "https://github.com/davidrosenberg/mlcourse/blob/gh-pages/Notebooks/Features/vector_quantization.ipynb"}
   References:
-    - {"Boyd's subgradient notes": "http://web.stanford.edu/class/ee364b/lectures.html"}
+    - {Feature Engineering for Machine Learning by Casari and Zheng: "https://www.safaribooksonline.com/library/view/feature-engineering-for/9781491953235/"}
 -
   Title: Kernel Methods
   Summary: "With linear methods, we may need to make a whole lot of features to get a hypothesis space that's expressive enough to fit our data -- sometimes there will be orders of magnitude more features than we have training examples. While regularization can control overfitting, having a huge number of features can make things computationally very difficult, if we handle them naively. However, it turns out that even when the optimal parameter vector we're searching for lives in a very high-dimensional vector space (dimension being the number of features), a basic linear algebra argument shows that for certain objective function, the optimal parameter vector lives in a subspace spanned by the training input vectors, which will be of dimension equal to the number of training points. Thus, when we have far more features than training points, we're better off restricting our search to this lower-dimensional subspace. We can do this by an easy reparameterization of the objective function. This result is referred to as the \"representer theorem\", and its proof can be given on one slide. After reparameterization, we'll find that the objective function depends on the data only through the Gram matrix, or \"kernel matrix\", which contains the dot product between all pairs of training feature vectors. This is where things get interesting a second time: Suppose f is our featurization function. Sometimes the dot product between two feature vectors f(x) and f(x') can be computed much more efficiently than multiplying together corresponding features and summing. In such a situation, we write the dot products in terms of the \"kernel function\": k(x,x') = <f(x),f(x')>, which we hope to compute much more quickly than O(d), where d is the dimension of the features space. Using this \"kernel trick\", together with the reparameterization described above, is the essence of a \"kernel method\", and it allows you to use huge (even infinite-dimensional) feature spaces with a computational burden that depends primarily on the size of your training set. In practice, it's useful for small and medium-sized datasets for which computing the kernel matrix is tractable. Scaling kernel methods to large data sets is still an active area of research."
@@ -267,6 +273,6 @@ We explain why lasso solutions may be very unstable in the case of highly correl
     - {Reducing Multiclass to Binary: "http://www.jmlr.org/papers/volume1/allwein00a/allwein00a.pdf"} 
 -
   Title: Next Steps
-  Summary: "This course has really just scratched the surface of machine learning. We point to several other topics that ."
+  Summary: "We point the direction to many other topics in machine learning that should be accessible to students of this course, but that did not have time to cover."
   Slides: "https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Lectures/14c.next-steps.pdf"
   Video: "https://www.youtube.com/embed/tiXdqe1zGJ4"
