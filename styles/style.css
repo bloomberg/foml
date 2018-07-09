@@ -266,7 +266,7 @@ body > section > section > h1 {
   font-size: 14px;
 }
 #lectures > section > table {
-  width: 100%;
+  width: 1000px;
   border-collapse: collapse;
 }
 #lectures > section thead {
@@ -438,4 +438,14 @@ body > section > section > h1 {
 #people .person > .info > p.bio {
   margin-top: 10px;
   font-size: 14px;
+}
+section.module tr:first-child td:first-child {
+  min-width: 500px;
+  max-width: 500px;
+}
+section.module table {
+  width: 1000px;
+}
+iframe {
+  padding-left: 20px;
 }
