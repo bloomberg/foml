@@ -71,9 +71,6 @@
   Video: "https://www.youtube.com/embed/KIoz_aa1ed4"
   Summary: "We continue our discussion of ridge and lasso regression with a sharp focus on what happens in the case of correlated features, which is a common occurrence in machine learning practice. 
 We explain why lasso solutions may be very unstable in the case of highly correlated features, and why elastic net, which combines L1 and L2 regularization, ameliorates the instability issue while maintaining some of the sparsity properties of lasso."
-  CChecks:
-    - {Risk Decomp and L1/L2 Questions: "https://davidrosenberg.github.io/mlcourse/Archive/2017/ConceptChecks/2-Lec-Check.pdf"}
-    - {Risk Decomp and L1/L2 Solutions: "https://davidrosenberg.github.io/mlcourse/Archive/2017/ConceptChecks/2-Lec-Check_sol.pdf"}
   Notes:
     - {Lasso and Elastic Net (ipynb): "https://github.com/davidrosenberg/mlcourse/blob/gh-pages/Notebooks/Lasso%20and%20Elastic%20Net/lasso_and_elastic_net.ipynb"}
     - {Elastic Net correlation theorem: "https://davidrosenberg.github.io/mlcourse/Notes/elastic-net-theorem.pdf"}
