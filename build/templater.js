@@ -13,7 +13,9 @@ const REFERENCES = 'References';
 
 const TEMPLATES_DIR = path.resolve(__dirname, '../templates');
 
-module.exports = (input, output) => {
+doTemplating(process.argv[2], process.argv[3]);
+
+function doTemplating(input, output) {
     const handlebars = handlebarsFactory.create();
     registerHelpers(handlebars);
     registerPartials(handlebars);
@@ -25,7 +27,7 @@ module.exports = (input, output) => {
     // console.log(require("util").inspect(documents, { depth: Infinity }));
 
     fs.writeFileSync(output, template(documents));
-};
+}
 
 function compileTemplate(handlebars, input) {
     return handlebars.compile(fs.readFileSync(input, { encoding: 'utf-8' }));
