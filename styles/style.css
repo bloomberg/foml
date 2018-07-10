@@ -17,6 +17,7 @@ body {
   padding-left: 100px;
   padding-top: 0;
   line-height: 1.6em;
+  max-width: 1250px;
   color: #444;
   font-family: Helvetica, Arial, sans-serif;
   background-color: #f8f7f8;
@@ -34,13 +35,6 @@ h1 {
 }
 p {
   margin: 16px 0;
-  font-size: 16px;
-  line-height: 1.6em;
-}
-@media (max-width: 420px) {
-  p {
-    font-size: 14px;
-  }
 }
 p:first-child {
   margin-top: 0;
@@ -287,14 +281,20 @@ body > section > section > h1 {
 #lectures > section td {
   vertical-align: top;
 }
-#lectures > section .label {
-  width: 20%;
+#lectures > section td.label {
+  padding-right: 20px;
 }
-#lectures > section .references {
+#lectures > section td.slides {
   width: 25%;
 }
-#lectures > section .slides {
-  width: 20%;
+#lectures > section td.notes {
+  width: 25%;
+}
+#lectures > section td.concept-checks {
+  width: 25%;
+}
+#lectures > section td.references {
+  width: 25%;
 }
 #lectures > section ul {
   list-style-type: none;
@@ -325,9 +325,6 @@ body > section > section > h1 {
   margin-left: 5px;
   vertical-align: top;
   content: "\e059";
-}
-#lectures > section .references {
-  padding-right: 60px;
 }
 #assignments .policies {
   margin-bottom: 30px;
@@ -445,7 +442,4 @@ section.module tr:first-child td:first-child {
 }
 section.module table {
   width: 1000px;
-}
-iframe {
-  padding-left: 20px;
 }
