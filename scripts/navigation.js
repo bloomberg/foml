@@ -31,7 +31,7 @@
 
     function setHashFromScroll() {
         // Don't override any currently-visible link targets that aren't sections (e.g., if the user clicked on a lecture permalink)
-        var currentLinkTarget = document.querySelector(location.hash);
+        var currentLinkTarget = location.hash && document.querySelector(location.hash);
         if (currentLinkTarget && sections.indexOf(currentLinkTarget) === -1) {
             if (isVisible(currentLinkTarget)) {
                 return;
