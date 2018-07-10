@@ -1,5 +1,5 @@
 {
-  "name": "dsga1003",
+  "name": "bloombergFOML",
   "private": true,
   "scripts": {
     "build-in-place": "npm run template && npm run stylus",
