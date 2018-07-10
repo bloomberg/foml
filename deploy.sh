@@ -7,7 +7,7 @@ SOURCE_BRANCH="master"
 TARGET_BRANCH="gh-pages"
 
 function doCompile {
-  npm run build
+    ./build.sh
 }
 
 # Save some useful information
