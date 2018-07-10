@@ -3,11 +3,11 @@
   Slides: "https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Lectures/01.black-box-ML.pdf"
   Video: "https://www.youtube.com/embed/MsD28INtSv8"
   Summary: "<p>
-  Here we present the high-level concepts and workflows of supervised machine learning, the most useful machine learning paradigm in practice. The premise of this lecture is that, with some basic knowledge of machine learning, one can produce workable machine learning solutions without understanding how the machine learning algorithms actually work. Understanding how to use machine learning libraries in this way, what we call \"black box machine learning\", is the topic of this introductory lecture.</p>
-  <p>This lecture may be skipped by those already familiar with practical machine learning.</p>"
-  Notes:
-    - {"Géron's Machine Learning Landscape": "https://github.com/ageron/handson-ml/blob/master/01_the_machine_learning_landscape.ipynb"}
-    - {"Géron's End-to-End Machine Learning": "https://github.com/ageron/handson-ml/blob/master/02_end_to_end_machine_learning_project.ipynb"}
+  With the abundance of well-documented machine learning (ML) libraries, it's fairly straightforward for a programmer to \"do\" ML, without any understanding of how things are working.  And we encourage this \"black boxes\" machine learning! (At least to start.)  However, to make proper use of these ML libraries, one needs to be conversant in the basic vocabulary, concepts, and workflows that underlie ML. We'll introduce the standard ML problem types (classification and regression) and discuss prediction functions, feature extraction, learning algorithms, performance evalution, cross-validation, sample bias, nonstationarity, overfitting, and hyperparameter tuning. </p>
+  <p>This lecture may be safely skipped by those already familiar with practical machine learning.</p>"
+#  Notes:
+#    - {"Géron's Machine Learning Landscape": "https://github.com/ageron/handson-ml/blob/master/01_the_machine_learning_landscape.ipynb"}
+#    - {"Géron's End-to-End Machine Learning": "https://github.com/ageron/handson-ml/blob/master/02_end_to_end_machine_learning_project.ipynb"}
   References:
     - "Géron Ch 1,2"
     - {Provost and Fawcett book: "http://www.data-science-for-biz.com/DSB/Home.html"}
@@ -15,14 +15,14 @@
   Title: "Case Study: Churn Prediction"
   Slides: "https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Lectures/churn.pdf"
   Video: "https://www.youtube.com/embed/kE_t3Mm8Z50"
-  Summary: "We have an interactive discussion on how to represent a realistic, but subtly complicated business problem to a formal machine learning setting."
+  Summary: "We have an interactive discussion on how to formulate a realistic, but subtly complicated, business problem as a formal machine learning problem."
   References:
     - {"KDD Cup 2009: Customer relationship prediction": "http://www.kdd.org/kdd-cup/view/kdd-cup-2009"}
 -
   Title: Introduction to Statistical Learning Theory
   Slides: "https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Lectures/02a.intro-stat-learning-theory.pdf"
   Video: "https://www.youtube.com/embed/rqJ8SrnmWu0"
-  Summary: "We introduce the main concepts, objects, and vocabulary that we'll use in this course: input space, action space, outcome/output/label space, prediction functions, loss functions, hypothesis spaces, and empirical risk minimization. We highlight the issue of overfitting, which will occur when we find the empirical risk minimizer over too large a hypothesis space."
+  Summary: "This is where our \"deep study\" of machine learning begins. We introduce some of the core building blocks and concepts that we use in this course: input space, action space, outcome space, prediction functions, loss functions, and hypothesis spaces.  We also present empirical risk minimization, our first machine learning method.  We highlight the issue of overfitting, which will occur when we find the empirical risk minimizer over too large a hypothesis space."
   Notes:
     - {Conditional Expectations: "https://davidrosenberg.github.io/mlcourse/Notes/conditional-expectations.pdf"}
   CChecks:
@@ -32,7 +32,7 @@
   Title: Stochastic Gradient Descent
   Slides: "https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Lectures/02b.SGD.pdf"
   Video: "https://www.youtube.com/embed/5TZww5bTROE"
-  Summary: "We motivate and give some intuitive justification for mini-batch and stochastic gradient descent, which are today's standard optimization methods for large-scale machine learning problems."
+  Summary: "A recurring theme in machine learning is to formulate a learning problem as an optimization problem.  Empirical risk minimization was our first example of this.  Thus to do learning, we need to do optimization. In this lecture we present stochastic gradient descent, which is today's standard optimization method for large-scale machine learning problems."
   References:
     - {"Bottou's SGD Tricks": "http://leon.bottou.org/papers/bottou-tricks-2012"}
     - {"Barnes \"Matrix Differentiation\" notes": "http://www.atmos.washington.edu/~dennis/MatrixCalculus.pdf"}
@@ -47,7 +47,8 @@
   Title: Excess Risk Decomposition
   Slides: "https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Lectures/02c.excess-risk-decomposition.pdf"
   Video: "https://www.youtube.com/embed/YA_CE9jat4I"
-  Summary: "We introduce the notions of approximation error, estimation error, and optimization error. While these concepts usually only show up in more advanced courses on statistical learning theory, they will help us frame our understanding of the very practical issue of trading off between the choice of hypothesis space, the amount of data we have, and how long we run our optimization algorithms. In particular, it will helps us understand why \"better\" optimization methods (such as quasi-Newton methods) that can do a better job minimizing our objective function may not help find prediction functions that generalize better. (Note: This is independent of the more recent observations that stochastic gradient methods often generalize _better_ than batch gradient methods in neural network settings.)"
+  Summary: "We introduce the notions of approximation error, estimation error, and optimization error. While these concepts usually show up in more advanced courses, they will help us frame our understanding of the very practical issue of trading off between the choice of hypothesis space, the amount of data we have, and how long we run our optimization algorithms. In particular, it will helps us understand why \"better\" optimization methods (such as quasi-Newton methods) may not find prediction functions that generalize better, despite finding better optima."
+  #  (Note: This is independent of the more recent observations that stochastic gradient methods often generalize _better_ than batch gradient methods in neural network settings.)"
   CChecks:
     - {Excess Risk and L1/L2 Questions: "https://davidrosenberg.github.io/mlcourse/ConceptChecks/2-Lec-Check.pdf"}
     - {Excess Risk and L1/L2 Solutions: "https://davidrosenberg.github.io/mlcourse/ConceptChecks/2-Lec-Check_sol.pdf"}
@@ -55,7 +56,9 @@
   Title: L1 and L2 regularization
   Video: "https://www.youtube.com/embed/d6XDOS4btck"
   Slides: "https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Lectures/03a.L1L2-regularization.pdf"
-  Summary: "We introduce the concept of regularization, as our main defense against overfitting. We discuss the equivalence of the penalization and constraint forms of regularization (see the homework for a precise statement). We compare regularization paths of L1- and L2-regularized linear least squares regression (i.e. \"lasso\" and \"ridge\" regression, respectively), and give a geometric argument for why lasso often gives \"sparse\" solutions, in a sense we make precise. Finally, we note that the lasso objective function is not differentiable, and thus not immediately amenable to our gradient-based optimization methods. We present several approaches to finding the lasso solution, including coordinate descent, known as the \"shooting algorithm\" in this context."
+  Summary: "<p>We introduce \"regularization\", our main defense against overfitting. We discuss the equivalence of the penalization and constraint forms of regularization (see <a href=\"#assignment-homework-4\">Hwk 4 Problem 8</a> for a precise statement). We compare regularization paths of L1- and L2-regularized linear least squares regression (i.e. \"lasso\" and \"ridge\" regression, respectively), and give a geometric argument for why lasso often gives \"sparse\" solutions. Finally, we present \"coordinate descent\", our second major approach to optimization.  When applied to the lasso objective function, coordinate descent takes a particularly clean form and is known as the \"shooting algorithm\"</p>."
+  #<details><p><summary>More...</summary>   <p></details>
+
   CChecks:
     - {Excess Risk and L1/L2 Questions: "https://davidrosenberg.github.io/mlcourse/ConceptChecks/2-Lec-Check.pdf"}
     - {Excess Risk and L1/L2 Solutions: "https://davidrosenberg.github.io/mlcourse/ConceptChecks/2-Lec-Check_sol.pdf"}
@@ -64,13 +67,12 @@
     - {Lasso Lecture Prep Questions: "https://davidrosenberg.github.io/mlcourse/ConceptChecks/2-PreLec-Check.pdf"}
     - {Lasso Lecture Prep Solutions: "https://davidrosenberg.github.io/mlcourse/ConceptChecks/2-PreLec-Check_sol.pdf"}
   References:
-    - "HTF 3.4"
+    - "HTF 3.4" 
 -
   Title: Lasso, Ridge, and Elastic Net
   Slides: "https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Lectures/03b.elastic-net.pdf"
   Video: "https://www.youtube.com/embed/KIoz_aa1ed4"
-  Summary: "We continue our discussion of ridge and lasso regression with a sharp focus on what happens in the case of correlated features, which is a common occurrence in machine learning practice. 
-We explain why lasso solutions may be very unstable in the case of highly correlated features, and why elastic net, which combines L1 and L2 regularization, ameliorates the instability issue while maintaining some of the sparsity properties of lasso."
+  Summary: "<p>We continue our discussion of ridge and lasso regression by focusing on the case of correlated features, which is a common occurrence in machine learning practice. We will see that ridge solutions tend to spread weight equally among highly correlated features, while lasso solutions may be unstable in the case of highly correlated features. Finally, we introduce the \"elastic net\", a combination of L1 and L2 regularization, which ameliorates the instability while maintaining some of the properties of lasso."
   Notes:
     - {Lasso and Elastic Net (ipynb): "https://github.com/davidrosenberg/mlcourse/blob/gh-pages/Notebooks/Lasso%20and%20Elastic%20Net/lasso_and_elastic_net.ipynb"}
     - {Elastic Net correlation theorem: "https://davidrosenberg.github.io/mlcourse/Notes/elastic-net-theorem.pdf"}
@@ -81,11 +83,12 @@ We explain why lasso solutions may be very unstable in the case of highly correl
   Title: Loss Functions for Regression and Classification
   Slides: "https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Lectures/04a.loss-functions.pdf"
   Video: "https://www.youtube.com/embed/1oi_Mwozj5w"
-  Summary: "We start by discussing the absolute loss and the Huber loss, whjch one might use in the regression setting, in place of square loss. Attention is given to \"robustness\", in the sense of sensitivity to outliers, which is a theme that occurs several times during the course. Next, we introduce our approach to the classification setting, introducing the notions of score, margin, and margin-based losses. We discuss basic properties of the hinge loss (i.e SVM loss), logistic loss, and even the square loss, considered as a margin-based loss."
+  Summary: "We start by discussing absolute loss and Huber loss, two alternative to the square loss for the regression setting, which are more robust to outliers.  Next, we introduce our approach to the classification setting, introducing the notions of score, margin, and margin-based loss functions. We discuss basic properties of the hinge loss (i.e SVM loss), logistic loss, and even the square loss, considered as a margin-based loss.  The interplay between the loss function we use for training and the properties of the prediction function we end up with is a theme we will return to several times during the course."
 -
   Title: Lagrangian Duality and Convex Optimization
   Slides: "https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Lectures/04b.convex-optimization.pdf"
-  Summary: "We give a highly abridged introduction to convex optimization and Lagrangian duality. We discuss duality and Slater's constraint qualifications, and derive the complementary slackness conditions. As far as this course is concerned, there are really only two reasons for discussing this material: 1) When we apply the complementary slackness conditions to the dual formulation of the support vector machine (SVM), we find that the solutions are \"sparse in the data\". This has important practical implications for the kernelized version of SVM, which we discuss later. I do not know another way derive these insights. 2) Lagrangian duality is the tool needed to establish the equivalence between the penalty and constraint forms of regularization, which we address in the homework."
+  Summary: "<p>We introduce the basics of convex optimization and Lagrangian duality. We discuss weak and strong duality, Slater's constraint qualifications, and we derive the complementary slackness conditions. As far as this course is concerned, there are really only two reasons for discussing Lagrangian duality: 1) The complementary slackness conditions will imply that SVM solutions are \"sparse in the data\" (<a href=\"#lecture-support-vector-machines\">next lecture</a>), which has important practical implications for the kernelized SVMs (see the <a href=\"#lecture-kernel-methods\">kernel methods lecture</a>). 2) Strong duality is a sufficient condition for the equivalence between the penalty and constraint forms of regularization (see <a href=\"#assignment-homework-4\">Hwk 4 Problem 8</a>).</p>
+  <p>This mathematically intense lectures may be skipped safely.</p>"
   Video: "https://www.youtube.com/embed/thuYiebq1cE"
   Notes:
     - {Pre-lecture warmup for SVM and Lagrangians: "https://davidrosenberg.github.io/mlcourse/Archive/2017/Notes/svm-lecture-prep.pdf"}
@@ -97,9 +100,9 @@ We explain why lasso solutions may be very unstable in the case of highly correl
   References:
 -
   Title: Support Vector Machines
-  Summary: "We define the [soft-margin] SVM directly as L2-regularized hinge loss minimization over a linear hypothesis space. While the objective function is not differentiable, we reformulate it as a quadratic program (with a differentiable (quadratic) objective function and linear constraints). We derive the dual form, and apply the complementary slackness conditions to get some interesting insights into the connection between \"support vectors\" and margin. See the Notes for a high-level summary of what we learn about the SVM from our Lagrangian duality study, lest it get lost in the details.
-
-  Notably absent from our treatment is the hard-margin SVM and its standard geometric derivation. Although the derivation is fun, as we proceed from the simple and visually appealing idea of maximizing the \"geometric margin\", the hard-margin SVM is rarely useful in practice, as it requires separable data, which precludes any datasets with repeated inputs and label noise. One fixes this by introducing \"slack\" variables, which leads to a formulation equivalent to the soft-margin SVM we present. Once we introduce slack variables, I've personally found the interpretation in terms of margin to be much hazier, and I find understanding the SVM in terms of \"just\" a particular loss function and a particular regularization to be much more useful. That said, Brett Bernstein gives a very nice development of the geometric approach to the SVM, which is linked in the Notes below. At the very least, it's a great exercise in basic linear algebra."
+  Summary: "<p>We define the soft-margin support vector machine (SVM) directly in terms of its objective function (L2-regularized, hinge loss minimization over a linear hypothesis space).  Using our knowledge of Lagrangian duality, we find a dual form of the SVM problem, apply the complementary slackness conditions, and derive some interesting insights into the connection between \"support vectors\" and margin. Read the \"SVM Insights from Duality\" in the Notes below for a high-level view of this mathematically dense lecture.</p>
+<details>
+  <p><summary>More...</summary>Notably absent from the lecture is the hard-margin SVM and its standard geometric derivation. Although the derivation is fun, since we start from the simple and visually appealing idea of maximizing the \"geometric margin\", the hard-margin SVM is rarely useful in practice, as it requires separable data, which precludes any datasets with repeated inputs and label noise. One fixes this by introducing \"slack\" variables, which leads to a formulation equivalent to the soft-margin SVM we present. Once we introduce slack variables, I've personally found the interpretation in terms of maximizing the margin to be much hazier, and I find understanding the SVM in terms of \"just\" a particular loss function and a particular regularization to be much more useful. That said, Brett Bernstein gives a very nice development of the geometric approach to the SVM, which is linked in the References below. At the very least, it's a great exercise in basic linear algebra.</p></details>"
   Slides: "https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Lectures/04c.SVM.pdf"
   Video: "https://www.youtube.com/embed/9zi6-RjlYrU"
   Notes:
