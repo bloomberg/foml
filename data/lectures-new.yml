@@ -156,7 +156,7 @@ We explain why lasso solutions may be very unstable in the case of highly correl
   References:
     - Provost and Fawcett book
 -
-  Title: "City Sense: Probabilistic Modeling for Unusual Behavior Detection"
+  Title: "\"City Sense\": Probabilistic Modeling for Unusual Behavior Detection"
   Summary: "So far we have studied the regression setting, for which our predictions (i.e. 'actions') are real-valued, as well as the classification setting, for which our score functions also produce real values. With this lecture, we begin our consideration of \"conditional probability models\", in which the predictions are probability distributions over possible outcomes. We motivate these models by discussion of the \"CitySense\" problem, in which we want to predict the probability distribution on the number of taxi cab pickups at each street corner, at different times of the week. In this lecture we take a \"bare hands\" approach to building these conditional probability models. While I consider the basic use of stratification and bucketing to build conditional models by hand to be very useful in practice, if you're eager to get to some mathematics, you may safely skip this lecture."
   Slides: "https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Lectures/08a.citysense.pdf"
   Video: "https://www.youtube.com/embed/6nolrvzXiE4"
@@ -190,7 +190,7 @@ We explain why lasso solutions may be very unstable in the case of highly correl
   Title: Bayesian Conditional Probability Models
   Summary: "In our earlier discussion of conditional probability modeling, we started with a hypothesis space of possible prediction functions, from which we selected a single prediction function (e.g. by regularized maximum likelihood). In the Bayesian approach, we additionally start with a prior distribution on this hypothesis space. After observing some training data, we end up with a posterior distribution on the hypothesis space. For making predictions, we can derive a predictive distribution from the posterior distribution. We explore these concepts by working through the case of Bayesian Gaussian linear regression. We also make a precise connection between MAP estimation in this model and ridge regression."
   Slides: "https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Lectures/09b.bayesian-regression.pdf"
-  Video: "https://www.youtube.com/embed/rEqsZVhVQi8"
+  Video: "https://www.youtube.com/embed/Mo4p2B37LwY"
   CChecks:
     - {Bayesian Methods and Regression Questions: "https://davidrosenberg.github.io/mlcourse/ConceptChecks/11-Lec-Check.pdf"}
     - {Bayesian Methods and Regression Solutions: "https://davidrosenberg.github.io/mlcourse/ConceptChecks/11-Lec-Check_sol.pdf"}
@@ -268,7 +268,7 @@ We explain why lasso solutions may be very unstable in the case of highly correl
   Title: Gaussian Mixture Models
   Summary: "A Gaussian mixture model (GMM) is a family of multimodal probability distributions that is a plausible generative model for clustered data. We can fit this model to data with maximum likelihood, and we can assess the quality of fit by evaluating the model likelihood on holdout data. While the \"learning\" phase of Gaussian mixture modeling is fitting the model to data, in the \"inference\" phase, we determine for any point drawn from the GMM the probability that it came from each of the k components. To use a GMM for clustering, we simply assign each point to the component that it is most likely to have come from. k-means clustering can be seen as a limiting case of a restricted form of Gaussian mixture modeling."
   Slides: "https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Lectures/13b.mixture-models.pdf"
-  Video: "https://www.youtube.com/embed/q0E6YyfdxS4"
+  Video: "https://www.youtube.com/embed/I9dfOMAhsug"
   References:
     - "Bishop 9.2,9.3"
     - {"An Alternative to EM for GMM [Optional]": "https://arxiv.org/pdf/1706.03267.pdf"}
@@ -297,4 +297,4 @@ We explain why lasso solutions may be very unstable in the case of highly correl
   Title: Next Steps
   Summary: "We point the direction to many other topics in machine learning that should be accessible to students of this course, but that did not have time to cover."
   Slides: "https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Lectures/14c.next-steps.pdf"
-  Video: "https://www.youtube.com/embed/tiXdqe1zGJ4"
+  Video: "https://www.youtube.com/embed/RMmAVrhAfWs"
