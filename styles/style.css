@@ -22,6 +22,9 @@ body {
   font-family: Helvetica, Arial, sans-serif;
   background-color: #f8f7f8;
 }
+iframe {
+  border: none;
+}
 a {
   text-decoration: none;
   color: #0d9ddb;
@@ -162,7 +165,8 @@ body > section > h1 {
     font-size: 20px;
   }
 }
-body > section > section:not(:last-of-type) {
+body > section > section:not(:last-of-type),
+body > section > .module > section:not(:last-of-type) {
   margin-bottom: 30px;
 }
 body > section > section > h1 {
@@ -208,6 +212,18 @@ body > section > section > h1 {
 @media (max-width: 420px) {
   #home > h1 .department {
     font-size: 14px;
+  }
+}
+#course-pitch {
+  font-size: 36px;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  line-height: normal;
+  margin-top: 70px;
+}
+@media (max-width: 420px) {
+  #course-pitch {
+    font-size: 20px;
   }
 }
 #course-info {
@@ -283,6 +299,9 @@ body > section > section > h1 {
 }
 #lectures > section td.label {
   padding-right: 20px;
+}
+#lectures > section td:not(.label) {
+  line-height: normal;
 }
 #lectures > section td.slides {
   width: 25%;

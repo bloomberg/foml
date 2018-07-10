@@ -8,31 +8,29 @@
     <link rel="stylesheet" media="only screen and (max-width: 770px)" href="styles/tablet-and-phone.css">
     <link rel="stylesheet" media="only screen and (max-width: 420px)" href="styles/phone.css">
     <link rel="icon" href="favicon.ico" type="image/vnd.microsoft.icon">
-    <link rel="canonical" href="https://https://bloomberg.github.io/foml/">
+    <link rel="canonical" href="https://bloomberg.github.io/foml/">
   </head>
   <body>
     <nav>
         <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#lectures">Lectures</a>
-            <a href="#assignments">Assignments</a>
-            <a href="#resources">Resources</a>
-            <a href="#people">People</a>
-        </a>
+        <a href="#about">About</a>
+        <a href="#lectures">Lectures</a>
+        <a href="#assignments">Assignments</a>
+        <a href="#resources">Resources</a>
+        <a href="#people">People</a>
     </nav>
 
     <section id="home">
-        <a href="https://www.techatbloomberg.com/post-topic/data-science/"><img src="images/mlbanner.jpg" srcset="images/mlbanner.jpg 1x"></a>
-        <h1 align="center">Bloomberg's Foundations of Machine Learning</h1>
+        <a href="https://www.techatbloomberg.com/post-topic/data-science/"><img src="images/mlbanner.jpg" alt="Bloomberg ML EDU presents:"></a>
+        <h1>Bloomberg's Foundations of Machine Learning</h1>
         <table id="course-info">
             <tr>
                 <th>Instructor</th>
-                <td>David Rosenberg </td>
+                <td>David Rosenberg</td>
             </tr>
         </table>
-    </section>
-    <section id="course-pitch">
-    <h1 align="center"><strong>Get a deep understanding of the concepts, techniques and mathematical frameworks used by experts in machine learning</strong></h1>
+
+        <p id="course-pitch"><strong>Get a deep understanding of the concepts, techniques and mathematical frameworks used by experts in machine learning</strong></p>
     </section>
     <section id="about">
         <h1>About This Course</h1>
@@ -52,34 +50,36 @@
 
             <section>
                 <h1>Highlights and Distinctive Features of the Course Lectures, Notes, and Assignments</h1>
-<p>
-                    <ul>
-                        <li>Geometric explanation for what happens with ridge, lasso, and elastic net regression in the case of correlated random variables.</li>
-                        <li>Investigation of when the penalty (Tikhonov) and constraint (Ivanov) forms of regularization are equivalent.</li>
-                        <li>Concise summary of what we really learn about SVMs from Lagrangian duality.</li>
-                        <li>Proof of representer theorem with simple linear algebra, emphasizing it as a way to reparametrize certain objective functions.</li>
-                        <li>Guided derivation of the math behind the classic diamond/circle/ellipsoids picture that "explains" why L1 regularization gives sparsity (Homework 2, Problem 5)</li>
-                        <li>From scrach (in numpy) implementation of almost all major ML algorithms we discuss: ridge regression with SGD and GD (Homework 1, Problems 2.5, 2.6 page 4), lasso regression with the shooting algorithm (Homework 2, Problem 3, page 4), kernel ridge regression (Homework 4, Problem 3, page 2), kernelized SVM with Kernelized Pegasos (Homework 4, 6.4, page 9), L2-regularized logistic regression (Homework 5, Problem 3.3, page 4),Bayesian Linear Regession (Homework 5, problem 5, page 6), multiclass SVM (Homework 6, Problem 4.2, p. 3), classification and regression trees (without pruning)  (Homework 6, Problem 6), gradient boosting with trees for classification and regression (Homework 6, Problem 8), multilayer perceptron for regression (Homework 7, Problem 4, page 3)</li>
-                        <li>Implementation of the Shooting algorithm (coordinate descent) for Lasso and Pegasos for SVM and kernelized SVM.</li>
-                        <li>Repeated use of a simple 1-dimensional regression dataset, so it's easy to visualize the effect of various hypothesis spaces and regularizations that we investigate throughout the course.</li>
-                        <li>Investigation of how to derive a conditional probability estimate from a predicted score for various loss functions, and why it's not so straightforward for the hinge loss (i.e. the SVM) (Homework 5, Problem 2, page 1)</li>
-                        <li>Discussion of numerical overflow issues and the log-sum-exp trick (Homework 5, Problem 3.2)</li>
-                        <li>Self-contained introduction to the expectation maximization (EM) algorithm for latent variable models.</li>
-                        <li>Develop a general computation graph framework from scratch, using numpy, and implement your neural networks in it.</li>
-                        <li><em>Recommended:</em> At least one advanced, proof-based mathematics course</li>
-                        <li><em>Recommended:</em> Computer science background up to a "data structures and algorithms" course</li>
-                    </ul>
+
+                <ul>
+                    <li>Geometric explanation for what happens with ridge, lasso, and elastic net regression in the case of correlated random variables.</li>
+                    <li>Investigation of when the penalty (Tikhonov) and constraint (Ivanov) forms of regularization are equivalent.</li>
+                    <li>Concise summary of what we really learn about SVMs from Lagrangian duality.</li>
+                    <li>Proof of representer theorem with simple linear algebra, emphasizing it as a way to reparametrize certain objective functions.</li>
+                    <li>Guided derivation of the math behind the classic diamond/circle/ellipsoids picture that "explains" why L1 regularization gives sparsity (Homework 2, Problem 5)</li>
+                    <li>From scrach (in numpy) implementation of almost all major ML algorithms we discuss: ridge regression with SGD and GD (Homework 1, Problems 2.5, 2.6 page 4), lasso regression with the shooting algorithm (Homework 2, Problem 3, page 4), kernel ridge regression (Homework 4, Problem 3, page 2), kernelized SVM with Kernelized Pegasos (Homework 4, 6.4, page 9), L2-regularized logistic regression (Homework 5, Problem 3.3, page 4),Bayesian Linear Regession (Homework 5, problem 5, page 6), multiclass SVM (Homework 6, Problem 4.2, p. 3), classification and regression trees (without pruning)  (Homework 6, Problem 6), gradient boosting with trees for classification and regression (Homework 6, Problem 8), multilayer perceptron for regression (Homework 7, Problem 4, page 3)</li>
+                    <li>Implementation of the Shooting algorithm (coordinate descent) for Lasso and Pegasos for SVM and kernelized SVM.</li>
+                    <li>Repeated use of a simple 1-dimensional regression dataset, so it's easy to visualize the effect of various hypothesis spaces and regularizations that we investigate throughout the course.</li>
+                    <li>Investigation of how to derive a conditional probability estimate from a predicted score for various loss functions, and why it's not so straightforward for the hinge loss (i.e. the SVM) (Homework 5, Problem 2, page 1)</li>
+                    <li>Discussion of numerical overflow issues and the log-sum-exp trick (Homework 5, Problem 3.2)</li>
+                    <li>Self-contained introduction to the expectation maximization (EM) algorithm for latent variable models.</li>
+                    <li>Develop a general computation graph framework from scratch, using numpy, and implement your neural networks in it.</li>
+                    <li><em>Recommended:</em> At least one advanced, proof-based mathematics course</li>
+                    <li><em>Recommended:</em> Computer science background up to a "data structures and algorithms" course</li>
+                </ul>
             </section>
-<p>
+
             <section>
                 <h1>Course Prerequisites</h1>
-                <p>The quickest way to see if the mathematics level of the course is for you is to take a look at this <a href="https://davidrosenberg.github.io/mlcourse/Notes/prereq-questions/math-questions.pdf">mathematics assessment</a>, which is a preview of some of the math concepts that show up in the first part of the course.
-                    <ul>
-                        <li><strong>Solid mathematical background</strong>, equivalent to a 1-semester undergraduate course in each of the following: linear algebra, multivariate differential calculus, probability theory, and statistics. The content of NYU's <a href="http://www.cims.nyu.edu/~cfgranda/pages/DSGA1002_fall15/index.html"><strong>DS-GA-1002: Statistical and Mathematical Methods</strong></a> would be more than sufficient, for example.</li>
-                        <li><strong>Python programming required</strong> for most homework assignments.</li>
-                        <li><em>Recommended:</em> At least one advanced, proof-based mathematics course</li>
-                        <li><em>Recommended:</em> Computer science background up to a "data structures and algorithms" course</li>
-                    </ul>
+
+                <p>The quickest way to see if the mathematics level of the course is for you is to take a look at this <a href="https://davidrosenberg.github.io/mlcourse/Notes/prereq-questions/math-questions.pdf">mathematics assessment</a>, which is a preview of some of the math concepts that show up in the first part of the course.</p>
+
+                <ul>
+                    <li><strong>Solid mathematical background</strong>, equivalent to a 1-semester undergraduate course in each of the following: linear algebra, multivariate differential calculus, probability theory, and statistics. The content of NYU's <a href="http://www.cims.nyu.edu/~cfgranda/pages/DSGA1002_fall15/index.html"><strong>DS-GA-1002: Statistical and Mathematical Methods</strong></a> would be more than sufficient, for example.</li>
+                    <li><strong>Python programming required</strong> for most homework assignments.</li>
+                    <li><em>Recommended:</em> At least one advanced, proof-based mathematics course</li>
+                    <li><em>Recommended:</em> Computer science background up to a "data structures and algorithms" course</li>
+                </ul>
             </section>
         </div>
     </section>
@@ -88,9 +88,9 @@
         <h1>Lectures</h1>
 
         <ul class="abbreviations">
-            <li> (HTF) refers to Hastie, Tibshirani, and Friedman's book <a href="https://web.stanford.edu/~hastie/ElemStatLearn/"><cite>The Elements of Statistical Learning</cite></a></li>
-            <li> (SSBD) refers to Shalev-Shwartz and Ben-David's book <a href="http://www.cs.huji.ac.il/~shais/UnderstandingMachineLearning/"><cite>Understanding Machine Learning: From Theory to Algorithms</cite></a></li>
-            <li> (JWHT) refers to James, Witten, Hastie, and Tibshirani's book <a href="http://www-bcf.usc.edu/~gareth/ISL"><cite>An Introduction to Statistical Learning</cite></a></li>
+            <li>(HTF) refers to Hastie, Tibshirani, and Friedman's book <a href="https://web.stanford.edu/~hastie/ElemStatLearn/"><cite>The Elements of Statistical Learning</cite></a></li>
+            <li>(SSBD) refers to Shalev-Shwartz and Ben-David's book <a href="http://www.cs.huji.ac.il/~shais/UnderstandingMachineLearning/"><cite>Understanding Machine Learning: From Theory to Algorithms</cite></a></li>
+            <li>(JWHT) refers to James, Witten, Hastie, and Tibshirani's book <a href="http://www-bcf.usc.edu/~gareth/ISL"><cite>An Introduction to Statistical Learning</cite></a></li>
         </ul>
 
         <section class="module" id="lecture-black-box-machine-learning">
@@ -101,15 +101,13 @@
                         <p> Here we present the high-level concepts and workflows of supervised machine learning, by far the most common paradigm of machine learning used in practice. The premise of the lecture is that, with some basic knowledge of machine learning, one can produce workable machine learning solutions without understanding how the machine learning algorithms actually work. Understanding how to use machine learning libraries in this way, what we call "black box machine learning", is the topic of this introductory lecture.</p> <p>This lecture may be skipped by those already familiar with practical machine learning.</p>
                     </td>
                     <td colspan="2">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/MsD28INtSv8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/MsD28INtSv8" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                     </td>
                 </tr>
                 <tr>
                     <td class="slides">
                         <h1>Slides</h1>
-                        <ul>
-                            <li><a href=https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Lectures/01.black-box-ML.pdf>Lecture Slides</a></li>
-                        </ul>
+                        <a href="https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Lectures/01.black-box-ML.pdf">Lecture Slides</a>
                     </td>
                     <td class="notes">
                         <h1>Notes</h1>
@@ -140,15 +138,13 @@
                         We have an interactive discussion on how to represent a realistic, but subtly complicated business problem to a formal machine learning setting.
                     </td>
                     <td colspan="2">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/kE_t3Mm8Z50" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/kE_t3Mm8Z50" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                     </td>
                 </tr>
                 <tr>
                     <td class="slides">
                         <h1>Slides</h1>
-                        <ul>
-                            <li><a href=https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Lectures/churn.pdf>Lecture Slides</a></li>
-                        </ul>
+                        <a href="https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Lectures/churn.pdf">Lecture Slides</a>
                     </td>
                     <td class="notes">
                         <h1>Notes</h1>
@@ -175,15 +171,13 @@
                         We introduce the main concepts, objects, and vocabulary that we'll use in this course: input space, action space, outcome/output/label space, prediction functions, loss functions, hypothesis spaces, and empirical risk minimization. We highlight the issue of overfitting, which will occur when we find the empirical risk minimizer over too large a hypothesis space.
                     </td>
                     <td colspan="2">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/rqJ8SrnmWu0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/rqJ8SrnmWu0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                     </td>
                 </tr>
                 <tr>
                     <td class="slides">
                         <h1>Slides</h1>
-                        <ul>
-                            <li><a href=https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Lectures/02a.intro-stat-learning-theory.pdf>Lecture Slides</a></li>
-                        </ul>
+                        <a href="https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Lectures/02a.intro-stat-learning-theory.pdf">Lecture Slides</a>
                     </td>
                     <td class="notes">
                         <h1>Notes</h1>
@@ -213,15 +207,13 @@
                         We motivate and give some intuitive justification for mini-batch and stochastic gradient descent, which are today's standard optimization methods for large-scale machine learning problems.
                     </td>
                     <td colspan="2">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/5TZww5bTROE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/5TZww5bTROE" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                     </td>
                 </tr>
                 <tr>
                     <td class="slides">
                         <h1>Slides</h1>
-                        <ul>
-                            <li><a href=https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Lectures/02b.SGD.pdf>Lecture Slides</a></li>
-                        </ul>
+                        <a href="https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Lectures/02b.SGD.pdf">Lecture Slides</a>
                     </td>
                     <td class="notes">
                         <h1>Notes</h1>
@@ -255,15 +247,13 @@
                         We introduce the notions of approximation error, estimation error, and optimization error. While these concepts usually only show up in more advanced courses on statistical learning theory, they will help us frame our understanding of the very practical issue of trading off between the choice of hypothesis space, the amount of data we have, and how long we run our optimization algorithms. In particular, it will helps us understand why "better" optimization methods (such as quasi-Newton methods) that can do a better job minimizing our objective function may not help find prediction functions that generalize better. (Note: This is independent of the more recent observations that stochastic gradient methods often generalize _better_ than batch gradient methods in neural network settings.)
                     </td>
                     <td colspan="2">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/YA_CE9jat4I" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/YA_CE9jat4I" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                     </td>
                 </tr>
                 <tr>
                     <td class="slides">
                         <h1>Slides</h1>
-                        <ul>
-                            <li><a href=https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Lectures/02c.excess-risk-decomposition.pdf>Lecture Slides</a></li>
-                        </ul>
+                        <a href="https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Lectures/02c.excess-risk-decomposition.pdf">Lecture Slides</a>
                     </td>
                     <td class="notes">
                         <h1>Notes</h1>
@@ -291,15 +281,13 @@
                         We introduce the concept of regularization, as our main defense against overfitting. We discuss the equivalence of the penalization and constraint forms of regularization (see the homework for a precise statement). We compare regularization paths of L1- and L2-regularized linear least squares regression (i.e. "lasso" and "ridge" regression, respectively), and give a geometric argument for why lasso often gives "sparse" solutions, in a sense we make precise. Finally, we note that the lasso objective function is not differentiable, and thus not immediately amenable to our gradient-based optimization methods. We present several approaches to finding the lasso solution, including coordinate descent, known as the "shooting algorithm" in this context.
                     </td>
                     <td colspan="2">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/d6XDOS4btck" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/d6XDOS4btck" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                     </td>
                 </tr>
                 <tr>
                     <td class="slides">
                         <h1>Slides</h1>
-                        <ul>
-                            <li><a href=https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Lectures/03a.L1L2-regularization.pdf>Lecture Slides</a></li>
-                        </ul>
+                        <a href="https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Lectures/03a.L1L2-regularization.pdf">Lecture Slides</a>
                     </td>
                     <td class="notes">
                         <h1>Notes</h1>
@@ -333,15 +321,13 @@
                         We continue our discussion of ridge and lasso regression with a sharp focus on what happens in the case of correlated features, which is a common occurrence in machine learning practice.  We explain why lasso solutions may be very unstable in the case of highly correlated features, and why elastic net, which combines L1 and L2 regularization, ameliorates the instability issue while maintaining some of the sparsity properties of lasso.
                     </td>
                     <td colspan="2">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/KIoz_aa1ed4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/KIoz_aa1ed4" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                     </td>
                 </tr>
                 <tr>
                     <td class="slides">
                         <h1>Slides</h1>
-                        <ul>
-                            <li><a href=https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Lectures/03b.elastic-net.pdf>Lecture Slides</a></li>
-                        </ul>
+                        <a href="https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Lectures/03b.elastic-net.pdf">Lecture Slides</a>
                     </td>
                     <td class="notes">
                         <h1>Notes</h1>
@@ -375,15 +361,13 @@
                         We start by discussing the absolute loss and the Huber loss, whjch one might use in the regression setting, in place of square loss. Attention is given to "robustness", in the sense of sensitivity to outliers, which is a theme that occurs several times during the course. Next, we introduce our approach to the classification setting, introducing the notions of score, margin, and margin-based losses. We discuss basic properties of the hinge loss (i.e SVM loss), logistic loss, and even the square loss, considered as a margin-based loss.
                     </td>
                     <td colspan="2">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/1oi_Mwozj5w" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/1oi_Mwozj5w" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                     </td>
                 </tr>
                 <tr>
                     <td class="slides">
                         <h1>Slides</h1>
-                        <ul>
-                            <li><a href=https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Lectures/04a.loss-functions.pdf>Lecture Slides</a></li>
-                        </ul>
+                        <a href="https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Lectures/04a.loss-functions.pdf">Lecture Slides</a>
                     </td>
                     <td class="notes">
                         <h1>Notes</h1>
@@ -408,15 +392,13 @@
                         We give a highly abridged introduction to convex optimization and Lagrangian duality. We discuss duality and Slater's constraint qualifications, and derive the complementary slackness conditions. As far as this course is concerned, there are really only two reasons for discussing this material: 1) When we apply the complementary slackness conditions to the dual formulation of the support vector machine (SVM), we find that the solutions are "sparse in the data". This has important practical implications for the kernelized version of SVM, which we discuss later. I do not know another way derive these insights. 2) Lagrangian duality is the tool needed to establish the equivalence between the penalty and constraint forms of regularization, which we address in the homework.
                     </td>
                     <td colspan="2">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/thuYiebq1cE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/thuYiebq1cE" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                     </td>
                 </tr>
                 <tr>
                     <td class="slides">
                         <h1>Slides</h1>
-                        <ul>
-                            <li><a href=https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Lectures/04b.convex-optimization.pdf>Lecture Slides</a></li>
-                        </ul>
+                        <a href="https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Lectures/04b.convex-optimization.pdf">Lecture Slides</a>
                     </td>
                     <td class="notes">
                         <h1>Notes</h1>
@@ -449,15 +431,13 @@
         Notably absent from our treatment is the hard-margin SVM and its standard geometric derivation. Although the derivation is fun, as we proceed from the simple and visually appealing idea of maximizing the "geometric margin", the hard-margin SVM is rarely useful in practice, as it requires separable data, which precludes any datasets with repeated inputs and label noise. One fixes this by introducing "slack" variables, which leads to a formulation equivalent to the soft-margin SVM we present. Once we introduce slack variables, I've personally found the interpretation in terms of margin to be much hazier, and I find understanding the SVM in terms of "just" a particular loss function and a particular regularization to be much more useful. That said, Brett Bernstein gives a very nice development of the geometric approach to the SVM, which is linked in the Notes below. At the very least, it's a great exercise in basic linear algebra.
                     </td>
                     <td colspan="2">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/9zi6-RjlYrU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/9zi6-RjlYrU" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                     </td>
                 </tr>
                 <tr>
                     <td class="slides">
                         <h1>Slides</h1>
-                        <ul>
-                            <li><a href=https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Lectures/04c.SVM.pdf>Lecture Slides</a></li>
-                        </ul>
+                        <a href="https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Lectures/04c.SVM.pdf">Lecture Slides</a>
                     </td>
                     <td class="notes">
                         <h1>Notes</h1>
@@ -488,15 +468,13 @@
                         Neither the lasso nor the SVM objective function is differentiable, and we had to do some work for each to optimize. It turns out, however, that gradient descent will essentially work in these situations, so long as you're careful about handling the non-differentiable points. To this end, we introduce "subgradient descent", and we show the surprising result that, even though the objective function may not decrease with each step, every step brings us closer to the minimizer. Note: This lecture is mathematically one of the heavier ones and one can safely skip it.
                     </td>
                     <td colspan="2">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/jYtCiV1aP44" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/jYtCiV1aP44" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                     </td>
                 </tr>
                 <tr>
                     <td class="slides">
                         <h1>Slides</h1>
-                        <ul>
-                            <li><a href=https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Lectures/05a.subgradient-descent.pdf>Lecture Slides</a></li>
-                        </ul>
+                        <a href="https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Lectures/05a.subgradient-descent.pdf">Lecture Slides</a>
                     </td>
                     <td class="notes">
                         <h1>Notes</h1>
@@ -528,15 +506,13 @@
                         When using linear hypothesis spaces, one needs to encode explicitly any nonlinear dependencies on the input as features. In this lecture we discuss various strategies for creating features. Many of the examples are taken (with permission) from Percy Liang's CS221 course at Stanford.
                     </td>
                     <td colspan="2">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/gmli6EyiNRw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/gmli6EyiNRw" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                     </td>
                 </tr>
                 <tr>
                     <td class="slides">
                         <h1>Slides</h1>
-                        <ul>
-                            <li><a href=https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Lectures/05b.features.pdf>Lecture Slides</a></li>
-                        </ul>
+                        <a href="https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Lectures/05b.features.pdf">Lecture Slides</a>
                     </td>
                     <td class="notes">
                         <h1>Notes</h1>
@@ -568,15 +544,13 @@
                         With linear methods, we may need to make a whole lot of features to get a hypothesis space that's expressive enough to fit our data -- sometimes there will be orders of magnitude more features than we have training examples. While regularization can control overfitting, having a huge number of features can make things computationally very difficult, if we handle them naively. However, it turns out that even when the optimal parameter vector we're searching for lives in a very high-dimensional vector space (dimension being the number of features), a basic linear algebra argument shows that for certain objective function, the optimal parameter vector lives in a subspace spanned by the training input vectors, which will be of dimension equal to the number of training points. Thus, when we have far more features than training points, we're better off restricting our search to this lower-dimensional subspace. We can do this by an easy reparameterization of the objective function. This result is referred to as the "representer theorem", and its proof can be given on one slide. After reparameterization, we'll find that the objective function depends on the data only through the Gram matrix, or "kernel matrix", which contains the dot product between all pairs of training feature vectors. This is where things get interesting a second time: Suppose f is our featurization function. Sometimes the dot product between two feature vectors f(x) and f(x') can be computed much more efficiently than multiplying together corresponding features and summing. In such a situation, we write the dot products in terms of the "kernel function": k(x,x') = <f(x),f(x')>, which we hope to compute much more quickly than O(d), where d is the dimension of the features space. Using this "kernel trick", together with the reparameterization described above, is the essence of a "kernel method", and it allows you to use huge (even infinite-dimensional) feature spaces with a computational burden that depends primarily on the size of your training set. In practice, it's useful for small and medium-sized datasets for which computing the kernel matrix is tractable. Scaling kernel methods to large data sets is still an active area of research.
                     </td>
                     <td colspan="2">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/m1otj-SdwYw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/m1otj-SdwYw" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                     </td>
                 </tr>
                 <tr>
                     <td class="slides">
                         <h1>Slides</h1>
-                        <ul>
-                            <li><a href=https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Lectures/06a.kernel-methods.pdf>Lecture Slides</a></li>
-                        </ul>
+                        <a href="https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Lectures/06a.kernel-methods.pdf">Lecture Slides</a>
                     </td>
                     <td class="notes">
                         <h1>Notes</h1>
@@ -607,15 +581,13 @@
                         This is another black-box ML lecture. We start with a mention of various baseline models that you should compare your prediction functions to: zero-information prediction function, single-feature prediction functions, regularized linear models, and sometimes an 'oracle' model that is trained on your validation/test data, to get an idea of the upper bound of performance for your learning method. Then we simply define the various summary statistics that are used in practice to describe classifier performance: confusion matrix, accuracy, precision, recall, specificity, sensitivity, F1 score, type 1 error, type 2 error, and a few others. We also discuss the fact that most classifiers give you a score, rather than just a hard classification, and you should tune your threshold to optimize the performance metric of importance to you, rather than just using the default (typically 0, or 0.5 if the prediction is a probability). We also discuss the various performance curves you'll see in practice: precision/recall, ROC, and (my personal favorite for many business applications) lift curves.
                     </td>
                     <td colspan="2">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/xMyAL0C6cPY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/xMyAL0C6cPY" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                     </td>
                 </tr>
                 <tr>
                     <td class="slides">
                         <h1>Slides</h1>
-                        <ul>
-                            <li><a href=https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Lectures/06b.classifier-performance.pdf>Lecture Slides</a></li>
-                        </ul>
+                        <a href="https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Lectures/06b.classifier-performance.pdf">Lecture Slides</a>
                     </td>
                     <td class="notes">
                         <h1>Notes</h1>
@@ -642,15 +614,13 @@
                         So far we have studied the regression setting, for which our predictions (i.e. 'actions') are real-valued, as well as the classification setting, for which our score functions also produce real values. With this lecture, we begin our consideration of "conditional probability models", in which the predictions are probability distributions over possible outcomes. We motivate these models by discussion of the "CitySense" problem, in which we want to predict the probability distribution on the number of taxi cab pickups at each street corner, at different times of the week. In this lecture we take a "bare hands" approach to building these conditional probability models. While I consider the basic use of stratification and bucketing to build conditional models by hand to be very useful in practice, if you're eager to get to some mathematics, you may safely skip this lecture.
                     </td>
                     <td colspan="2">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/6nolrvzXiE4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/6nolrvzXiE4" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                     </td>
                 </tr>
                 <tr>
                     <td class="slides">
                         <h1>Slides</h1>
-                        <ul>
-                            <li><a href=https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Lectures/08a.citysense.pdf>Lecture Slides</a></li>
-                        </ul>
+                        <a href="https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Lectures/08a.citysense.pdf">Lecture Slides</a>
                     </td>
                     <td class="notes">
                         <h1>Notes</h1>
@@ -677,15 +647,13 @@
                         In empirical risk minimization, we select a prediction function that minimizes the average loss on a training set (or on a validation set, at the model selection phase). So if our prediction functions are producing probability distributions, what loss functions will give a reasonable performance measure on an individual example? In this lecture, we discuss one of the most popular performance measures for a predicted probability distribution: "likelihood". For this lecture, we temporarily leave aside the conditional probability modeling problem, and focus on the simpler problem of fitting a single probability model to data. For a parametric models, it's often a straightforward optimization problem to find the "maximum likelihood" model, which maximizes the likelihood on some training data. Of course, we can also use a non-parametric model, such as the histogram model we used in the previous lecture. No matter how we have developed a collection of candidate probability distributions on training data, we can compare them on an equal footing by evaluating their likelihood on some validation data.
                     </td>
                     <td colspan="2">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/ec_5vvxW7fE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/ec_5vvxW7fE" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                     </td>
                 </tr>
                 <tr>
                     <td class="slides">
                         <h1>Slides</h1>
-                        <ul>
-                            <li><a href=https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Lectures/08b.MLE.pdf>Lecture Slides</a></li>
-                        </ul>
+                        <a href="https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Lectures/08b.MLE.pdf">Lecture Slides</a>
                     </td>
                     <td class="notes">
                         <h1>Notes</h1>
@@ -710,15 +678,13 @@
                         In this lecture we consider prediction functions that produces distributions from some parametric family of distributions. We restrict to the case of linear models, though later in the course it will be clear how to make nonlinear versions using gradient boosting and neural networks. We develop the technique through four examples: Bernoulli regression (logistic regression being a special case), Poisson regression, Gaussian regression, and multinomial logistic regression (our first multiclass method). We conclude by connecting this maximum likelihood framework back to our empirical risk minimization framework.
                     </td>
                     <td colspan="2">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/JrFj0xpGd2Q" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/JrFj0xpGd2Q" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                     </td>
                 </tr>
                 <tr>
                     <td class="slides">
                         <h1>Slides</h1>
-                        <ul>
-                            <li><a href=https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Lectures/08c.conditional-probability-models.pdf>Lecture Slides</a></li>
-                        </ul>
+                        <a href="https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Lectures/08c.conditional-probability-models.pdf">Lecture Slides</a>
                     </td>
                     <td class="notes">
                         <h1>Notes</h1>
@@ -746,15 +712,13 @@
                         In preparation for our discussion on Bayesian predictive machine learning, we review some basics of classical and Bayesian statistics for parametric probability models. For classical (i.e. "frequentist") statistics, we define statistics and point estimators, and discuss various desirable properties of point estimators. For Bayesian statistics, we introduce a new ingredient, the "prior distribution", which is a distribution on the parameter space that you declare, before seeing any data. We compare the two approaches for the simple problem of learning about a coin's probability of heads. Along the way, we discuss conjugate priors, Bayesian point estimators, posterior distributions, and credible sets. Finally, we give the basic setup for Bayesian decision theory, which is how a Bayesian would choose a single action to take, given the posterior distribution on the parameter space.
                     </td>
                     <td colspan="2">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/VCfrGjDPC6k" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/VCfrGjDPC6k" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                     </td>
                 </tr>
                 <tr>
                     <td class="slides">
                         <h1>Slides</h1>
-                        <ul>
-                            <li><a href=https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Lectures/09a.bayesian-methods.pdf>Lecture Slides</a></li>
-                        </ul>
+                        <a href="https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Lectures/09a.bayesian-methods.pdf">Lecture Slides</a>
                     </td>
                     <td class="notes">
                         <h1>Notes</h1>
@@ -785,15 +749,13 @@
                         In our earlier discussion of conditional probability modeling, we started with a hypothesis space of possible prediction functions, from which we selected a single prediction function (e.g. by regularized maximum likelihood). In the Bayesian approach, we additionally start with a prior distribution on this hypothesis space. After observing some training data, we end up with a posterior distribution on the hypothesis space. For making predictions, we can derive a predictive distribution from the posterior distribution. We explore these concepts by working through the case of Bayesian Gaussian linear regression. We also make a precise connection between MAP estimation in this model and ridge regression.
                     </td>
                     <td colspan="2">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/rEqsZVhVQi8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/rEqsZVhVQi8" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                     </td>
                 </tr>
                 <tr>
                     <td class="slides">
                         <h1>Slides</h1>
-                        <ul>
-                            <li><a href=https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Lectures/09b.bayesian-regression.pdf>Lecture Slides</a></li>
-                        </ul>
+                        <a href="https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Lectures/09b.bayesian-regression.pdf">Lecture Slides</a>
                     </td>
                     <td class="notes">
                         <h1>Notes</h1>
@@ -826,15 +788,13 @@
                         We begin our discussion of nonlinear models with tree models. While it's easy enough to define a hypothesis space of decision trees, along with some complexity measure for regularization, such as tree depth or number of leaf nodes, the challenge starts when we try to find the empirical risk minimizer (ERM) over this space for some loss function. It turns out finding the ERM is computationally intractable. We discuss a standard greedy approach to tree building, both for classification and regression, in the case that features take values in any ordered set. We also mention how to categorical variables (in the binary classification case) and missing values.
                     </td>
                     <td colspan="2">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/GZuweldJWrM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/GZuweldJWrM" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                     </td>
                 </tr>
                 <tr>
                     <td class="slides">
                         <h1>Slides</h1>
-                        <ul>
-                            <li><a href=https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Lectures/10a.trees.pdf>Lecture Slides</a></li>
-                        </ul>
+                        <a href="https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Lectures/10a.trees.pdf">Lecture Slides</a>
                     </td>
                     <td class="notes">
                         <h1>Notes</h1>
@@ -863,15 +823,13 @@
                         In this lecture we define bootstrap sampling, and show how how it is typically applied in statistics to do things such as estimate the variance of statistics and make confidence intervals.
                     </td>
                     <td colspan="2">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/lr5WH-JVT5I" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/lr5WH-JVT5I" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                     </td>
                 </tr>
                 <tr>
                     <td class="slides">
                         <h1>Slides</h1>
-                        <ul>
-                            <li><a href=https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Lectures/10b.bootstrap.pdf>Lecture Slides</a></li>
-                        </ul>
+                        <a href="https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Lectures/10b.bootstrap.pdf">Lecture Slides</a>
                     </td>
                     <td class="notes">
                         <h1>Notes</h1>
@@ -899,15 +857,13 @@
                         The motivating idea of bagging is simple: Consider the regression case, and suppose we could create a bunch (say B) prediction functions based on independent training samples of size n. If we average together these prediction functions, the expected value of the average is the same as any one of the functions, but the variance would have decreased by a factor of 1/B -- a clear win! Of course, this would require an overall sample of size nB. The idea of bagging is to replace independent samples with bootstrap samples from a single data set of size n. Of course, the bootstrap samples are not independent draws from the data generating distribution, and so that this even sometimes works is the really the magic of the bootstrap. Although it's hard to find crisp theoretical results describing when bagging helps, conventional wisdom says that it helps most for models that are "high variance", which in this context means that the prediction function may change a lot and when you got a new random sample from the same distribution, and "low bias", which just means fitting the training data well. Trees that have these characteristics are usually the model of choice for bagging. Random forests are just bagged trees with one additional twist: only a random subset of features are considered when splitting a node of a tree. The hope, very roughly speaking, is that by injecting this randomness, the resulting prediction functions are less dependent, and thus we'll get a larger reduction in variance. In practice, random forests are one of the most effect machine learning models in many domains.
                     </td>
                     <td colspan="2">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/f2S4hVs-ESw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/f2S4hVs-ESw" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                     </td>
                 </tr>
                 <tr>
                     <td class="slides">
                         <h1>Slides</h1>
-                        <ul>
-                            <li><a href=https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Lectures/10c.bagging-random-forests.pdf>Lecture Slides</a></li>
-                        </ul>
+                        <a href="https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Lectures/10c.bagging-random-forests.pdf">Lecture Slides</a>
                     </td>
                     <td class="notes">
                         <h1>Notes</h1>
@@ -939,15 +895,13 @@
                         We start by considering the "adaptive basis function model", in which we are trying to learn a linear combination of M basis functions, where the M basis functions are themselves learned (i.e. chosen based on training data) from a base hypothesis space H. In this lecture, we address the question of how to find a good prediction function of this form. If the base hypothesis space H has a nice parameterization (say differentiable, in a certain sense), then we may be able to use standard gradient-based optimization methods. In fact, neural networks may be considered in this category. However, if the base hypothesis space H consists of trees, then no such parameterization exists, and we need to consider some other approach. Gradient boosted regression is one approach to this problem, which works for doing empirical risk minimization whenever the loss function is [sub]differentiable, and we can regression on the base hypothesis space (i.e find a prediction function that approximately minimizes a square loss on some data). By far the most common base hypothesis space are regression trees. It is important to note that even though there is "regression" in the name, we can choose a wide range of loss functions, allowing classification and conditional probability modeling. Gradient boosting with trees (and its specific implementation in the packages XGBoost and LightGBM are, along with neural networks, among the most dominant methods in competitive machine learning (i.e. Kaggle competitions).
                     </td>
                     <td colspan="2">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/fz1H03ZKvLM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/fz1H03ZKvLM" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                     </td>
                 </tr>
                 <tr>
                     <td class="slides">
                         <h1>Slides</h1>
-                        <ul>
-                            <li><a href=https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Lectures/11a.gradient-boosting.pdf>Lecture Slides</a></li>
-                        </ul>
+                        <a href="https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Lectures/11a.gradient-boosting.pdf">Lecture Slides</a>
                     </td>
                     <td class="notes">
                         <h1>Notes</h1>
@@ -982,15 +936,13 @@
                         Here we consider how to generalize the score-producing binary classification methods we've discussed (e.g., SVM and logistic regression) to multiclass settings. We start by discussing 'One-vs-All', a simple reduction of multiclass to binary classification. This usually works just fine in practice, despite the interesting failure case we illustrate. However, One-vs-All doesn't scale to very large number of classes, as we have to train a separate model for each class. This is the real motivation for presenting the "compatibility function" approach described in this lecture. The approach presented here extends to structured prediction problems, where the output space may be exponentially large. We didn't have time to define structured prediction in the lecture, but all the key components are there. Please see the slides and the SSBD book in the references.
                     </td>
                     <td colspan="2">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/WMQwtoMUjDA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/WMQwtoMUjDA" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                     </td>
                 </tr>
                 <tr>
                     <td class="slides">
                         <h1>Slides</h1>
-                        <ul>
-                            <li><a href=https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Lectures/11b.multiclass.pdf>Lecture Slides</a></li>
-                        </ul>
+                        <a href="https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Lectures/11b.multiclass.pdf">Lecture Slides</a>
                     </td>
                     <td class="notes">
                         <h1>Notes</h1>
@@ -1022,15 +974,13 @@
                         Here we start our short unit on unsupervised learning. k-means clustering is presented first as an algorithm and then as an approach to minimizing a particular objective function. One challenge with clustering algorithms is that it's not obvious how to measure success (see Section 22.5 of the Shalev-Shwartz, Ben-David book for a nice discussion). When possible, I prefer to take a probabilistic modeling approach, as discussed in the next two lectures.
                     </td>
                     <td colspan="2">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/J0A_tkIgutw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/J0A_tkIgutw" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                     </td>
                 </tr>
                 <tr>
                     <td class="slides">
                         <h1>Slides</h1>
-                        <ul>
-                            <li><a href=https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Lectures/13a.k-means.pdf>Lecture Slides</a></li>
-                        </ul>
+                        <a href="https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Lectures/13a.k-means.pdf">Lecture Slides</a>
                     </td>
                     <td class="notes">
                         <h1>Notes</h1>
@@ -1058,15 +1008,13 @@
                         A Gaussian mixture model (GMM) is a family of multimodal probability distributions that is a plausible generative model for clustered data. We can fit this model to data with maximum likelihood, and we can assess the quality of fit by evaluating the model likelihood on holdout data. While the "learning" phase of Gaussian mixture modeling is fitting the model to data, in the "inference" phase, we determine for any point drawn from the GMM the probability that it came from each of the k components. To use a GMM for clustering, we simply assign each point to the component that it is most likely to have come from. k-means clustering can be seen as a limiting case of a restricted form of Gaussian mixture modeling.
                     </td>
                     <td colspan="2">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/q0E6YyfdxS4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/q0E6YyfdxS4" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                     </td>
                 </tr>
                 <tr>
                     <td class="slides">
                         <h1>Slides</h1>
-                        <ul>
-                            <li><a href=https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Lectures/13b.mixture-models.pdf>Lecture Slides</a></li>
-                        </ul>
+                        <a href="https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Lectures/13b.mixture-models.pdf">Lecture Slides</a>
                     </td>
                     <td class="notes">
                         <h1>Notes</h1>
@@ -1094,15 +1042,13 @@
                         It turns out, fitting a Gaussian mixture model by maximum likelihood is easier said then done: there is no closed from solution, and our usual gradient methods do not work well. The standard approach to maximum likelihood estimation in a Gaussian mixture model is the expectation maximization algorithm. In this lecture, we present the EM algorithm in the general setting of latent variable models, of which GMM is a special case. We present the EM algorithm as a very basic "variational method" and indicate a few generalizations.
                     </td>
                     <td colspan="2">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/lMShR1vjbUo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/lMShR1vjbUo" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                     </td>
                 </tr>
                 <tr>
                     <td class="slides">
                         <h1>Slides</h1>
-                        <ul>
-                            <li><a href=https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Lectures/13c.EM-algorithm.pdf>Lecture Slides</a></li>
-                        </ul>
+                        <a href="https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Lectures/13c.EM-algorithm.pdf">Lecture Slides</a>
                     </td>
                     <td class="notes">
                         <h1>Notes</h1>
@@ -1130,15 +1076,13 @@
                         In the context of this course, we view neural networks as "just" another nonlinear hypothesis space. On the practical side, unlike trees and tree-based ensembles (our other major nonlinear hypothesis spaces), neural networks can be fit using gradient-based optimization methods. On the theoretical side, a large enough neural network can approximate any continuous function. We discuss the specific case of the multilayer perceptron for multiclass classification, which we view as a generalization of multinomial logistic regression from linear to nonlinear score functions.
                     </td>
                     <td colspan="2">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/Wr11D5sObzc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/Wr11D5sObzc" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                     </td>
                 </tr>
                 <tr>
                     <td class="slides">
                         <h1>Slides</h1>
-                        <ul>
-                            <li><a href=https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Lectures/14a.neural-networks.pdf>Lecture Slides</a></li>
-                        </ul>
+                        <a href="https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Lectures/14a.neural-networks.pdf">Lecture Slides</a>
                     </td>
                     <td class="notes">
                         <h1>Notes</h1>
@@ -1163,15 +1107,13 @@
                         Neural network optimization is amenable to gradient-based methods, but if the actual computation of the gradient is done naively, the computational cost can be prohibitive. Backpropagation is the standard algorithm for computing the gradient efficiently. We present the backpropagation algorithm for a general computation graph. The algorithm we present applies, without change, to models with "parameter tying", which include convolutional networks and recurrent neural networks (RNN's), the workhorses of computer vision and natural language processing. We illustrate backpropagation with one of the simplest models with parameter tying: regularized linear regression. Backpropagation for the multilayer perceptron, the standard introductory example, is presented as a homework problem.
                     </td>
                     <td colspan="2">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/RtzDjbZ1QbA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/RtzDjbZ1QbA" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                     </td>
                 </tr>
                 <tr>
                     <td class="slides">
                         <h1>Slides</h1>
-                        <ul>
-                            <li><a href=https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Lectures/14b.backpropagation.pdf>Lecture Slides</a></li>
-                        </ul>
+                        <a href="https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Lectures/14b.backpropagation.pdf">Lecture Slides</a>
                     </td>
                     <td class="notes">
                         <h1>Notes</h1>
@@ -1199,15 +1141,13 @@
                         We point the direction to many other topics in machine learning that should be accessible to students of this course, but that did not have time to cover.
                     </td>
                     <td colspan="2">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/tiXdqe1zGJ4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/tiXdqe1zGJ4" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                     </td>
                 </tr>
                 <tr>
                     <td class="slides">
                         <h1>Slides</h1>
-                        <ul>
-                            <li><a href=https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Lectures/14c.next-steps.pdf>Lecture Slides</a></li>
-                        </ul>
+                        <a href="https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Lectures/14c.next-steps.pdf">Lecture Slides</a>
                     </td>
                     <td class="notes">
                         <h1>Notes</h1>
@@ -1320,44 +1260,37 @@
 
         <section id="textbooks">
             <h1>Textbooks</h1>
-<br>
+
             <a href="http://shop.oreilly.com/product/0636920052289.do"><img src="images/geron-original.jpg" alt="The cover of Hands-On Machine Learning with Scikit-Learn and TensorFlow"></a>
 
             <a href="https://web.stanford.edu/~hastie/ElemStatLearn/"><img src="images/hastie-1x.png" srcset="images/hastie-1x.png 1x, images/hastie-2x.jpg 2x, images/hastie-3x.jpg 3x" alt="The cover of Elements of Statistical Learning"></a>
 
             <a href="http://www-bcf.usc.edu/~gareth/ISL/"><img src="images/james-1x.jpg" srcset="images/james-1x.jpg 1x, images/james-2x.jpg 2x, images/james-3x.jpg 3x" alt="The cover of An Introduction to Statistical Learning"></a>
 
-            <a href="http://www.cs.huji.ac.il/~shais/UnderstandingMachineLearning/"><img src="images/shalev-shwartz-original.jpg" alt="The cover of Understanding Machine Learning: From Theory to Algorithms"></a>
+            <a href="http://www.cs.huji.ac.il/~shais/UnderstandingMachineLearning/"><img src="images/shalev-shwartz-1x.jpg" srcset="images/shalev-shwartz-1x.jpg 1x, images/shalev-shwartz-2x.jpg 2x, images/shalev-shwartz-3x.jpg 3x" alt="The cover of Understanding Machine Learning: From Theory to Algorithms"></a>
 
             <a href="https://research.microsoft.com/en-us/um/people/cmbishop/PRML/"><img src="images/bishop-1x.jpg" srcset="images/bishop-1x.jpg 1x, images/bishop-2x.jpg 2x, images/bishop-3x.jpg 3x" alt="The cover of Pattern Recognition and Machine Learning"></a>
 
             <a href="http://www.data-science-for-biz.com/DSB/Home.html/"><img src="images/provost-fawcett-original.jpg" alt="The cover of Data Science for Business"></a>
 
             <dl>
-                <dt><a href="http://shop.oreilly.com/product/0636920052289.do"><cite>Hands-On Machine Learning with Scikit-Learn and TensorFlow</cite> (Aurélien Géron)</a>
-                    <dd>This is a practical guide to machine learning that corresponds fairly well with the content and level of our course.  While most of our homework is about coding ML from scratch with numpy, this book makes heavy use of scikit-learn and TensorFlow. We'll use the first two chapters of this book in the first two weeks of the course, when we cover "black-box machine learning."  It'll also be a handy reference for your projects and beyond this course, when you'll want to make use of existing ML packages, rather than rolling your own.</dd>
-                </dt>
+                <dt><a href="http://shop.oreilly.com/product/0636920052289.do"><cite>Hands-On Machine Learning with Scikit-Learn and TensorFlow</cite> (Aurélien Géron)</a></dt>
+                <dd>This is a practical guide to machine learning that corresponds fairly well with the content and level of our course.  While most of our homework is about coding ML from scratch with numpy, this book makes heavy use of scikit-learn and TensorFlow. We'll use the first two chapters of this book in the first two weeks of the course, when we cover "black-box machine learning."  It'll also be a handy reference for your projects and beyond this course, when you'll want to make use of existing ML packages, rather than rolling your own.</dd>
 
-                <dt><a href="https://web.stanford.edu/~hastie/ElemStatLearn/"><cite>The
-                    Elements of Statistical Learning</cite> (Hastie, Friedman, and Tibshirani)</a>
-                    <dd>This will be our main textbook for L1 and L2 regularization, trees, bagging, random forests, and boosting.  It's written by three statisticians who invented many of the techniques discussed. There's an easier version of this book that covers many of the same topics, described below. (Available for free as a PDF.)</dd>
-                </dt>
+                <dt><a href="https://web.stanford.edu/~hastie/ElemStatLearn/"><cite>The Elements of Statistical Learning</cite> (Hastie, Friedman, and Tibshirani)</a></dt>
+                <dd>This will be our main textbook for L1 and L2 regularization, trees, bagging, random forests, and boosting.  It's written by three statisticians who invented many of the techniques discussed. There's an easier version of this book that covers many of the same topics, described below. (Available for free as a PDF.)</dd>
 
-                <dt><a href="http://www-bcf.usc.edu/~gareth/ISL/"><cite>An Introduction to Statistical Learning</cite> (James, Witten, Hastie, and Tibshirani)</a>
-                    <dd>This book is written by two of the same authors as The Elements of Statistical Learning. It's much less intense mathematically, and it's good for a lighter introduction to the topics. Uses R as the language of instruction.  (Available for free as a PDF.)</dd>
-                </dt>
+                <dt><a href="http://www-bcf.usc.edu/~gareth/ISL/"><cite>An Introduction to Statistical Learning</cite> (James, Witten, Hastie, and Tibshirani)</a></dt>
+                <dd>This book is written by two of the same authors as The Elements of Statistical Learning. It's much less intense mathematically, and it's good for a lighter introduction to the topics. Uses R as the language of instruction.  (Available for free as a PDF.)</dd>
 
-    	          <dt><a href="http://www.cs.huji.ac.il/~shais/UnderstandingMachineLearning/"><cite>Understanding Machine Learning: From Theory to Algorithms</cite> (Shalev-Shwartz and Ben-David)</a>
-    	              <dd>This is our primary reference for kernel methods and multiclass classification, and possibly more towards the end of the course.  Covers a lot of theory that we don't go into, but it would be a good supplemental resource for a more theoretical course, such as Mohri's <a href="http://www.cs.nyu.edu/~mohri/ml16/">Foundations of Machine Learning</a> course. (Available for free as a PDF.)</dd>
-                </dt>
+                <dt><a href="http://www.cs.huji.ac.il/~shais/UnderstandingMachineLearning/"><cite>Understanding Machine Learning: From Theory to Algorithms</cite> (Shalev-Shwartz and Ben-David)</a></dt>
+                <dd>This is our primary reference for kernel methods and multiclass classification, and possibly more towards the end of the course.  Covers a lot of theory that we don't go into, but it would be a good supplemental resource for a more theoretical course, such as Mohri's <a href="http://www.cs.nyu.edu/~mohri/ml16/">Foundations of Machine Learning</a> course. (Available for free as a PDF.)</dd>
 
-                <dt><a href="https://research.microsoft.com/en-us/um/people/cmbishop/PRML/"><cite>Pattern Recognition and Machine Learning</cite> (Christopher Bishop)</a>
-    	              <dd>Our primary reference for probabilistic methods, including bayesian regression, latent variable models, and the EM algorithm.  It's highly recommended, but unfortunately not free online.</dd>
-                </dt>
+                <dt><a href="https://research.microsoft.com/en-us/um/people/cmbishop/PRML/"><cite>Pattern Recognition and Machine Learning</cite> (Christopher Bishop)</a></dt>
+                <dd>Our primary reference for probabilistic methods, including bayesian regression, latent variable models, and the EM algorithm.  It's highly recommended, but unfortunately not free online.</dd>
 
-    	          <dt><a href="http://www.data-science-for-biz.com/DSB/Home.html"><cite>Data Science for Business</cite> (Provost and Fawcett)</a>
-    	              <dd>Ideally, this would be everybody's first book on machine learning.  The intended audience is both the ML practitioner and the ML product manager.  It's full of important core concepts and practical wisdom.  The math is so minimal that it's perfect for reading on your phone, and I encourage you to read it in parallel to doing this class.  Have your managers read it too.</dd>
-                </dt>
+                <dt><a href="http://www.data-science-for-biz.com/DSB/Home.html"><cite>Data Science for Business</cite> (Provost and Fawcett)</a></dt>
+                <dd>Ideally, this would be everybody's first book on machine learning.  The intended audience is both the ML practitioner and the ML product manager.  It's full of important core concepts and practical wisdom.  The math is so minimal that it's perfect for reading on your phone, and I encourage you to read it in parallel to doing this class.  Have your managers read it too.</dd>
             </dl>
         </section>
 
@@ -1366,7 +1299,7 @@
 
             <ul>
                 <li><a href="http://www.cims.nyu.edu/~cfgranda/pages/DSGA1002_fall15/notes.html">Carlos Fernandez-Granda's lecture notes</a> provide a comprehensive review of the prerequisite material in linear algebra, probability, statistics, and optimization.</li>
-    	          <li><a href="http://nbviewer.ipython.org/github/briandalessandro/DataScienceCourse/tree/master/ipython/">Brian Dalessandro's iPython notebooks</a> from <a href="https://github.com/briandalessandro/DataScienceCourse/blob/master/ipython/references/Syllabus_2017.pdf"><strong>DS-GA-1001: Intro to Data Science</strong></a></li>
+                <li><a href="http://nbviewer.ipython.org/github/briandalessandro/DataScienceCourse/tree/master/ipython/">Brian Dalessandro's iPython notebooks</a> from <a href="https://github.com/briandalessandro/DataScienceCourse/blob/master/ipython/references/Syllabus_2017.pdf"><strong>DS-GA-1001: Intro to Data Science</strong></a></li>
                 <li><a href="http://www2.imm.dtu.dk/pubdb/views/publication_details.php?id=3274">The Matrix Cookbook</a> has lots of facts and identities about matrices and certain probability distributions.</li>
                 <li><a href="http://cs229.stanford.edu/section/cs229-prob.pdf">Stanford CS229: "Review of Probability Theory"</a></li>
                 <li><a href="http://cs229.stanford.edu/section/cs229-linalg.pdf">Stanford CS229: "Linear Algebra Review and Reference"</a></li>
@@ -1385,7 +1318,7 @@
             <h1>Instructor</h1>
 
             <div class="person module instructor">
-                <img src="images/people/david.jpg" alt="A photo of David Rosenberg">
+                <img src="images/people/david-1x.jpg" srcset="images/people/david-1x.jpg 1x, images/people/david-2x.jpg 2x, images/people/david-3x.jpg 3x" alt="A photo of David Rosenberg">
                 <div class="info">
                     <p class="name"><a href="http://www.linkedin.com/pub/david-rosenberg/4/241/598">David Rosenberg</a></p>
                     <p class="email"><a href="mailto:drosenberg44@bloomberg.net">Email</a></p>
@@ -1394,16 +1327,19 @@
             </div>
         </section>
 
-       <!--  <section class="multiple-people">
+<!--
+        <section class="multiple-people">
             <h1>Teaching Assistants</h1>
 
             <ul>
 
             </ul>
         </section>
+-->
     </section>
- -->
-
     <script async defer src="scripts/navigation.js"></script>
 </body>
+<footer>
+    <p>This website is developed <a href="https://github.com/bloomberg/foml/">on GitHub</a>.  Feel free to <a href="https://github.com/bloomberg/foml/issues">report issues or make suggestions</a>.</p>
+</footer>
 </html>
