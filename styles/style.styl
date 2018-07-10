@@ -83,6 +83,9 @@ body
 
   background-color: bg-gray
 
+iframe
+  border: none
+
 a
   text-decoration: none
   color: accent
@@ -218,7 +221,7 @@ body > section
 
     {font-large}
 
-  > section:not(:last-of-type)
+  > section:not(:last-of-type), > .module > section:not(:last-of-type)
     margin-bottom: 30px
 
   > section > h1
@@ -249,6 +252,13 @@ body > section
     .department
       {font-small}
       vertical-align: middle
+
+#course-pitch
+  {font-large}
+  text-transform: uppercase
+  margin-bottom: 40px
+  line-height: normal
+  margin-top: 70px
 
 #course-info
   margin: 10px auto
@@ -324,6 +334,8 @@ body > section
     &.label
       padding-right: 20px
 
+    &:not(.label)
+      line-height: normal // especially important because of the mix of lists and non-lists
     &.slides
       width: 25%
     &.notes

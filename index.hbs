@@ -8,31 +8,29 @@
     <link rel="stylesheet" media="only screen and (max-width: 770px)" href="styles/tablet-and-phone.css">
     <link rel="stylesheet" media="only screen and (max-width: 420px)" href="styles/phone.css">
     <link rel="icon" href="favicon.ico" type="image/vnd.microsoft.icon">
-    <link rel="canonical" href="https://https://bloomberg.github.io/foml/">
+    <link rel="canonical" href="https://bloomberg.github.io/foml/">
   </head>
   <body>
     <nav>
         <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#lectures">Lectures</a>
-            <a href="#assignments">Assignments</a>
-            <a href="#resources">Resources</a>
-            <a href="#people">People</a>
-        </a>
+        <a href="#about">About</a>
+        <a href="#lectures">Lectures</a>
+        <a href="#assignments">Assignments</a>
+        <a href="#resources">Resources</a>
+        <a href="#people">People</a>
     </nav>
 
     <section id="home">
-        <a href="https://www.techatbloomberg.com/post-topic/data-science/"><img src="images/mlbanner.jpg" srcset="images/mlbanner.jpg 1x"></a>
-        <h1 align="center">Bloomberg's Foundations of Machine Learning</h1>
+        <a href="https://www.techatbloomberg.com/post-topic/data-science/"><img src="images/mlbanner.jpg" alt="Bloomberg ML EDU presents:"></a>
+        <h1>Bloomberg's Foundations of Machine Learning</h1>
         <table id="course-info">
             <tr>
                 <th>Instructor</th>
-                <td>David Rosenberg </td>
+                <td>David Rosenberg</td>
             </tr>
         </table>
-    </section>
-    <section id="course-pitch">
-    <h1 align="center"><strong>Get a deep understanding of the concepts, techniques and mathematical frameworks used by experts in machine learning</strong></h1>
+
+        <p id="course-pitch"><strong>Get a deep understanding of the concepts, techniques and mathematical frameworks used by experts in machine learning</strong></p>
     </section>
     <section id="about">
         <h1>About This Course</h1>
@@ -52,34 +50,36 @@
 
             <section>
                 <h1>Highlights and Distinctive Features of the Course Lectures, Notes, and Assignments</h1>
-<p>
-                    <ul>
-                        <li>Geometric explanation for what happens with ridge, lasso, and elastic net regression in the case of correlated random variables.</li>
-                        <li>Investigation of when the penalty (Tikhonov) and constraint (Ivanov) forms of regularization are equivalent.</li>
-                        <li>Concise summary of what we really learn about SVMs from Lagrangian duality.</li>
-                        <li>Proof of representer theorem with simple linear algebra, emphasizing it as a way to reparametrize certain objective functions.</li>
-                        <li>Guided derivation of the math behind the classic diamond/circle/ellipsoids picture that "explains" why L1 regularization gives sparsity (Homework 2, Problem 5)</li>
-                        <li>From scrach (in numpy) implementation of almost all major ML algorithms we discuss: ridge regression with SGD and GD (Homework 1, Problems 2.5, 2.6 page 4), lasso regression with the shooting algorithm (Homework 2, Problem 3, page 4), kernel ridge regression (Homework 4, Problem 3, page 2), kernelized SVM with Kernelized Pegasos (Homework 4, 6.4, page 9), L2-regularized logistic regression (Homework 5, Problem 3.3, page 4),Bayesian Linear Regession (Homework 5, problem 5, page 6), multiclass SVM (Homework 6, Problem 4.2, p. 3), classification and regression trees (without pruning)  (Homework 6, Problem 6), gradient boosting with trees for classification and regression (Homework 6, Problem 8), multilayer perceptron for regression (Homework 7, Problem 4, page 3)</li>
-                        <li>Implementation of the Shooting algorithm (coordinate descent) for Lasso and Pegasos for SVM and kernelized SVM.</li>
-                        <li>Repeated use of a simple 1-dimensional regression dataset, so it's easy to visualize the effect of various hypothesis spaces and regularizations that we investigate throughout the course.</li>
-                        <li>Investigation of how to derive a conditional probability estimate from a predicted score for various loss functions, and why it's not so straightforward for the hinge loss (i.e. the SVM) (Homework 5, Problem 2, page 1)</li>
-                        <li>Discussion of numerical overflow issues and the log-sum-exp trick (Homework 5, Problem 3.2)</li>
-                        <li>Self-contained introduction to the expectation maximization (EM) algorithm for latent variable models.</li>
-                        <li>Develop a general computation graph framework from scratch, using numpy, and implement your neural networks in it.</li>
-                        <li><em>Recommended:</em> At least one advanced, proof-based mathematics course</li>
-                        <li><em>Recommended:</em> Computer science background up to a "data structures and algorithms" course</li>
-                    </ul>
+
+                <ul>
+                    <li>Geometric explanation for what happens with ridge, lasso, and elastic net regression in the case of correlated random variables.</li>
+                    <li>Investigation of when the penalty (Tikhonov) and constraint (Ivanov) forms of regularization are equivalent.</li>
+                    <li>Concise summary of what we really learn about SVMs from Lagrangian duality.</li>
+                    <li>Proof of representer theorem with simple linear algebra, emphasizing it as a way to reparametrize certain objective functions.</li>
+                    <li>Guided derivation of the math behind the classic diamond/circle/ellipsoids picture that "explains" why L1 regularization gives sparsity (Homework 2, Problem 5)</li>
+                    <li>From scrach (in numpy) implementation of almost all major ML algorithms we discuss: ridge regression with SGD and GD (Homework 1, Problems 2.5, 2.6 page 4), lasso regression with the shooting algorithm (Homework 2, Problem 3, page 4), kernel ridge regression (Homework 4, Problem 3, page 2), kernelized SVM with Kernelized Pegasos (Homework 4, 6.4, page 9), L2-regularized logistic regression (Homework 5, Problem 3.3, page 4),Bayesian Linear Regession (Homework 5, problem 5, page 6), multiclass SVM (Homework 6, Problem 4.2, p. 3), classification and regression trees (without pruning)  (Homework 6, Problem 6), gradient boosting with trees for classification and regression (Homework 6, Problem 8), multilayer perceptron for regression (Homework 7, Problem 4, page 3)</li>
+                    <li>Implementation of the Shooting algorithm (coordinate descent) for Lasso and Pegasos for SVM and kernelized SVM.</li>
+                    <li>Repeated use of a simple 1-dimensional regression dataset, so it's easy to visualize the effect of various hypothesis spaces and regularizations that we investigate throughout the course.</li>
+                    <li>Investigation of how to derive a conditional probability estimate from a predicted score for various loss functions, and why it's not so straightforward for the hinge loss (i.e. the SVM) (Homework 5, Problem 2, page 1)</li>
+                    <li>Discussion of numerical overflow issues and the log-sum-exp trick (Homework 5, Problem 3.2)</li>
+                    <li>Self-contained introduction to the expectation maximization (EM) algorithm for latent variable models.</li>
+                    <li>Develop a general computation graph framework from scratch, using numpy, and implement your neural networks in it.</li>
+                    <li><em>Recommended:</em> At least one advanced, proof-based mathematics course</li>
+                    <li><em>Recommended:</em> Computer science background up to a "data structures and algorithms" course</li>
+                </ul>
             </section>
-<p>
+
             <section>
                 <h1>Course Prerequisites</h1>
-                <p>The quickest way to see if the mathematics level of the course is for you is to take a look at this <a href="https://davidrosenberg.github.io/mlcourse/Notes/prereq-questions/math-questions.pdf">mathematics assessment</a>, which is a preview of some of the math concepts that show up in the first part of the course.
-                    <ul>
-                        <li><strong>Solid mathematical background</strong>, equivalent to a 1-semester undergraduate course in each of the following: linear algebra, multivariate differential calculus, probability theory, and statistics. The content of NYU's <a href="http://www.cims.nyu.edu/~cfgranda/pages/DSGA1002_fall15/index.html"><strong>DS-GA-1002: Statistical and Mathematical Methods</strong></a> would be more than sufficient, for example.</li>
-                        <li><strong>Python programming required</strong> for most homework assignments.</li>
-                        <li><em>Recommended:</em> At least one advanced, proof-based mathematics course</li>
-                        <li><em>Recommended:</em> Computer science background up to a "data structures and algorithms" course</li>
-                    </ul>
+
+                <p>The quickest way to see if the mathematics level of the course is for you is to take a look at this <a href="https://davidrosenberg.github.io/mlcourse/Notes/prereq-questions/math-questions.pdf">mathematics assessment</a>, which is a preview of some of the math concepts that show up in the first part of the course.</p>
+
+                <ul>
+                    <li><strong>Solid mathematical background</strong>, equivalent to a 1-semester undergraduate course in each of the following: linear algebra, multivariate differential calculus, probability theory, and statistics. The content of NYU's <a href="http://www.cims.nyu.edu/~cfgranda/pages/DSGA1002_fall15/index.html"><strong>DS-GA-1002: Statistical and Mathematical Methods</strong></a> would be more than sufficient, for example.</li>
+                    <li><strong>Python programming required</strong> for most homework assignments.</li>
+                    <li><em>Recommended:</em> At least one advanced, proof-based mathematics course</li>
+                    <li><em>Recommended:</em> Computer science background up to a "data structures and algorithms" course</li>
+                </ul>
             </section>
         </div>
     </section>
@@ -88,9 +88,9 @@
         <h1>Lectures</h1>
 
         <ul class="abbreviations">
-            <li> (HTF) refers to Hastie, Tibshirani, and Friedman's book <a href="https://web.stanford.edu/~hastie/ElemStatLearn/"><cite>The Elements of Statistical Learning</cite></a></li>
-            <li> (SSBD) refers to Shalev-Shwartz and Ben-David's book <a href="http://www.cs.huji.ac.il/~shais/UnderstandingMachineLearning/"><cite>Understanding Machine Learning: From Theory to Algorithms</cite></a></li>
-            <li> (JWHT) refers to James, Witten, Hastie, and Tibshirani's book <a href="http://www-bcf.usc.edu/~gareth/ISL"><cite>An Introduction to Statistical Learning</cite></a></li>
+            <li>(HTF) refers to Hastie, Tibshirani, and Friedman's book <a href="https://web.stanford.edu/~hastie/ElemStatLearn/"><cite>The Elements of Statistical Learning</cite></a></li>
+            <li>(SSBD) refers to Shalev-Shwartz and Ben-David's book <a href="http://www.cs.huji.ac.il/~shais/UnderstandingMachineLearning/"><cite>Understanding Machine Learning: From Theory to Algorithms</cite></a></li>
+            <li>(JWHT) refers to James, Witten, Hastie, and Tibshirani's book <a href="http://www-bcf.usc.edu/~gareth/ISL"><cite>An Introduction to Statistical Learning</cite></a></li>
         </ul>
 
         {{> lectures-new lecturesNew }}
@@ -107,44 +107,37 @@
 
         <section id="textbooks">
             <h1>Textbooks</h1>
-<br>
+
             <a href="http://shop.oreilly.com/product/0636920052289.do"><img src="images/geron-original.jpg" alt="The cover of Hands-On Machine Learning with Scikit-Learn and TensorFlow"></a>
 
             <a href="https://web.stanford.edu/~hastie/ElemStatLearn/"><img src="images/hastie-1x.png" srcset="images/hastie-1x.png 1x, images/hastie-2x.jpg 2x, images/hastie-3x.jpg 3x" alt="The cover of Elements of Statistical Learning"></a>
 
             <a href="http://www-bcf.usc.edu/~gareth/ISL/"><img src="images/james-1x.jpg" srcset="images/james-1x.jpg 1x, images/james-2x.jpg 2x, images/james-3x.jpg 3x" alt="The cover of An Introduction to Statistical Learning"></a>
 
-            <a href="http://www.cs.huji.ac.il/~shais/UnderstandingMachineLearning/"><img src="images/shalev-shwartz-original.jpg" alt="The cover of Understanding Machine Learning: From Theory to Algorithms"></a>
+            <a href="http://www.cs.huji.ac.il/~shais/UnderstandingMachineLearning/"><img src="images/shalev-shwartz-1x.jpg" srcset="images/shalev-shwartz-1x.jpg 1x, images/shalev-shwartz-2x.jpg 2x, images/shalev-shwartz-3x.jpg 3x" alt="The cover of Understanding Machine Learning: From Theory to Algorithms"></a>
 
             <a href="https://research.microsoft.com/en-us/um/people/cmbishop/PRML/"><img src="images/bishop-1x.jpg" srcset="images/bishop-1x.jpg 1x, images/bishop-2x.jpg 2x, images/bishop-3x.jpg 3x" alt="The cover of Pattern Recognition and Machine Learning"></a>
 
             <a href="http://www.data-science-for-biz.com/DSB/Home.html/"><img src="images/provost-fawcett-original.jpg" alt="The cover of Data Science for Business"></a>
 
             <dl>
-                <dt><a href="http://shop.oreilly.com/product/0636920052289.do"><cite>Hands-On Machine Learning with Scikit-Learn and TensorFlow</cite> (Aurélien Géron)</a>
-                    <dd>This is a practical guide to machine learning that corresponds fairly well with the content and level of our course.  While most of our homework is about coding ML from scratch with numpy, this book makes heavy use of scikit-learn and TensorFlow. We'll use the first two chapters of this book in the first two weeks of the course, when we cover "black-box machine learning."  It'll also be a handy reference for your projects and beyond this course, when you'll want to make use of existing ML packages, rather than rolling your own.</dd>
-                </dt>
+                <dt><a href="http://shop.oreilly.com/product/0636920052289.do"><cite>Hands-On Machine Learning with Scikit-Learn and TensorFlow</cite> (Aurélien Géron)</a></dt>
+                <dd>This is a practical guide to machine learning that corresponds fairly well with the content and level of our course.  While most of our homework is about coding ML from scratch with numpy, this book makes heavy use of scikit-learn and TensorFlow. We'll use the first two chapters of this book in the first two weeks of the course, when we cover "black-box machine learning."  It'll also be a handy reference for your projects and beyond this course, when you'll want to make use of existing ML packages, rather than rolling your own.</dd>
 
-                <dt><a href="https://web.stanford.edu/~hastie/ElemStatLearn/"><cite>The
-                    Elements of Statistical Learning</cite> (Hastie, Friedman, and Tibshirani)</a>
-                    <dd>This will be our main textbook for L1 and L2 regularization, trees, bagging, random forests, and boosting.  It's written by three statisticians who invented many of the techniques discussed. There's an easier version of this book that covers many of the same topics, described below. (Available for free as a PDF.)</dd>
-                </dt>
+                <dt><a href="https://web.stanford.edu/~hastie/ElemStatLearn/"><cite>The Elements of Statistical Learning</cite> (Hastie, Friedman, and Tibshirani)</a></dt>
+                <dd>This will be our main textbook for L1 and L2 regularization, trees, bagging, random forests, and boosting.  It's written by three statisticians who invented many of the techniques discussed. There's an easier version of this book that covers many of the same topics, described below. (Available for free as a PDF.)</dd>
 
-                <dt><a href="http://www-bcf.usc.edu/~gareth/ISL/"><cite>An Introduction to Statistical Learning</cite> (James, Witten, Hastie, and Tibshirani)</a>
-                    <dd>This book is written by two of the same authors as The Elements of Statistical Learning. It's much less intense mathematically, and it's good for a lighter introduction to the topics. Uses R as the language of instruction.  (Available for free as a PDF.)</dd>
-                </dt>
+                <dt><a href="http://www-bcf.usc.edu/~gareth/ISL/"><cite>An Introduction to Statistical Learning</cite> (James, Witten, Hastie, and Tibshirani)</a></dt>
+                <dd>This book is written by two of the same authors as The Elements of Statistical Learning. It's much less intense mathematically, and it's good for a lighter introduction to the topics. Uses R as the language of instruction.  (Available for free as a PDF.)</dd>
 
-    	          <dt><a href="http://www.cs.huji.ac.il/~shais/UnderstandingMachineLearning/"><cite>Understanding Machine Learning: From Theory to Algorithms</cite> (Shalev-Shwartz and Ben-David)</a>
-    	              <dd>This is our primary reference for kernel methods and multiclass classification, and possibly more towards the end of the course.  Covers a lot of theory that we don't go into, but it would be a good supplemental resource for a more theoretical course, such as Mohri's <a href="http://www.cs.nyu.edu/~mohri/ml16/">Foundations of Machine Learning</a> course. (Available for free as a PDF.)</dd>
-                </dt>
+                <dt><a href="http://www.cs.huji.ac.il/~shais/UnderstandingMachineLearning/"><cite>Understanding Machine Learning: From Theory to Algorithms</cite> (Shalev-Shwartz and Ben-David)</a></dt>
+                <dd>This is our primary reference for kernel methods and multiclass classification, and possibly more towards the end of the course.  Covers a lot of theory that we don't go into, but it would be a good supplemental resource for a more theoretical course, such as Mohri's <a href="http://www.cs.nyu.edu/~mohri/ml16/">Foundations of Machine Learning</a> course. (Available for free as a PDF.)</dd>
 
-                <dt><a href="https://research.microsoft.com/en-us/um/people/cmbishop/PRML/"><cite>Pattern Recognition and Machine Learning</cite> (Christopher Bishop)</a>
-    	              <dd>Our primary reference for probabilistic methods, including bayesian regression, latent variable models, and the EM algorithm.  It's highly recommended, but unfortunately not free online.</dd>
-                </dt>
+                <dt><a href="https://research.microsoft.com/en-us/um/people/cmbishop/PRML/"><cite>Pattern Recognition and Machine Learning</cite> (Christopher Bishop)</a></dt>
+                <dd>Our primary reference for probabilistic methods, including bayesian regression, latent variable models, and the EM algorithm.  It's highly recommended, but unfortunately not free online.</dd>
 
-    	          <dt><a href="http://www.data-science-for-biz.com/DSB/Home.html"><cite>Data Science for Business</cite> (Provost and Fawcett)</a>
-    	              <dd>Ideally, this would be everybody's first book on machine learning.  The intended audience is both the ML practitioner and the ML product manager.  It's full of important core concepts and practical wisdom.  The math is so minimal that it's perfect for reading on your phone, and I encourage you to read it in parallel to doing this class.  Have your managers read it too.</dd>
-                </dt>
+                <dt><a href="http://www.data-science-for-biz.com/DSB/Home.html"><cite>Data Science for Business</cite> (Provost and Fawcett)</a></dt>
+                <dd>Ideally, this would be everybody's first book on machine learning.  The intended audience is both the ML practitioner and the ML product manager.  It's full of important core concepts and practical wisdom.  The math is so minimal that it's perfect for reading on your phone, and I encourage you to read it in parallel to doing this class.  Have your managers read it too.</dd>
             </dl>
         </section>
 
@@ -153,7 +146,7 @@
 
             <ul>
                 <li><a href="http://www.cims.nyu.edu/~cfgranda/pages/DSGA1002_fall15/notes.html">Carlos Fernandez-Granda's lecture notes</a> provide a comprehensive review of the prerequisite material in linear algebra, probability, statistics, and optimization.</li>
-    	          <li><a href="http://nbviewer.ipython.org/github/briandalessandro/DataScienceCourse/tree/master/ipython/">Brian Dalessandro's iPython notebooks</a> from <a href="https://github.com/briandalessandro/DataScienceCourse/blob/master/ipython/references/Syllabus_2017.pdf"><strong>DS-GA-1001: Intro to Data Science</strong></a></li>
+                <li><a href="http://nbviewer.ipython.org/github/briandalessandro/DataScienceCourse/tree/master/ipython/">Brian Dalessandro's iPython notebooks</a> from <a href="https://github.com/briandalessandro/DataScienceCourse/blob/master/ipython/references/Syllabus_2017.pdf"><strong>DS-GA-1001: Intro to Data Science</strong></a></li>
                 <li><a href="http://www2.imm.dtu.dk/pubdb/views/publication_details.php?id=3274">The Matrix Cookbook</a> has lots of facts and identities about matrices and certain probability distributions.</li>
                 <li><a href="http://cs229.stanford.edu/section/cs229-prob.pdf">Stanford CS229: "Review of Probability Theory"</a></li>
                 <li><a href="http://cs229.stanford.edu/section/cs229-linalg.pdf">Stanford CS229: "Linear Algebra Review and Reference"</a></li>
@@ -172,7 +165,7 @@
             <h1>Instructor</h1>
 
             <div class="person module instructor">
-                <img src="images/people/david.jpg" alt="A photo of David Rosenberg">
+                <img src="images/people/david-1x.jpg" srcset="images/people/david-1x.jpg 1x, images/people/david-2x.jpg 2x, images/people/david-3x.jpg 3x" alt="A photo of David Rosenberg">
                 <div class="info">
                     <p class="name"><a href="http://www.linkedin.com/pub/david-rosenberg/4/241/598">David Rosenberg</a></p>
                     <p class="email"><a href="mailto:drosenberg44@bloomberg.net">Email</a></p>
@@ -181,16 +174,16 @@
             </div>
         </section>
 
-       <!--  <section class="multiple-people">
+<!--
+        <section class="multiple-people">
             <h1>Teaching Assistants</h1>
 
             <ul>
 
             </ul>
         </section>
+-->
     </section>
- -->
-
     <script async defer src="scripts/navigation.js"></script>
 </body>
 <footer>
