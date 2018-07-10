@@ -322,12 +322,18 @@ body > section
   th, td
     vertical-align: top
 
-  .label
-    width: 20%
-  .references
-    width: 25%
-  .slides
-    width: 20%
+  td
+    &.label
+      padding-right: 20px
+
+    &.slides
+      width: 25%
+    &.notes
+      width: 25%
+    &.concept-checks
+      width: 25%
+    &.references
+      width: 25%
 
   ul
     list-style-type: none
@@ -357,9 +363,6 @@ body > section
       margin-left: 5px
       vertical-align: top
       {icon-video}
-
-  .references
-    padding-right: 60px
 
   // .icon
   //   &.references, &.slides
@@ -502,6 +505,3 @@ section.module tr:first-child td:first-child
 
 section.module table
     width: 1000px
-
-iframe
-    padding-left: 20px
