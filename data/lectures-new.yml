@@ -207,6 +207,7 @@ We explain why lasso solutions may be very unstable in the case of highly correl
   References:
     - "JWHT 8.1"
     - "HTF 9.2"
+    - {"CART book by Breiman et al.": "http://a.co/bNi2hH5"}
 -
   Title: Basic Statistics and a Bit of Bootstrap
   Slides: "https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Lectures/10b.bootstrap.pdf"
