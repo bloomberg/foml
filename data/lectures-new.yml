@@ -3,7 +3,7 @@
   Slides: "https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Lectures/01.black-box-ML.pdf"
   Video: "https://www.youtube.com/embed/MsD28INtSv8"
   Summary: "<p>
-  Here we present the high-level concepts and workflows of supervised machine learning, by far the most common paradigm of machine learning used in practice. The premise of the lecture is that, with some basic knowledge of machine learning, one can produce workable machine learning solutions without understanding how the machine learning algorithms actually work. Understanding how to use machine learning libraries in this way, what we call \"black box machine learning\", is the topic of this introductory lecture.</p>
+  Here we present the high-level concepts and workflows of supervised machine learning, the most useful machine learning paradigm in practice. The premise of this lecture is that, with some basic knowledge of machine learning, one can produce workable machine learning solutions without understanding how the machine learning algorithms actually work. Understanding how to use machine learning libraries in this way, what we call \"black box machine learning\", is the topic of this introductory lecture.</p>
   <p>This lecture may be skipped by those already familiar with practical machine learning.</p>"
   Notes:
     - {"Géron's Machine Learning Landscape": "https://github.com/ageron/handson-ml/blob/master/01_the_machine_learning_landscape.ipynb"}
