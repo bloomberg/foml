@@ -103,7 +103,7 @@
                 <tr>
                     <td class="label" colspan="2">
                         <h1><a href="#lecture-1-black-box-machine-learning">1. Black Box Machine Learning</a></h1>
-                        <p> With the abundance of well-documented machine learning (ML) libraries, it's fairly straightforward for a programmer to "do" ML, without any understanding of how things are working.  And we encourage this kind of "black box" machine learning! (At least to start.)  However, to make proper use of these ML libraries, one needs to be conversant in the basic vocabulary, concepts, and workflows that underlie ML. We'll introduce the standard ML problem types (classification and regression) and discuss prediction functions, feature extraction, learning algorithms, performance evaluation, cross-validation, sample bias, nonstationarity, overfitting, and hyperparameter tuning. </p> <p>This lecture may be safely skipped by those already familiar with practical machine learning.</p>
+                        <p>With the abundance of well-documented machine learning (ML) libraries, programmers can now "do" some ML, without any understanding of how things are working.  And we'll encourage such "black box" machine learning... just so long as you follow the procedures described in this lecture. To make proper use of ML libraries, you need to be conversant in the basic vocabulary, concepts, and workflows that underlie ML. We'll introduce the standard ML problem types (classification and regression) and discuss prediction functions, feature extraction, learning algorithms, performance evaluation, cross-validation, sample bias, nonstationarity, overfitting, and hyperparameter tuning.</p><p>If you're already familiar with standard machine learning practice, you can skip this lecture.</p>
                     </td>
                     <td colspan="2">
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/MsD28INtSv8" allow="autoplay; encrypted-media" allowfullscreen></iframe>
@@ -137,7 +137,7 @@
                 <tr>
                     <td class="label" colspan="2">
                         <h1><a href="#lecture-2-case-study-churn-prediction">2. Case Study: Churn Prediction</a></h1>
-                        We have an interactive discussion on how to formulate a realistic, but subtly complicated, business problem as a formal machine learning problem.
+                        <p>We have an interactive discussion about how to reformulate a real and subtly complicated business problem as a formal machine learning problem.  The real goal isn't so much to solve the problem, as to convey the point that properly mapping your business problem to a machine learning problem is both extremely important and often quite challenging.  This course doesn't dwell on how to do this mapping, though see Provost and Fawcett's book in the references.</p>
                     </td>
                     <td colspan="2">
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/kE_t3Mm8Z50" allow="autoplay; encrypted-media" allowfullscreen></iframe>
@@ -160,6 +160,7 @@
                         <h1>References</h1>
                         <ul>
                                 <li><a href="http://www.kdd.org/kdd-cup/view/kdd-cup-2009">KDD Cup 2009: Customer relationship prediction</a></li>
+                                <li><a href="http://www.data-science-for-biz.com/DSB/Home.html">Provost and Fawcett book</a></li>
                         </ul>
                     </td>
             </tr>
@@ -170,7 +171,7 @@
                 <tr>
                     <td class="label" colspan="2">
                         <h1><a href="#lecture-3-introduction-to-statistical-learning-theory">3. Introduction to Statistical Learning Theory</a></h1>
-                        This is where our "deep study" of machine learning begins. We introduce some of the core building blocks and concepts that we use in this course: input space, action space, outcome space, prediction functions, loss functions, and hypothesis spaces.  We also present empirical risk minimization, our first machine learning method.  We highlight the issue of overfitting, which will occur when we find the empirical risk minimizer over too large a hypothesis space.
+                        This is where our "deep study" of machine learning begins. We introduce some of the core building blocks and concepts that we will use throughout the remainder of this course: input space, action space, outcome space, prediction functions, loss functions, and hypothesis spaces.  We present our first machine learning method: empirical risk minimization.  We also highlight the issue of overfitting, which may occur when we find the empirical risk minimizer over too large a hypothesis space.
                     </td>
                     <td colspan="2">
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/rqJ8SrnmWu0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
@@ -206,7 +207,7 @@
                 <tr>
                     <td class="label" colspan="2">
                         <h1><a href="#lecture-4-stochastic-gradient-descent">4. Stochastic Gradient Descent</a></h1>
-                        A recurring theme in machine learning is to formulate a learning problem as an optimization problem.  Empirical risk minimization was our first example of this.  Thus to do learning, we need to do optimization. In this lecture we present stochastic gradient descent, which is today's standard optimization method for large-scale machine learning problems.
+                        A recurring theme in machine learning is that we formulate learning problems as optimization problems.  Empirical risk minimization was our first example of this.  To do learning, we need to do optimization. In this lecture we cover stochastic gradient descent, which is today's standard optimization method for large-scale machine learning problems.
                     </td>
                     <td colspan="2">
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/5TZww5bTROE" allow="autoplay; encrypted-media" allowfullscreen></iframe>
@@ -246,7 +247,7 @@
                 <tr>
                     <td class="label" colspan="2">
                         <h1><a href="#lecture-5-excess-risk-decomposition">5. Excess Risk Decomposition</a></h1>
-                        We introduce the notions of approximation error, estimation error, and optimization error. While these concepts usually show up in more advanced courses, they will help us frame our understanding of the very practical issue of trading off between the choice of hypothesis space, the amount of data we have, and how long we run our optimization algorithms. In particular, it will helps us understand why "better" optimization methods (such as quasi-Newton methods) may not find prediction functions that generalize better, despite finding better optima.
+                        We introduce the notions of approximation error, estimation error, and optimization error. While these concepts usually show up in more advanced courses, they will help us frame our understanding of the tradeoffs between hypothesis space choice, data set size, and optimization run times. In particular, these concepts will help us understand why "better" optimization methods (such as quasi-Newton methods) may not find prediction functions that generalize better, despite finding better optima.
                     </td>
                     <td colspan="2">
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/YA_CE9jat4I" allow="autoplay; encrypted-media" allowfullscreen></iframe>
