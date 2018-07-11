@@ -158,7 +158,7 @@
   References:
     - Provost and Fawcett book
 -
-  Title: "15. \"City Sense\": Probabilistic Modeling for Unusual Behavior Detection"
+  Title: "15. \"CitySense\": Probabilistic Modeling for Unusual Behavior Detection"
 #  <p>In this lecture, we take a \"bare hands\" approach to building these conditional probability models. While I consider these techniques to be very useful in practice, if you're eager to get to some mathematics, you may safely skip this lecture.</p>"
   Summary: "<p>So far we have studied the regression setting, for which our predictions (i.e. 'actions') are real-valued, as well as the classification setting, for which our score functions also produce real values. With this lecture, we begin our consideration of \"conditional probability models\", in which the predictions are probability distributions over possible outcomes. We motivate these models by discussion of the \"CitySense\" problem, in which we want to predict the probability distribution for the number of taxicab pickups at each street corner, at different times of the week. We can use a conditional probability model to predict likely outcomes, as well as to detect anomalies.</p>"
   Slides: "https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Lectures/08a.citysense.pdf"
