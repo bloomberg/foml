@@ -85,7 +85,7 @@
   Title: "9. Lagrangian Duality and Convex Optimization"
   Slides: "https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Lectures/04b.convex-optimization.pdf"
   Summary: "<p>We introduce the basics of convex optimization and Lagrangian duality. We discuss weak and strong duality, Slater's constraint qualifications, and we derive the complementary slackness conditions. As far as this course is concerned, there are really only two reasons for discussing Lagrangian duality: 1) The complementary slackness conditions will imply that SVM solutions are \"sparse in the data\" (<a href=\"#lecture-10-support-vector-machines\">next lecture</a>), which has important practical implications for the kernelized SVMs (see the <a href=\"#lecture-13-kernel-methods\">kernel methods lecture</a>). 2) Strong duality is a sufficient condition for the equivalence between the penalty and constraint forms of regularization (see <a href=\"#assignment-homework-4\">Hwk 4 Problem 8</a>).</p>
-  <p>This mathematically intense lectures may be safely skipped.</p>"
+  <p>This mathematically intense lecture may be safely skipped.</p>"
   Video: "https://www.youtube.com/embed/thuYiebq1cE"
   Notes:
     - {Pre-lecture warmup for SVM and Lagrangians: "https://davidrosenberg.github.io/mlcourse/Notes/svm-lecture-prep.pdf"}
@@ -114,7 +114,7 @@
 -
   Title: "11. Subgradient Descent"
   Summary: "<p>Neither the lasso nor the SVM objective function is differentiable, and we had to do some work for each to optimize with gradient-based methods. It turns out, however, that gradient descent will essentially work in these situations, so long as you're careful about handling the non-differentiable points. To this end, we introduce \"subgradient descent\", and we show the surprising result that, even though the objective value may not decrease with each step, every step brings us closer to the minimizer.</p> 
-<p>This mathematically intense lectures may be safely skipped.</p>"
+<p>This mathematically intense lecture may be safely skipped.</p>"
   Slides: "https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Lectures/05a.subgradient-descent.pdf"
   Video: "https://www.youtube.com/embed/jYtCiV1aP44"
   Notes:
@@ -227,7 +227,7 @@
   Title: "22. Bagging and Random Forests"
   Summary: "<p>We motivate bagging as follows: Consider the regression case, and suppose we could create a bunch (say B) prediction functions based on independent training samples of size n. If we average together these prediction functions, the expected value of the average is the same as any one of the functions, but the variance would have decreased by a factor of 1/B -- a clear win! Of course, this would require an overall sample of size nB. The idea of bagging is to replace independent samples with bootstrap samples from a single data set of size n. Of course, the bootstrap samples are not independent, so much of our discussion is about when bagging does and does not lead to improved performance.  Random forests were invented as a way to create conditions in which bagging works better.</p>
 <details>
-  <p><summary>More...</summary>Although it's hard to find crisp theoretical results describing when bagging helps, conventional wisdom says that it helps most for models that are \"high variance\", which in this context means the prediction function may change a lot when you train with a new random sample from the same distribution, and \"low bias\", which basically means fitting the training data well. Large decision trees have these characteristics and are usually the model of choice for bagging. Random forests are just bagged trees with one additional twist: only a random subset of features are considered when splitting a node of a tree. The hope, very roughly speaking, is that by injecting this randomness, the resulting prediction functions are less dependent, and thus we'll get a larger reduction in variance. In practice, random forests are one of the most effect machine learning models in many domains.</p></details>"
+  <p><summary>More...</summary>Although it's hard to find crisp theoretical results describing when bagging helps, conventional wisdom says that it helps most for models that are \"high variance\", which in this context means the prediction function may change a lot when you train with a new random sample from the same distribution, and \"low bias\", which basically means fitting the training data well. Large decision trees have these characteristics and are usually the model of choice for bagging. Random forests are just bagged trees with one additional twist: only a random subset of features are considered when splitting a node of a tree. The hope, very roughly speaking, is that by injecting this randomness, the resulting prediction functions are less dependent, and thus we'll get a larger reduction in variance. In practice, random forests are one of the most effective machine learning models in many domains.</p></details>"
   Slides: "https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Lectures/10c.bagging-random-forests.pdf"
   Video: "https://www.youtube.com/embed/f2S4hVs-ESw"
   Notes:
@@ -286,7 +286,7 @@
     - {"An Alternative to EM for GMM [Optional]": "https://arxiv.org/pdf/1706.03267.pdf"}
 -
   Title: "27. EM Algorithm for Latent Variable Models"
-  Summary: "It turns out, fitting a Gaussian mixture model by maximum likelihood is easier said then done: there is no closed from solution, and our usual gradient methods do not work well. The standard approach to maximum likelihood estimation in a Gaussian mixture model is the expectation maximization algorithm. In this lecture, we present the EM algorithm in the general setting of latent variable models, of which GMM is a special case. We present the EM algorithm as a very basic \"variational method\" and indicate a few generalizations."
+  Summary: "It turns out, fitting a Gaussian mixture model by maximum likelihood is easier said than done: there is no closed from solution, and our usual gradient methods do not work well. The standard approach to maximum likelihood estimation in a Gaussian mixture model is the expectation maximization algorithm. In this lecture, we present the EM algorithm in the general setting of latent variable models, of which GMM is a special case. We present the EM algorithm as a very basic \"variational method\" and indicate a few generalizations."
   Slides: "https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Lectures/13c.EM-algorithm.pdf"
   Video: "https://www.youtube.com/embed/lMShR1vjbUo"
   References:
