@@ -265,7 +265,7 @@
     - {"Multiclass Questions": "https://davidrosenberg.github.io/mlcourse/ConceptChecks/7-Lec-Check.pdf"}
     - {"Multiclass Solutions": "https://davidrosenberg.github.io/mlcourse/ConceptChecks/7-Lec-Check_sol.pdf"}
   References:
-    - {SSBD 17.1-17.3}
+    - "SSBD 17.1-17.3"
     - {In Defense of One-vs-All Classification: "http://www.jmlr.org/papers/v5/rifkin04a.html"}
     - {Reducing Multiclass to Binary: "http://www.jmlr.org/papers/volume1/allwein00a/allwein00a.pdf"} 
 -
