@@ -179,7 +179,7 @@ body > section > section > h1 {
   }
 }
 #home {
-  text-align: center;
+  text-align: left;
   padding-top: 40px;
 }
 #home > a img {
@@ -216,7 +216,7 @@ body > section > section > h1 {
 }
 #course-pitch {
   font-size: 36px;
-  text-transform: uppercase;
+  text-transform: none;
   margin-bottom: 40px;
   line-height: normal;
   margin-top: 70px;
