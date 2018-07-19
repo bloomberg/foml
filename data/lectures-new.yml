@@ -69,7 +69,7 @@
   Title: "7. Lasso, Ridge, and Elastic Net"
   Slides: "https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Lectures/03b.elastic-net.pdf"
   Video: "https://www.youtube.com/embed/KIoz_aa1ed4"
-  xxSummary: "<p>We continue our discussion of ridge and lasso regression by focusing on the case of correlated features, which is a common occurrence in machine learning practice. We will see that ridge solutions tend to spread weight equally among highly correlated features, while lasso solutions may be unstable in the case of highly correlated features. Finally, we introduce the \"elastic net\", a combination of L1 and L2 regularization, which ameliorates the instability of L1 while still allowing for sparsity in the solution. (Credit to Brett Bernstein for the excellent graphics.)"
+  Summary: "<p>We continue our discussion of ridge and lasso regression by focusing on the case of correlated features, which is a common occurrence in machine learning practice. We will see that ridge solutions tend to spread weight equally among highly correlated features, while lasso solutions may be unstable in the case of highly correlated features. Finally, we introduce the \"elastic net\", a combination of L1 and L2 regularization, which ameliorates the instability of L1 while still allowing for sparsity in the solution. (Credit to Brett Bernstein for the excellent graphics.)"
   Notes:
     - {Lasso and Elastic Net (ipynb): "https://github.com/davidrosenberg/mlcourse/blob/gh-pages/Notebooks/Lasso%20and%20Elastic%20Net/lasso_and_elastic_net.ipynb"}
     - {Elastic Net correlation theorem: "https://davidrosenberg.github.io/mlcourse/Notes/elastic-net-theorem.pdf"}
