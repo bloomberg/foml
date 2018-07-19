@@ -184,7 +184,7 @@
   Video: "https://www.youtube.com/embed/JrFj0xpGd2Q"
 -
   Title: "18. Bayesian Methods"
-  Summary: "<p>We review some basics of classical and Bayesian statistics. For classical \"frequentist\" statistics, we define statistics and point estimators, and discuss various desirable properties of point estimators. For Bayesian statistics, we introduce the \"prior distribution\", which is a distribution on the parameter space that you declare before seeing any data. We compare the two approaches for the simple problem of learning about a coin's probability of heads. Along the way, we discuss conjugate priors, Bayesian point estimators, posterior distributions, and credible sets. Finally, we give the basic setup for Bayesian decision theory, which is how a Bayesian would go from a posterior distribution to choosing an action.</p>"
+  Summary: "<p>We review some basics of classical and Bayesian statistics. For classical \"frequentist\" statistics, we define statistics and point estimators, and discuss various desirable properties of point estimators. For Bayesian statistics, we introduce the \"prior distribution\", which is a distribution on the parameter space that you declare before seeing any data. We compare the two approaches for the simple problem of learning about a coin's probability of heads. Along the way, we discuss conjugate priors, posterior distributions, and credible sets. Finally, we give the basic setup for Bayesian decision theory, which is how a Bayesian would go from a posterior distribution to choosing an action.</p>"
   Slides: "https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Lectures/09a.bayesian-methods.pdf"
   Video: "https://www.youtube.com/embed/VCfrGjDPC6k"
   CChecks:
