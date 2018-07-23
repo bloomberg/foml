@@ -208,7 +208,7 @@
     - "Bishop 3.3"
 -
   Title: "20. Classification and Regression Trees"
-  Summary: "We begin our discussion of nonlinear models with tree models. We first describe the hypothesis space of decision trees, and we discuss some complexity measure we can use for regularization, including tree depth and the number of leaf nodes.  The challenge starts when we try to find the regularized empirical risk minimizer (ERM) over this space for some loss function. It turns out finding this ERM is computationally intractable. We discuss a standard greedy approach to tree building, both for classification and regression, in the case that features take values in any ordered set. We also describe an approach for handling categorical variables (in the binary classification case) and missing values."
+  Summary: "We begin our discussion of nonlinear models with tree models. We first describe the hypothesis space of decision trees, and we discuss some complexity measures we can use for regularization, including tree depth and the number of leaf nodes.  The challenge starts when we try to find the regularized empirical risk minimizer (ERM) over this space for some loss function. It turns out finding this ERM is computationally intractable. We discuss a standard greedy approach to tree building, both for classification and regression, in the case that features take values in any ordered set. We also describe an approach for handling categorical variables (in the binary classification case) and missing values."
   Slides: "https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Lectures/10a.trees.pdf"
   Video: "https://www.youtube.com/embed/GZuweldJWrM"
   References:
