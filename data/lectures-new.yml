@@ -27,6 +27,7 @@
   CChecks:
     - {SLT and SGD Concept Check Questions: "https://davidrosenberg.github.io/mlcourse/ConceptChecks/1-Lec-Check.pdf"}
     - {SLT and SGD Concept Check Solutions: "https://davidrosenberg.github.io/mlcourse/ConceptChecks/1-Lec-Check_sol.pdf"}
+    - {"Homework 1: §3": "#assignment-homework-1"}
 -
   Title: "4. Stochastic Gradient Descent"
   Slides: "https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Lectures/02b.SGD.pdf"
@@ -42,6 +43,8 @@
   CChecks:
     - {SLT and SGD Concept Check Questions: "https://davidrosenberg.github.io/mlcourse/ConceptChecks/1-Lec-Check.pdf"}
     - {SLT and SGD Concept Check Solutions: "https://davidrosenberg.github.io/mlcourse/ConceptChecks/1-Lec-Check_sol.pdf"}
+    - {"Homework 1: §2": "#assignment-homework-1"}
+    - {"Homework 2: §1,2": "#assignment-homework-2"}
 -
   Title: "5. Excess Risk Decomposition"
   Slides: "https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Lectures/02c.excess-risk-decomposition.pdf"
@@ -59,6 +62,7 @@
   CChecks:
     - {Excess Risk and L1/L2 Questions: "https://davidrosenberg.github.io/mlcourse/ConceptChecks/2-Lec-Check.pdf"}
     - {Excess Risk and L1/L2 Solutions: "https://davidrosenberg.github.io/mlcourse/ConceptChecks/2-Lec-Check_sol.pdf"}
+    - {"Homework 2": "#assignment-homework-2"}
   Notes:
     - {Completing the Square: "https://davidrosenberg.github.io/mlcourse/Notes/completing-the-square.pdf"}
     - {Lasso Lecture Prep Questions: "https://davidrosenberg.github.io/mlcourse/ConceptChecks/2-PreLec-Check.pdf"}
@@ -73,6 +77,8 @@
   Notes:
     - {Lasso and Elastic Net (ipynb): "https://github.com/davidrosenberg/mlcourse/blob/gh-pages/Notebooks/Lasso%20and%20Elastic%20Net/lasso_and_elastic_net.ipynb"}
     - {Elastic Net correlation theorem: "https://davidrosenberg.github.io/mlcourse/Notes/elastic-net-theorem.pdf"}
+  CChecks:
+    - {"Homework 2: §4.2,5": "#assignment-homework-2"}
   References:
     - {"Zou and Hastie's Elastic Net Paper (2005)": "https://web.stanford.edu/~hastie/Papers/B67.2%20(2005)%20301-320%20Zou%20&%20Hastie.pdf"}
     - {'Mairal, Bach, and Ponce on Sparse Modeling': "https://arxiv.org/pdf/1411.3230v2.pdf"}
@@ -81,6 +87,10 @@
   Slides: "https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Lectures/04a.loss-functions.pdf"
   Video: "https://www.youtube.com/embed/1oi_Mwozj5w"
   Summary: "We start by discussing absolute loss and Huber loss.  We consider them as alternatives to the square loss that are more robust to outliers.  Next, we introduce our approach to the classification setting, introducing the notions of score, margin, and margin-based loss functions. We discuss basic properties of the hinge loss (i.e SVM loss), logistic loss, and the square loss, considered as margin-based losses.  The interplay between the loss function we use for training and the properties of the prediction function we end up with is a theme we will return to several times during the course."
+  CChecks:
+    - {"Homework 3: §2,3": "#assignment-homework-3"}
+    - {"Homework 5: §2": "#assignment-homework-5"}
+
 -
   Title: "9. Lagrangian Duality and Convex Optimization"
   Slides: "https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Lectures/04b.convex-optimization.pdf"
@@ -94,6 +104,7 @@
   CChecks:
     - {Subgradients and Lagrangian Duality Questions: "https://davidrosenberg.github.io/mlcourse/ConceptChecks/4-Lec-Check.pdf"}
     - {Subgradients and Lagrangian Duality Solutions: "https://davidrosenberg.github.io/mlcourse/ConceptChecks/4-Lec-Check_sol.pdf"}
+    - {"Homework 4: §8": "#assignment-homework-4"}
   References:
 -
   Title: "10. Support Vector Machines"
@@ -106,6 +117,9 @@
     - {Pre-lecture warmup for SVM and Lagrangians: "https://davidrosenberg.github.io/mlcourse/Notes/svm-lecture-prep.pdf"}
     - {Support Vector Machines: "https://davidrosenberg.github.io/mlcourse/Notes/svm-notes.pdf"}
     - {SVM Insights from Duality: "https://davidrosenberg.github.io/mlcourse/Notes/SVM-main-points.pdf"}
+  CChecks:
+    - {"Homework 3": "#assignment-homework-3"}
+    - {"Homework 4: §4": "#assignment-homework-4"}
   References:
     - {"Geometric Derivation of SVMs": "https://davidrosenberg.github.io/mlcourse/Labs/3-SVM-Notes_sol.pdf"}
     - {"Note on the Uniqueness of SVMs": "https://davidrosenberg.github.io/mlcourse/Labs/UniquenessOfSVM.pdf"}
@@ -122,6 +136,7 @@
   CChecks:
     - {Subgradients and Lagrangian Duality Questions: "https://davidrosenberg.github.io/mlcourse/ConceptChecks/4-Lec-Check.pdf"}
     - {Subgradients and Lagrangian Duality Solutions: "https://davidrosenberg.github.io/mlcourse/ConceptChecks/4-Lec-Check_sol.pdf"}
+    - {"Homework 3": "#assignment-homework-3"}
   References:
     - {"Boyd's subgradient notes": "http://web.stanford.edu/class/ee364b/lectures.html"}
 -
@@ -134,6 +149,8 @@
     - {Ingesting text with BOW: "https://github.com/davidrosenberg/mlcourse/blob/gh-pages/Notebooks/Features/test_BOW.ipynb"}
     - {Polynomial features: "https://github.com/davidrosenberg/mlcourse/blob/gh-pages/Notebooks/Features/polynomial_feature_comparison.ipynb"}
     - {Vector quantization with k-means: "https://github.com/davidrosenberg/mlcourse/blob/gh-pages/Notebooks/Features/vector_quantization.ipynb"}
+  CChecks:
+    - {"Homework 3: §6,7,8": "#assignment-homework-3"}
   References:
     - {Feature Engineering for Machine Learning by Casari and Zheng: "http://shop.oreilly.com/product/0636920049081.do"}
 -
@@ -149,6 +166,7 @@
   CChecks:
     - {Kernel Concept Check Questions: "https://davidrosenberg.github.io/mlcourse/ConceptChecks/5-Lab-Check.pdf"}
     - {Kernel Concept Check Solutions: "https://davidrosenberg.github.io/mlcourse/ConceptChecks/5-Lab-Check_sol.pdf"}
+    - {"Homework 4": "#assignment-homework-4"}
 -
 #: zero-information prediction function, single-feature prediction functions, regularized linear models, and controversially an \"oracle\" model that is trained on your validation data, to get an idea of the upper bound of performance for your learning method.
   Title: "14. Performance Evaluation"
@@ -170,6 +188,8 @@
   Summary: "In empirical risk minimization, we minimize the average loss on a training set. If our prediction functions are producing probability distributions, what loss functions will give reasonable performance measures? In this lecture, we discuss \"likelihood\", one of the most popular performance measures for distributions. We temporarily leave aside the conditional probability modeling problem, and focus on the simpler problem of fitting an unconditional probability model to data. We can use \"maximum likelihood\" to fit both parametric and nonparametric models. Once we have developed a collection of candidate probability distributions on training data, we select the best one by choosing the model that has highest \"hold-out likelihood\", i.e. likelihood on validation data."
   Slides: "https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Lectures/08b.MLE.pdf"
   Video: "https://www.youtube.com/embed/ec_5vvxW7fE"
+  CChecks:
+    - {"Homework 5: §7,8": "#assignment-homework-5"}
 -
   Title: "17. Conditional Probability Models"
   Summary: "In this lecture we consider prediction functions that produce distributions from a parametric family of distributions. We restrict to the case of linear models, though later in the course we will show how to make nonlinear versions using gradient boosting and neural networks. We develop the technique through four examples: Bernoulli regression (logistic regression being a special case), Poisson regression, Gaussian regression, and multinomial logistic regression (our first multiclass method). We conclude by connecting this maximum likelihood framework back to our empirical risk minimization framework."
@@ -181,6 +201,7 @@
   CChecks:
     - {Conditional Model Questions: "https://davidrosenberg.github.io/mlcourse/ConceptChecks/10-Lab-Check.pdf"}
     - {Conditional Model Solutions: "https://davidrosenberg.github.io/mlcourse/ConceptChecks/10-Lab-Check_sol.pdf"}
+    - {"Homework 5: §3": "#assignment-homework-5"}
   Video: "https://www.youtube.com/embed/JrFj0xpGd2Q"
 -
   Title: "18. Bayesian Methods"
@@ -190,6 +211,7 @@
   CChecks:
     - {Bayesian Methods and Regression Questions: "https://davidrosenberg.github.io/mlcourse/ConceptChecks/11-Lec-Check.pdf"}
     - {Bayesian Methods and Regression Solutions: "https://davidrosenberg.github.io/mlcourse/ConceptChecks/11-Lec-Check_sol.pdf"}
+    - {"Homework 5: §7,8": "#assignment-homework-5"}
   Notes:
     - {"Proportionality Review": "https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Notes/proportionality.pdf"}
     - {"Thompson Sampling for Bernoulli Bandits [Optional]": "https://davidrosenberg.github.io/mlcourse/in-prep/thompson-sampling-bernoulli.pdf"}
@@ -211,6 +233,8 @@
   Summary: "We begin our discussion of nonlinear models with tree models. We first describe the hypothesis space of decision trees, and we discuss some complexity measures we can use for regularization, including tree depth and the number of leaf nodes.  The challenge starts when we try to find the regularized empirical risk minimizer (ERM) over this space for some loss function. It turns out finding this ERM is computationally intractable. We discuss a standard greedy approach to tree building, both for classification and regression, in the case that features take values in any ordered set. We also describe an approach for handling categorical variables (in the binary classification case) and missing values."
   Slides: "https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Lectures/10a.trees.pdf"
   Video: "https://www.youtube.com/embed/GZuweldJWrM"
+  CChecks:
+    - {"Homework 6: §6": "#assignment-homework-6"}
   References:
     - "JWHT 8.1"
     - "HTF 9.2"
@@ -253,6 +277,8 @@
     - {"Exponential Distribution Gradient Boosting": "https://davidrosenberg.github.io/mlcourse/Notes/conditional-exponential-distributions.pdf"}
     - {"Poisson Gradient Boosting": "https://davidrosenberg.github.io/mlcourse/Notes/poisson-gradient-boosting.pdf"}
     - {"gbm.py": "https://davidrosenberg.github.io/mlcourse/Archive/2017/Labs/gbm.py"}
+  CChecks:
+    - {"Homework 6: §7,8": "#assignment-homework-6"}
   References:
     - {"Friedman's GBM Paper": http://statweb.stanford.edu/~jhf/ftp/trebst.pdf}
     - {"Ridgeway's GBM Guide": http://www.saedsayad.com/docs/gbm2.pdf}
@@ -266,6 +292,7 @@
   CChecks:
     - {"Multiclass Questions": "https://davidrosenberg.github.io/mlcourse/ConceptChecks/7-Lec-Check.pdf"}
     - {"Multiclass Solutions": "https://davidrosenberg.github.io/mlcourse/ConceptChecks/7-Lec-Check_sol.pdf"}
+    - {"Homework 6: §1-5": "#assignment-homework-6"}
   References:
     - "SSBD 17.1-17.3"
     - {In Defense of One-vs-All Classification: "http://www.jmlr.org/papers/v5/rifkin04a.html"}
@@ -304,6 +331,8 @@
   Summary: "<p>Neural network optimization is amenable to gradient-based methods, but if the actual computation of the gradient is done naively, the computational cost can be prohibitive. Backpropagation is the standard algorithm for computing the gradient efficiently. We present the backpropagation algorithm for a general computation graph. The algorithm we present applies, without change, to models with \"parameter tying\", which include convolutional networks and recurrent neural networks (RNN's), the workhorses of modern computer vision and natural language processing. We illustrate backpropagation with one of the simplest models with parameter tying: regularized linear regression. Backpropagation for the multilayer perceptron, the standard introductory example, is presented in detail in <a href=\"#assignment-homework-7\">Hwk 7 Problem 4</a>.</p>"
   Slides: "https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Lectures/14b.backpropagation.pdf"
   Video: "https://www.youtube.com/embed/XIpyEvLv93A"
+  CChecks:
+    - {"Homework 7": "#assignment-homework-7"}
   References:
     - {'Yes you should understand backprop (Karpathy)': "https://medium.com/@karpathy/yes-you-should-understand-backprop-e2f06eab496b"}
     - {'Challenges with backprop (Karpathy Lecture)': "https://youtu.be/gYpoJMlgyXA?t=13m44s"}
