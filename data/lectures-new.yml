@@ -8,7 +8,7 @@
 #    - {"Géron's End-to-End Machine Learning": "https://github.com/ageron/handson-ml/blob/master/02_end_to_end_machine_learning_project.ipynb"}
   References:
     - "Géron Ch 1,2"
-    - {Provost and Fawcett book: "http://www.data-science-for-biz.com/DSB/Home.html"}
+    - {Provost and Fawcett book: "http://www.data-science-for-biz.com"}
 -
   Title: "2. Case Study: Churn Prediction"
   Slides: "https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Lectures/churn.pdf"
@@ -16,7 +16,7 @@
   Summary: "<p>We have an interactive discussion about how to reformulate a real and subtly complicated business problem as a formal machine learning problem.  The real goal isn't so much to solve the problem, as to convey the point that properly mapping your business problem to a machine learning problem is both extremely important and often quite challenging.  This course doesn't dwell on how to do this mapping, though see Provost and Fawcett's book in the references.</p>"
   References:
     - {"KDD Cup 2009: Customer relationship prediction": "http://www.kdd.org/kdd-cup/view/kdd-cup-2009"}
-    - {Provost and Fawcett book: "http://www.data-science-for-biz.com/DSB/Home.html"}
+    - {Provost and Fawcett book: "http://www.data-science-for-biz.com"}
 -
   Title: "3. Introduction to Statistical Learning Theory"
   Slides: "https://davidrosenberg.github.io/mlcourse/Archive/2017Fall/Lectures/02a.intro-stat-learning-theory.pdf"
@@ -100,10 +100,10 @@
   Notes:
     - {Pre-lecture warmup for SVM and Lagrangians: "https://davidrosenberg.github.io/mlcourse/Notes/svm-lecture-prep.pdf"}
     - {Extreme Abridgment of BV: "https://davidrosenberg.github.io/mlcourse/Notes/convex-optimization.pdf"}
-    - {Lagrangian Duality (10-minute summary)): "https://davidrosenberg.github.io/mlcourse/Lectures/04d.lagrangian-duality-in-ten-minutes.pdf"}
+    - {Lagrangian Duality (10-minute summary)): "https://davidrosenberg.github.io/mlcourse/Archive/2018/Lectures/04d.lagrangian-duality-in-ten-minutes.pdf"}
   CChecks:
-    - {Subgradients and Lagrangian Duality Questions: "https://davidrosenberg.github.io/mlcourse/ConceptChecks/4-Lec-Check.pdf"}
-    - {Subgradients and Lagrangian Duality Solutions: "https://davidrosenberg.github.io/mlcourse/ConceptChecks/4-Lec-Check_sol.pdf"}
+    - {Convexity and Lagrangian Duality Questions: "https://davidrosenberg.github.io/mlcourse/Archive/2018/ConceptChecks/4-Lec-Check.pdf"}
+    - {Convexity and Lagrangian Duality Solutions: "https://davidrosenberg.github.io/mlcourse/Archive/2018/ConceptChecks/4-Lec-Check_sol.pdf"}
     - {"Homework 4: §8": "#assignment-homework-4"}
   References:
 -
@@ -134,8 +134,8 @@
   Notes:
     - {"Subgradients": "https://davidrosenberg.github.io/mlcourse/Labs/4-Subgradients-Notes_sol.pdf"}
   CChecks:
-    - {Subgradients and Lagrangian Duality Questions: "https://davidrosenberg.github.io/mlcourse/ConceptChecks/4-Lec-Check.pdf"}
-    - {Subgradients and Lagrangian Duality Solutions: "https://davidrosenberg.github.io/mlcourse/ConceptChecks/4-Lec-Check_sol.pdf"}
+    - {Subgradient Questions: "https://davidrosenberg.github.io/mlcourse/Archive/2018/ConceptChecks/4-Lab-Check.pdf"}
+    - {Subgradient Solutions: "https://davidrosenberg.github.io/mlcourse/Archive/2018/ConceptChecks/4-Lab-Check_sol.pdf"}
     - {"Homework 3": "#assignment-homework-3"}
   References:
     - {"Boyd's subgradient notes": "http://web.stanford.edu/class/ee364b/lectures.html"}
