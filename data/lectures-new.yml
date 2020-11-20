@@ -197,7 +197,7 @@
   Notes:
     - {"Exponential Distribution Gradient Boosting (First part)": "https://davidrosenberg.github.io/mlcourse/Notes/conditional-exponential-distributions.pdf"}
     - {"Poisson Gradient Boosting (First part)": "https://davidrosenberg.github.io/mlcourse/Notes/poisson-gradient-boosting.pdf"}
-
+    - {"Logistic regression is matching moments": "https://davidrosenberg.github.io/mlcourse/Notes/logistic-regression-moment-matching.pdf"} 
   CChecks:
     - {Conditional Model Questions: "https://davidrosenberg.github.io/mlcourse/ConceptChecks/10-Lab-Check.pdf"}
     - {Conditional Model Solutions: "https://davidrosenberg.github.io/mlcourse/ConceptChecks/10-Lab-Check_sol.pdf"}
