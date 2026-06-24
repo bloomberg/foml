@@ -162,7 +162,7 @@
   Video: "https://www.youtube.com/embed/m1otj-SdwYw"
   References:
     - "SSBD Chapter 16"
-    - {"A Survey of Kernels for Structured Data": "http://homepages.rpi.edu/~bennek/class/mmld/papers/p49-gartner.pdf"}
+    - {"A Survey of Kernels for Structured Data": "https://web.archive.org/web/20240419173242/https://people.cs.pitt.edu/~milos/courses/cs3750-Fall2007/Readings/Gartner-kernels-survey.pdf"}
   CChecks:
     - {Kernel Concept Check Questions: "https://davidrosenberg.github.io/mlcourse/ConceptChecks/5-Lab-Check.pdf"}
     - {Kernel Concept Check Solutions: "https://davidrosenberg.github.io/mlcourse/ConceptChecks/5-Lab-Check_sol.pdf"}
@@ -283,7 +283,7 @@
   CChecks:
     - {"Homework 6: §7,8": "#assignment-homework-6"}
   References:
-    - {"Friedman's GBM Paper": http://statweb.stanford.edu/~jhf/ftp/trebst.pdf}
+    - {"Friedman's GBM Paper": "https://web.archive.org/web/20210517213819/https://statweb.stanford.edu/~jhf/ftp/trebst.pdf"}
     - {"Ridgeway's GBM Guide": http://www.saedsayad.com/docs/gbm2.pdf}
     - {XGBoost Paper: http://arxiv.org/abs/1603.02754}
 #    - {"Bühlmann and Hothorn's Boosting Paper": https://projecteuclid.org/euclid.ss/1207580163}
@@ -323,7 +323,7 @@
   Video: "https://www.youtube.com/embed/lMShR1vjbUo"
   References:
     - "Bishop 9.4"
-    - {"Vaida's \"Parameter Convergence for EM and MM Algorithms\"": "http://www3.stat.sinica.edu.tw/statistica/oldpdf/a15n316.pdf"}
+    - {"Vaida's \"Parameter Convergence for EM and MM Algorithms\"": "https://www3.stat.sinica.edu.tw/statistica/oldpdf/a15n316.pdf"}
 -
   Title: "28. Neural Networks"
   Summary: "In the context of this course, we view neural networks as \"just\" another nonlinear hypothesis space. On the practical side, unlike trees and tree-based ensembles (our other major nonlinear hypothesis spaces), neural networks can be fit using gradient-based optimization methods. On the theoretical side, a large enough neural network can approximate any continuous function. We discuss the specific case of the multilayer perceptron for multiclass classification, which we view as a generalization of multinomial logistic regression from linear to nonlinear score functions."
