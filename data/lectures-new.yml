@@ -24,6 +24,7 @@
   Summary: "This is where our \"deep study\" of machine learning begins. We introduce some of the core building blocks and concepts that we will use throughout the remainder of this course: input space, action space, outcome space, prediction functions, loss functions, and hypothesis spaces.  We present our first machine learning method: empirical risk minimization.  We also highlight the issue of overfitting, which may occur when we find the empirical risk minimizer over too large a hypothesis space."
   Notes:
     - {Conditional Expectations: "https://davidrosenberg.github.io/mlcourse/Notes/conditional-expectations.pdf"}
+    - {Conditional Expectations (extended): "https://davidrosenberg.github.io/ttml2021fall/background/conditional-expectation-notes.pdf"}
   CChecks:
     - {SLT and SGD Concept Check Questions: "https://davidrosenberg.github.io/mlcourse/ConceptChecks/1-Lec-Check.pdf"}
     - {SLT and SGD Concept Check Solutions: "https://davidrosenberg.github.io/mlcourse/ConceptChecks/1-Lec-Check_sol.pdf"}
